@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBG Partner Program</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="partical.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://kit.fontawesome.com/ba76523eba.js"
+    crossorigin="anonymous"
+  ></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full z-50 px-20 pt-6">
+      <!-- backdrop-blur-md bg-gradient-to-r from-white/80 via-blue-100/80 to-white/80 shadow-lg rounded-b-2xl border-b border-blue-200 -->
+      <nav
+        class="container mx-auto flex justify-between items-center px-8 py-4 backdrop-blur-md bg-gradient-to-r from-white/80 via-blue-100/80 to-white/80 rounded-2xl shadow-lg"
+      >
+        <div class="logo transition-transform duration-300 hover:scale-110">
+          <img
+            src="assets/logo.png"
+            alt="EBG Partner Program"
+            class="h-12 drop-shadow-lg"
+          />
+        </div>
+        <div class="menu">
+          <ul class="flex items-center gap-8">
+            <li>
+              <a
+                class="relative text-primary hover:text-gray-700 transition-all duration-300 font-semibold text-base uppercase after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-700 after:transition-all after:duration-300 hover:after:w-full after:mt-1"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative text-primary hover:text-gray-700 transition-all duration-300 font-semibold text-base uppercase after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full after:mt-1"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <!-- <button
+                class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50"
+              >
+                Become a Partner
+              </button> -->
+
+              <button
+                class="bg-black text-white px-6 py-2 rounded-lg shadow-lg"
+              >
+                Become a Partner
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <section
+      class="relative h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-20 pt-44"
+    >
+      <div class="flex gap-4 justify-center items-center">
+        <div class="flex flex-col gap-4 w-1/2">
+          <h1 class="text-8xl font-bold uppercase bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Let's make thing right</h1>
+          <p class="text-2xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quos.
+          </p>
+          <button
+            class="w-fit bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent hover:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50"
+          >
+            Become a Partner
+          </button>
+        </div>
+        <div class="w-1/2">
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <video
+            src="assets/video.mp4"
+            autoplay
+            muted
+            loop
+            class="w-full h-full object-cover"
+          ></video>
+          </div>
+        </div>
+
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/5 to-secondary/20 z-10"></div>
+
+    </section> -->
+
+    <section class="bg-primary h-screen relative">
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-50"
+      ></div>
+
+      <div class="absolute top-0 left-0 w-full h-full">
+        <video
+          src="assets/video.mp4"
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover"
+        ></video>
+      </div>
+
+      <div
+        class="container mx-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-white text-6xl text-center font-bold uppercase">
+          Let's make thing right
+        </h1>
+        <!-- <p class="text-white text-2xl text-center font-bold uppercase ">3x Yearly Growth</p>
+        <p class="text-white text-2xl text-center font-bold uppercase ">36+ Brands & Counting</p> -->
+        <div class="mt-4 text-secondary font-bold text-3xl autotyping">
+          <span class="typing_text"></span>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0 pb-5 pr-3">
+        <img
+          src="assets/logas/acer.png"
+          alt="EBG Partner Program"
+          class="h-8 object-cover"
+        />
+        <!-- <img src="assets/logas/daewoo.png" alt="EBG Partner Program" class="h-8 object-cover"> -->
+      </div>
+    </section>
+
+    <!-- <section class="h-screen relative bg-white">
+      <div class="particles-container" id="particlesContainer">
+        <canvas id="particlesCanvas"></canvas>
+      </div>
+
+      <div class="demo-controls">
+        <div class="control-group">
+          <label for="quantity">Particles (10-500):</label>
+          <input type="range" id="quantity" min="10" max="500" value="100" />
+          <span id="quantityValue">100</span>
+        </div>
+        <div class="control-group">
+          <label for="color">Color:</label>
+          <input type="color" id="color" value="#ffffff" />
+        </div>
+        <div class="control-group">
+          <label for="size">Size (0.1-3):</label>
+          <input type="range" id="size" min="1" max="30" value="4" />
+          <span id="sizeValue">0.4</span>
+        </div>
+        <div class="control-group">
+          <label for="staticity">Mouse Effect (1-100):</label>
+          <input type="range" id="staticity" min="1" max="100" value="50" />
+          <span id="staticityValue">50</span>
+        </div>
+      </div>
+    </section> -->
+
+    <section
+      class="h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-32"
+    >
+      <p
+        class="text-5xl font-bold text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+      >
+        Our Core Values
+      </p>
+      <div class="p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
+        <div class="space-y-0">
+          <button
+            class="tab-btn block w-full bg-gradient-to-r cursor-pointer bg-white hover:bg-gray-50 px-6 py-4  transition-all duration-200 font-bold text-lg tracking-wide focus:outline-none active"
+            data-img="0"
+          >
+            <div class="flex items-center justify-between gap-2 text-primary">
+              <img src="assets/icons/sustainable.png" alt="Sustainability" class="w-6 h-6">
+              <p class="text-primary">Sustainability</p>
+            </div>
+            
+          </button>
+          <button
+            class="tab-btn block w-full bg-gradient-to-r cursor-pointer bg-white hover:bg-gray-50 px-6 py-4  transition-all duration-200 font-bold text-lg tracking-wide focus:outline-none"
+            data-img="1"
+          >
+            <div class="flex items-center justify-between gap-2 text-primary">
+              <img src="assets/icons/collaborative.png" alt="Innovation" class="w-6 h-6">
+              <p class="text-primary">Innovation</p>
+            </div>
+          </button>
+          <button
+            class="tab-btn block w-full bg-gradient-to-r cursor-pointer bg-white hover:bg-gray-50 px-6 py-4  transition-all duration-200 font-bold text-lg tracking-wide focus:outline-none"
+            data-img="2"
+          >
+            <div class="flex items-center justify-between gap-2 text-primary">
+               <img src="./assets/icons/destination.png" alt="" class="w-6 h-6">
+              <p class="text-primary">Global</p>
+            </div>
+          </button>
+        </div>
+        <div class="relative space-y-4">
+          <div class="tab-img absolute inset-0 w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500" style="z-index: 2">
+            <h2 class="text-black text-2xl font-bold">Sustainability</h2>
+            <p class="text-black text-lg mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero blanditiis rem delectus. A sapiente vitae, fuga, iure quaerat consequuntur porro numquam, rem ullam voluptatum accusantium et autem earum! Odit officia aspernatur cum!</p>
+            <img
+              src="/assets/dummey.jpg"
+              alt="Sustainability"
+              class="w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500"
+            />
+            <button class="w-full text-center text-black px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50">
+              Read More >
+            </button>
+          </div>
+
+          <div class="tab-img absolute inset-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-500">
+            <h2 class="text-black text-2xl font-bold">Innovation</h2>
+            <p class="text-black text-lg mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero blanditiis rem delectus. A sapiente vitae, fuga, iure quaerat consequuntur porro numquam, rem ullam voluptatum accusantium et autem earum! Odit officia aspernatur cum!</p>
+            <img
+              src="/assets/dummey2.png"
+              alt="Innovation"
+              class="w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500"
+            />
+            <button class="w-full text-center text-black px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50">
+              Read More >
+            </button>
+          </div>
+
+          <div class="tab-img absolute inset-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-500">
+            <h2 class="text-black text-2xl font-bold">Global</h2>
+            <p class="text-black text-lg mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero blanditiis rem delectus. A sapiente vitae, fuga, iure quaerat consequuntur porro numquam, rem ullam voluptatum accusantium et autem earum! Odit officia aspernatur cum!</p>
+            <img
+              src="/assets/dummey3.png"
+              alt="Global"
+              class="w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500"
+            />
+            <button class="w-full text-center text-black px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50">
+              Read More >
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen bg-white py-10 px-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div
+            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-white hover:bg-gray-50"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center bg-blue-100 text-blue-600"
+              >
+                <div class="w-6 h-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span class="font-semibold">Sustainability</span>
+            </div>
+            <img
+              src="./images/homepage/upArrow.svg"
+              alt=""
+              style="
+                width: 55px;
+                height: 55px;
+                border: 1px solid rgba(90, 156, 254, 0.35);
+                border-radius: 105px 105px 105px 105px;
+              "
+            />
+          </div>
+          <div
+            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-white hover:bg-gray-50"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center bg-blue-100 text-blue-600"
+              >
+                <div class="w-6 h-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span class="font-semibold">Innovation</span>
+            </div>
+            <img
+              src="./images/homepage/upArrow.svg"
+              alt=""
+              style="
+                width: 55px;
+                height: 55px;
+                border: 1px solid rgba(90, 156, 254, 0.35);
+                border-radius: 105px 105px 105px 105px;
+              "
+            />
+          </div>
+          <div
+            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-white hover:bg-gray-50"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center bg-blue-100 text-blue-600"
+              >
+                <div class="w-6 h-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span class="font-semibold">Global</span>
+            </div>
+            <img
+              src="./images/homepage/upArrow.svg"
+              alt=""
+              style="
+                width: 55px;
+                height: 55px;
+                border: 1px solid rgba(90, 156, 254, 0.35);
+                border-radius: 105px 105px 105px 105px;
+              "
+            />
+          </div>
+        </div>
+        <div class="relative ">
+        <div class="tab-img absolute bg-white p-3 opacity-100 transition-opacity duration-500" style="z-index: 1">
+          <img
+            src="./assets/dummey.jpg"
+            alt="Company Formation"
+            class="w-64 rounded-lg mb-6"
+          />
+          <h2 class="text-2xl font-bold mb-4">COMPANY FORMATION</h2>
+          <p class="text-gray-600 mb-6">
+            Globex simplifies company setup with needs assessment, legal
+            registration, and compliance. Our tailored solutions in accounting,
+            marketing, and IT support sustainable growth.
+          </p>
+          <div
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <a
+              class="text-blue-600 font-semibold flex hover:text-blue-800"
+              href="/business-setup-in-dubai-UAE/">Read more
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="tab-img absolute bg-white p-3 opacity-0 transition-opacity duration-500" style="z-index: 1">
+          <img
+            src="./assets/dummey.jpg"
+            alt="Company Formation"
+            class="w-64 rounded-lg mb-6"
+          />
+          <h2 class="text-2xl font-bold mb-4">Trade License</h2>
+          <p class="text-gray-600 mb-6">
+            Globex simplifies company setup with needs assessment, legal
+            registration, and compliance. Our tailored solutions in accounting,
+            marketing, and IT support sustainable growth.
+          </p>
+          <div
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <a
+              class="text-blue-600 font-semibold flex hover:text-blue-800"
+              href="/business-setup-in-dubai-UAE/">Read more
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section
+      class="h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-32 flex flex-col items-center justify-center"
+    >
+      <h2
+        class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+      >
+        What we do
+      </h2>
+      <!-- <div class="w-full max-w-2xl">
+        <div id="shadcn-tabs" class="flex space-x-2 bg-white/80 rounded-xl shadow p-2 mb-8">
+          <button class="tab-shadcn px-6 py-2 rounded-lg font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:z-10 relative bg-gradient-to-r from-primary to-secondary text-white shadow active" data-tab="0">Appliance</button>
+          <button class="tab-shadcn px-6 py-2 rounded-lg font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:z-10 relative" data-tab="1">Energy</button>
+          <button class="tab-shadcn px-6 py-2 rounded-lg font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:z-10 relative" data-tab="2">Mobility</button>
+        </div>
+        <div class="relative min-h-[140px]">
+          <div class="tab-content-shadcn transition-opacity duration-300 opacity-100" data-content="0">
+            <h3 class="text-2xl font-bold mb-2">Appliance</h3>
+            <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+          </div>
+          <div class="tab-content-shadcn transition-opacity duration-300 opacity-0 absolute inset-0 pointer-events-none" data-content="1">
+            <h3 class="text-2xl font-bold mb-2">Energy</h3>
+            <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+          </div>
+          <div class="tab-content-shadcn transition-opacity duration-300 opacity-0 absolute inset-0 pointer-events-none" data-content="2">
+            <h3 class="text-2xl font-bold mb-2">Mobility</h3>
+            <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+          </div>
+        </div>
+      </div> -->
+      <div class="w-full">
+        <div class="relative right-0">
+          <ul
+            class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-slate-100"
+            data-tabs="tabs"
+            role="list"
+          >
+            <li class="z-30 flex-auto text-center">
+              <a
+                class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-slate-600 bg-inherit"
+                data-tab-target=""
+                role="tab"
+                aria-selected="true"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-sm transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-600 bg-inherit"
+                data-tab-target=""
+                role="tab"
+                aria-selected="false"
+              >
+                Profile
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+                aria-selected="false"
+              >
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="src/particalEffect.js"></script>
+    <style>
+      /* Custom underline animation for nav links */
+      .menu a::after {
+        display: block;
+        content: "";
+        border-bottom: solid 2px #7c3aed; /* secondary color */
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: left;
+      }
+      .menu a:hover::after {
+        transform: scaleX(1);
+      }
+      .tab-btn.active {
+        box-shadow: 0 4px 24px 0 #7c3aed33;
+        border-color: #7c3aed;
+        transform: scale(1.05);
+      }
+      .tab-img {
+        pointer-events: none;
+      }
+      .tab-shadcn.active {
+        background: linear-gradient(to right, var(--tw-gradient-stops));
+        color: #fff;
+        box-shadow: 0 4px 24px 0 #7c3aed33;
+        position: relative;
+      }
+      .tab-shadcn.active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 3px;
+        background: #7c3aed;
+        border-radius: 2px;
+        transition: width 0.3s;
+      }
+      .tab-shadcn {
+        background: transparent;
+        color: #7c3aed;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
+      .tab-shadcn:not(.active):hover {
+        background: #ede9fe;
+        color: #5b21b6;
+      }
+      .tab-content-shadcn {
+        transition: opacity 0.3s;
+      }
+      .tab-content-shadcn:not(.opacity-100) {
+        pointer-events: none;
+      }
+    </style>
+
+    <script>
+      var typed = new Typed(".typing_text", {
+        strings: ["3x Yearly Growth", "36+ Brands & Counting"],
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+        cursorChar: "|️",
+      });
+      // Tab functionality for 'What we do' section
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".tab-btn");
+        const images = document.querySelectorAll(".tab-img");
+        buttons.forEach((btn, idx) => {
+          btn.addEventListener("mouseover", function () {
+            // Remove active from all buttons
+            buttons.forEach((b) => b.classList.remove("active"));
+            // Hide all images
+            images.forEach((img) => {
+              img.style.opacity = 0;
+              img.style.zIndex = 1;
+            });
+            // Activate clicked button
+            btn.classList.add("active");
+            // Show corresponding image
+            images[idx].style.opacity = 1;
+            images[idx].style.zIndex = 2;
+          });
+        });
+      });
+      // Shadcn-style tabs functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabBtns = document.querySelectorAll(".tab-shadcn");
+        const tabContents = document.querySelectorAll(".tab-content-shadcn");
+        tabBtns.forEach((btn, idx) => {
+          btn.addEventListener("click", function () {
+            // Remove active from all buttons
+            tabBtns.forEach((b) => b.classList.remove("active"));
+            // Hide all tab contents
+            tabContents.forEach((c, i) => {
+              c.classList.remove("opacity-100");
+              c.classList.add("opacity-0", "absolute", "pointer-events-none");
+            });
+            // Activate clicked button
+            btn.classList.add("active");
+            // Show corresponding content
+            const content = document.querySelector(
+              '.tab-content-shadcn[data-content="' + idx + '"]'
+            );
+            if (content) {
+              content.classList.remove(
+                "opacity-0",
+                "absolute",
+                "pointer-events-none"
+              );
+              content.classList.add("opacity-100");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

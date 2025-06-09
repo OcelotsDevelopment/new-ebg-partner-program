@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* --blue-gradient: linear-gradient(to right, #027fc0, #79d9e1); */
+@theme {
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
