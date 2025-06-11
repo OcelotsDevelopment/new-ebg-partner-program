@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBG Partner Program</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="partical.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ba76523eba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full z-50 px-20 pt-6">
+      <nav
+        class="container mx-auto flex justify-between items-center px-8 py-4 backdrop-blur-md bg-gradient-to-r from-white/80 via-blue-100/80 to-white/80 rounded-2xl shadow-lg"
+      >
+        <div class="logo transition-transform duration-300 hover:scale-110">
+          <img
+            src="assets/logo.png"
+            alt="EBG Partner Program"
+            class="h-12 drop-shadow-lg"
+          />
+        </div>
+        <div class="menu">
+          <ul class="flex items-center gap-8">
+            <li>
+              <a
+                class="relative text-primary hover:text-gray-700 transition-all duration-300 font-semibold text-base uppercase after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-700 after:transition-all after:duration-300 hover:after:w-full after:mt-1"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative text-primary hover:text-gray-700 transition-all duration-300 font-semibold text-base uppercase after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full after:mt-1"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-black text-white px-6 py-2 rounded-lg shadow-lg"
+              >
+                Become a Partner
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class=" h-screen relative">
+      <!-- <div
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-50"
+      ></div> -->
+
+      <div class="absolute top-0 left-0 w-full h-full">
+        <video
+          src="assets/video.mp4"
+          autoplay
+          muted
+          loop
+          class="w-full h-full object-cover"
+        ></video>
+      </div>
+
+      <div
+        class="container mx-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-white text-6xl text-center font-bold uppercase">
+          Let's make thing right
+        </h1>
+        <div class="mt-4 text-secondary font-bold text-3xl autotyping">
+          <span class="typing_text"></span>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0 pb-5 pr-3 w-32 z-10">
+        <div class="swiper logo-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center">
+              <img
+                src="assets/logas/acer.png"
+                alt="Acer"
+                class="h-8 object-contain"
+              />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img
+                src="assets/logas/daewoo.png"
+                alt="Daewoo"
+                class="h-8 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen bg-white py-10 px-32">
+      <p
+        class="text-5xl font-bold text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-10"
+      >
+        Our Core Values
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div
+            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-black hover:bg-gray-900"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center bg-white"
+              >
+                <img
+                  src="./assets/icons/sustainable.png"
+                  alt="Sustainability"
+                  class="w-6 h-6"
+                />
+              </div>
+              <span class="font-semibold text-white">Sustainability</span>
+            </div>
+            <div
+              class="flex items-center justify-center"
+              style="
+                width: 40px;
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 105px 105px 105px 105px;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-black hover:bg-gray-900"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center bg-white"
+              >
+                <div class="w-6 h-6">
+                  <img
+                    src="./assets/icons/collaborative.png"
+                    alt="Innovation"
+                    class="w-6 h-6"
+                  />
+                </div>
+              </div>
+              <span class="font-semibold text-white">Innovation</span>
+            </div>
+            <div
+              class="flex items-center justify-center"
+              style="
+                width: 40px;
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 105px 105px 105px 105px;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-black hover:bg-gray-900"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center bg-white"
+              >
+                <div class="w-6 h-6">
+                  <img
+                    src="./assets/icons/destination.png"
+                    alt="Global"
+                    class="w-6 h-6"
+                  />
+                </div>
+              </div>
+              <span class="font-semibold text-white">Global</span>
+            </div>
+            <div
+              class="flex items-center justify-center"
+              style="
+                width: 40px;
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 105px 105px 105px 105px;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="tab-img absolute bg-white p-3 opacity-100 transition-opacity duration-500"
+            style="z-index: 1"
+          >
+            <img
+              src="./assets/dummey.jpg"
+              alt="Company Formation"
+              class="w-full h-44 object-cover rounded-lg mb-6"
+            />
+            <h2 class="text-2xl font-bold mb-4">COMPANY FORMATION</h2>
+            <p class="text-gray-600 mb-6">
+              Globex simplifies company setup with needs assessment, legal
+              registration, and compliance. Our tailored solutions in
+              accounting, marketing, and IT support sustainable growth.
+            </p>
+          </div>
+
+          <div
+            class="tab-img absolute bg-white p-3 opacity-0 transition-opacity duration-500"
+            style="z-index: 1"
+          >
+            <img
+              src="./assets/dummey.jpg"
+              alt="Company Formation"
+              class="w-64 rounded-lg mb-6"
+            />
+            <h2 class="text-2xl font-bold mb-4">Trade License</h2>
+            <p class="text-gray-600 mb-6">
+              Globex simplifies company setup with needs assessment, legal
+              registration, and compliance. Our tailored solutions in
+              accounting, marketing, and IT support sustainable growth.
+            </p>
+          </div>
+
+          <div
+            class="tab-img absolute bg-white p-3 opacity-0 transition-opacity duration-500"
+            style="z-index: 1"
+          >
+            <img
+              src="./assets/dummey.jpg"
+              alt="Company Formation"
+              class="w-64 rounded-lg mb-6"
+            />
+            <h2 class="text-2xl font-bold mb-4">Global</h2>
+            <p class="text-gray-600 mb-6">
+              Globex simplifies company setup with needs assessment, legal
+              registration, and compliance. Our tailored solutions in
+              accounting, marketing, and IT support sustainable growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-32"
+    >
+      <h2
+        class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+      >
+        What we do
+      </h2>
+      <div class="w-full">
+        <div class="relative right-0">
+          <ul
+            class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-slate-100"
+            data-tabs="tabs"
+            role="list"
+          >
+            <li class="z-30 flex-auto text-center">
+              <a
+                class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-slate-600 bg-white"
+                data-tab-target=""
+                role="tab"
+                aria-selected="true"
+              >
+                Appliance
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-sm transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-600 bg-inherit"
+                data-tab-target=""
+                role="tab"
+                aria-selected="false"
+              >
+                Energy
+              </a>
+            </li>
+            <li class="z-30 flex-auto text-center">
+              <a
+                class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                data-tab-target=""
+                role="tab"
+                aria-selected="false"
+              >
+                Mobility
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content-shadcn bg-white p-10 h-full mt-5 rounded-lg">
+          <div
+            class="tab-content-shadcn-item flex justify-between items-center gap-7"
+          >
+            <div class="w-1/2">
+              <h3 class="text-6xl font-bold mb-2">Appliance</h3>
+              <p class="text-lg text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quos.
+              </p>
+            </div>
+            <div class="w-1/2">
+              <p class="text-gray-700">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                non a ipsum tempora odio rerum quidem delectus, ea quisquam
+                enim, ratione ex ut culpa maiores accusamus! Perspiciatis, sed
+                quis sequi obcaecati ipsam tempora culpa impedit nisi aut saepe
+                veniam totam soluta provident quaerat reprehenderit aliquam
+                aspernatur neque deleniti sit voluptates.
+              </p>
+              <div class="flex justify-end gap-2 mt-10 w-full">
+                <button class="bg-black text-white px-4 py-2 rounded-md">
+                  Become a Partner
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen bg-white py-10 px-32 pb-10">
+      <h2
+        class="text-7xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+      >
+        What we are
+      </h2>
+      <div class="bg-white p-10 mt-5 rounded-lg shadow-2xl">
+        <div class="flex justify-between items-center">
+          <div class="w-1/2">
+            <h3 class="text-6xl font-bold mb-2">Our Vision</h3>
+            <p class="text-lg text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quos.
+            </p>
+          </div>
+          <div class="w-1/2">
+            <img
+              src="./assets/dummey.jpg"
+              alt="Company Formation"
+              class="w-full h-full object-cover rounded-lg mb-6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-10 px-32 mt-10 h-screen">
+      <div class="container mx-auto h-full">
+        <div class="grid grid-cols-3 gap-8 h-full">
+          <div class="flex flex-col justify-between">
+            <div>
+              <h3 class="text-4xl font-bold mb-6">About Us</h3>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates
+                deserunt maxime temporibus adipisci exercitationem.
+              </p>
+            </div>
+            <div class="mt-auto">
+              <p class="text-sm text-gray-400">&copy; 2024 EBG Partner. All rights reserved.</p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">Services</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Contact Info</h3>
+            <div class="space-y-4">
+              <p class="text-gray-300">
+                <span class="block">123 Business Street</span>
+                <span class="block">New York, NY 10001</span>
+              </p>
+              <p class="text-gray-300">
+                <span class="block">Phone: (123) 456-7890</span>
+                <span class="block">Email: info@ebgpartner.com</span>
+              </p>
+            </div>
+            <div class="mt-8 flex space-x-4">
+              <a href="#" class="text-gray-300 hover:text-white">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="src/particalEffect.js"></script>
+    <style>
+      /* Custom underline animation for nav links */
+      .menu a::after {
+        display: block;
+        content: "";
+        border-bottom: solid 2px #7c3aed; /* secondary color */
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: left;
+      }
+      .menu a:hover::after {
+        transform: scaleX(1);
+      }
+      .tab-btn.active {
+        box-shadow: 0 4px 24px 0 #7c3aed33;
+        border-color: #7c3aed;
+        transform: scale(1.05);
+      }
+      .tab-img {
+        pointer-events: none;
+      }
+      .tab-shadcn.active {
+        background: linear-gradient(to right, var(--tw-gradient-stops));
+        color: #fff;
+        box-shadow: 0 4px 24px 0 #7c3aed33;
+        position: relative;
+      }
+      .tab-shadcn.active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 3px;
+        background: #7c3aed;
+        border-radius: 2px;
+        transition: width 0.3s;
+      }
+      .tab-shadcn {
+        background: transparent;
+        color: #7c3aed;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
+      .tab-shadcn:not(.active):hover {
+        background: #ede9fe;
+        color: #5b21b6;
+      }
+      .tab-content-shadcn {
+        transition: opacity 0.3s;
+      }
+      .tab-content-shadcn:not(.opacity-100) {
+        pointer-events: none;
+      }
+    </style>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Initialize Swiper
+      const swiper = new Swiper('.logo-slider', {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+        },
+      });
+
+      var typed = new Typed(".typing_text", {
+        strings: ["3x Yearly Growth", "36+ Brands & Counting"],
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+        cursorChar: "|️",
+      });
+      // Tab functionality for 'What we do' section
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".tab-btn");
+        const images = document.querySelectorAll(".tab-img");
+        buttons.forEach((btn, idx) => {
+          btn.addEventListener("mouseover", function () {
+            // Remove active from all buttons
+            buttons.forEach((b) => b.classList.remove("active"));
+            // Hide all images
+            images.forEach((img) => {
+              img.style.opacity = 0;
+              img.style.zIndex = 1;
+            });
+            // Activate clicked button
+            btn.classList.add("active");
+            // Show corresponding image
+            images[idx].style.opacity = 1;
+            images[idx].style.zIndex = 2;
+          });
+        });
+      });
+      // Shadcn-style tabs functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabBtns = document.querySelectorAll(".tab-shadcn");
+        const tabContents = document.querySelectorAll(".tab-content-shadcn");
+        tabBtns.forEach((btn, idx) => {
+          btn.addEventListener("click", function () {
+            // Remove active from all buttons
+            tabBtns.forEach((b) => b.classList.remove("active"));
+            // Hide all tab contents
+            tabContents.forEach((c, i) => {
+              c.classList.remove("opacity-100");
+              c.classList.add("opacity-0", "absolute", "pointer-events-none");
+            });
+            // Activate clicked button
+            btn.classList.add("active");
+            // Show corresponding content
+            const content = document.querySelector(
+              '.tab-content-shadcn[data-content="' + idx + '"]'
+            );
+            if (content) {
+              content.classList.remove(
+                "opacity-0",
+                "absolute",
+                "pointer-events-none"
+              );
+              content.classList.add("opacity-100");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

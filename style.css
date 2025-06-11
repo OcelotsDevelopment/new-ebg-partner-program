@@ -2,10 +2,67 @@
 
 /* --blue-gradient: linear-gradient(to right, #027fc0, #79d9e1); */
 @theme {
-    --color-primary: #000000;
-    --color-secondary: #ffffff;
+    --color-primary: #027fc0;
+    --color-secondary: #79d9e1;
+    --color-tertiary: #10638E;
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+/* Tab transition */
+.tab-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.tab-cont {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.tab-cont.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.slider {
+    will-change: transform, width;
+}
+
+
+/* Fade transition */
+/* Initial state - hide all items except first */
+/* Initial state - hide all items except first */
+.info-item,
+.image-item {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.info-item:not(.active) {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.info-item.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.image-item:not(.active) {
+    opacity: 0;
+    transform: translateX(30px);
+    pointer-events: none;
+}
+
+.image-item.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
 }

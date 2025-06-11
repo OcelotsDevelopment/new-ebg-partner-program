@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Info Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Initial state - hide all items except first */
+        .info-item,
+        .image-item {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .info-item:not(.active) {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+        }
+
+        .info-item.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .image-item:not(.active) {
+            opacity: 0;
+            transform: translateX(30px);
+            pointer-events: none;
+        }
+
+        .image-item.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <section class="bg-gray-100 text-gray-800 px-4 md:px-20 py-10">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+                <!-- Info Section -->
+                <div class="md:w-1/4 relative min-h-[200px]">
+                    <div class="info-item active absolute inset-0">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovation Hub</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Building a sustainable future through cutting-edge innovation and strategic partnerships
+                            that drive meaningful change.
+                        </p>
+                    </div>
+                    <div class="info-item absolute inset-0">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Global Impact</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Connecting communities worldwide through transformative solutions that create lasting
+                            positive impact across industries.
+                        </p>
+                    </div>
+                    <div class="info-item absolute inset-0">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Future Vision</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Pioneering tomorrow's technologies today with visionary leadership and collaborative
+                            excellence in every project.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image Section -->
+                <div class="md:w-1/2 min-h-[200px] relative">
+                    <div class=" rounded-lg shadow-lg">
+                        <img src="./assets/dummey.jpg" alt="Innovation Technology"
+                            class="image-item active h-80 object-cover absolute inset-0">
+                        <img src="./assets/dummey2.png" alt="Global Connectivity"
+                            class="image-item h-80 object-cover absolute inset-0">
+                        <img src="./assets/dummey3.png" alt="Future Vision"
+                            class="image-item h-80 object-cover absolute inset-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  <section class="bg-white text-gray-800 px-20 py-10">
+    <div class="max-w-5xl mx-auto px-4 py-12 relative">
+      <!-- Vertical line -->
+      <div class="absolute top-[190px] left-1/2 transform -translate-x-1/2 h-[1110px] w-px bg-gray-400"></div>
+
+      <!-- Header -->
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-2">Our Journey of Impact</h1>
+      <p class="text-sm text-gray-600 text-center mb-12">
+        From vision to reality – tracking our progress toward a sustainable future
+      </p>
+
+      <!-- Timeline item 1 (event on left, graphic on right) -->
+      <div class="relative mb-16">
+        <!-- Circle on the line -->
+        <div
+          class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white border-2 border-gray-400 w-6 h-6 rounded-full">
+        </div>
+        <div class="flex items-center">
+          <!-- Event box (left) -->
+          <div class="w-1/2 flex justify-end pr-8">
+            <div class="bg-gray-200 p-4 rounded-lg max-w-sm">
+              <p class="text-sm font-bold">2019</p>
+              <p class="mt-1 font-semibold">Foundation</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Established EBG Partners with a vision to transform essential industries through sustainable innovation.
+              </p>
+            </div>
+          </div>
+          <!-- Placeholder graphic (right) -->
+          <div class="w-1/2 pl-8">
+            <div class="bg-gray-300 w-full h-40 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline item 2 (graphic on left, event on right) -->
+      <div class="relative mb-16">
+        <div
+          class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white border-2 border-gray-400 w-6 h-6 rounded-full">
+        </div>
+        <div class="flex items-center">
+          <!-- Placeholder graphic (left) -->
+          <div class="w-1/2 pr-8">
+            <div class="bg-gray-300 w-full h-40 rounded-lg"></div>
+          </div>
+          <!-- Event box (right) -->
+          <div class="w-1/2 flex justify-start pl-8">
+            <div class="bg-gray-200 p-4 rounded-lg max-w-sm">
+              <p class="text-sm font-bold">2020</p>
+              <p class="mt-1 font-semibold">First Pilot</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Ran our first sustainable-tech pilot program with a major utility partner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline item 3 (event on left, graphic on right) -->
+      <div class="relative mb-16">
+        <div
+          class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white border-2 border-gray-400 w-6 h-6 rounded-full">
+        </div>
+        <div class="flex items-center">
+          <div class="w-1/2 flex justify-end pr-8">
+            <div class="bg-gray-200 p-4 rounded-lg max-w-sm">
+              <p class="text-sm font-bold">2021</p>
+              <p class="mt-1 font-semibold">Global Expansion</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Opened offices in three continents to support growing partner network.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <div class="bg-gray-300 w-full h-40 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline item 4 (graphic on left, event on right) -->
+      <div class="relative mb-16">
+        <div
+          class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white border-2 border-gray-400 w-6 h-6 rounded-full">
+        </div>
+        <div class="flex items-center">
+          <div class="w-1/2 pr-8">
+            <div class="bg-gray-300 w-full h-40 rounded-lg"></div>
+          </div>
+          <div class="w-1/2 flex justify-start pl-8">
+            <div class="bg-gray-200 p-4 rounded-lg max-w-sm">
+              <p class="text-sm font-bold">2022</p>
+              <p class="mt-1 font-semibold">Innovation Award</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Recognized by the Global Sustainability Forum for breakthrough design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline item 5 (event on left, graphic on right) -->
+      <div class="relative mb-16">
+        <div
+          class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white border-2 border-gray-400 w-6 h-6 rounded-full">
+        </div>
+        <div class="flex items-center">
+          <div class="w-1/2 flex justify-end pr-8">
+            <div class="bg-gray-200 p-4 rounded-lg max-w-sm">
+              <p class="text-sm font-bold">2023</p>
+              <p class="mt-1 font-semibold">Series B</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Closed a $50M round to fuel next-gen sustainability projects.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <div class="bg-gray-300 w-full h-40 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline item 6 (graphic on left, event on right) -->
+      <div class="relative">
+        <div
+          class="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white border-2 border-gray-400 w-6 h-6 rounded-full">
+        </div>
+        <div class="flex items-center">
+          <div class="w-1/2 pr-8">
+            <div class="bg-gray-300 w-full h-40 rounded-lg"></div>
+          </div>
+          <div class="w-1/2 flex justify-start pl-8">
+            <div class="bg-gray-200 p-4 rounded-lg max-w-sm">
+              <p class="text-sm font-bold">2024</p>
+              <p class="mt-1 font-semibold">Next Frontier</p>
+              <p class="mt-2 text-sm text-gray-700">
+                Launching our AI-powered platform to supercharge partner growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <script>
+        class AnimatedInfoSection {
+            constructor() {
+                this.currentIndex = 0;
+                this.totalItems = 3;
+                this.duration = 3000; // 3 seconds
+                this.isPlaying = true;
+                this.intervalId = null;
+
+                this.infoItems = document.querySelectorAll('.info-item');
+                this.imageItems = document.querySelectorAll('.image-item');
+
+                this.init();
+            }
+
+            init() {
+                // Start the animation after a brief delay to ensure everything is loaded
+                setTimeout(() => {
+                    this.play();
+                }, 100);
+            }
+
+            goToSlide(index) {
+                if (index === this.currentIndex) return;
+
+                // Remove active class from current items
+                this.infoItems[this.currentIndex].classList.remove('active');
+                this.imageItems[this.currentIndex].classList.remove('active');
+
+                // Update index
+                this.currentIndex = index;
+
+                // Add active class to new items
+                this.infoItems[this.currentIndex].classList.add('active');
+                this.imageItems[this.currentIndex].classList.add('active');
+
+                // Restart the timer if playing
+                if (this.isPlaying) {
+                    this.resetTimer();
+                }
+            }
+
+            nextSlide() {
+                const nextIndex = (this.currentIndex + 1) % this.totalItems;
+                this.goToSlide(nextIndex);
+            }
+
+            play() {
+                if (!this.isPlaying) {
+                    this.isPlaying = true;
+                }
+                this.startTimer();
+            }
+
+            pause() {
+                this.isPlaying = false;
+                if (this.intervalId) {
+                    clearInterval(this.intervalId);
+                    this.intervalId = null;
+                }
+            }
+
+            startTimer() {
+                if (this.intervalId) {
+                    clearInterval(this.intervalId);
+                }
+                this.intervalId = setInterval(() => {
+                    this.nextSlide();
+                }, this.duration);
+            }
+
+            resetTimer() {
+                this.startTimer();
+            }
+        }
+
+        // Initialize immediately when script loads
+        let animationInstance = null;
+
+        function initAnimation() {
+            if (!animationInstance) {
+                animationInstance = new AnimatedInfoSection();
+            }
+        }
+
+        // Multiple initialization attempts to ensure it works
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initAnimation);
+        } else {
+            initAnimation();
+        }
+
+        // Fallback initialization
+        window.addEventListener('load', () => {
+            if (!animationInstance) {
+                initAnimation();
+            }
+        });
+    </script>
+</body>
+
+</html>

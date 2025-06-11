@@ -1,618 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EBG Partner Program</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="partical.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-    src="https://kit.fontawesome.com/ba76523eba.js"
-    crossorigin="anonymous"
-  ></script>
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-  </head>
-  <body>
-    <header class="fixed top-0 left-0 w-full z-50 px-20 pt-6">
-      <!-- backdrop-blur-md bg-gradient-to-r from-white/80 via-blue-100/80 to-white/80 shadow-lg rounded-b-2xl border-b border-blue-200 -->
-      <nav
-        class="container mx-auto flex justify-between items-center px-8 py-4 backdrop-blur-md bg-gradient-to-r from-white/80 via-blue-100/80 to-white/80 rounded-2xl shadow-lg"
-      >
-        <div class="logo transition-transform duration-300 hover:scale-110">
-          <img
-            src="assets/logo.png"
-            alt="EBG Partner Program"
-            class="h-12 drop-shadow-lg"
-          />
-        </div>
-        <div class="menu">
-          <ul class="flex items-center gap-8">
-            <li>
-              <a
-                class="relative text-primary hover:text-gray-700 transition-all duration-300 font-semibold text-base uppercase after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-700 after:transition-all after:duration-300 hover:after:w-full after:mt-1"
-                href="#"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                class="relative text-primary hover:text-gray-700 transition-all duration-300 font-semibold text-base uppercase after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full after:mt-1"
-                href="#"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <!-- <button
-                class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50"
-              >
-                Become a Partner
-              </button> -->
 
-              <button
-                class="bg-black text-white px-6 py-2 rounded-lg shadow-lg"
-              >
-                Become a Partner
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBG Partner Program</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- <section
-      class="relative h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-20 pt-44"
-    >
-      <div class="flex gap-4 justify-center items-center">
-        <div class="flex flex-col gap-4 w-1/2">
-          <h1 class="text-8xl font-bold uppercase bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Let's make thing right</h1>
-          <p class="text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos.
-          </p>
-          <button
-            class="w-fit bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent hover:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50"
-          >
-            Become a Partner
-          </button>
-        </div>
-        <div class="w-1/2">
-          <div class="rounded-2xl overflow-hidden shadow-2xl">
-            <video
-            src="assets/video.mp4"
-            autoplay
-            muted
-            loop
-            class="w-full h-full object-cover"
-          ></video>
-          </div>
-        </div>
-
+<body>
+  <header>
+    <nav class="flex justify-between items-center px-20 py-6">
+      <div>
+        <img src="./assets/logo.png" alt="EBG Partner Program" class="h-10">
       </div>
-      <div class="absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/5 to-secondary/20 z-10"></div>
+      <ul class="flex items-center gap-8">
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="#">Our Brands</a></li>
+        <li><a href="#">Ideology</a></li>
+        <li><button class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">Become a Partner</button></li>
+      </ul>
+    </nav>
+  </header>
 
-    </section> -->
-
-    <section class="bg-primary h-screen relative">
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-black opacity-50"
-      ></div>
-
-      <div class="absolute top-0 left-0 w-full h-full">
-        <video
-          src="assets/video.mp4"
-          autoplay
-          muted
-          loop
-          class="w-full h-full object-cover"
-        ></video>
-      </div>
-
-      <div
-        class="container mx-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center justify-center"
-      >
-        <h1 class="text-white text-6xl text-center font-bold uppercase">
-          Let's make thing right
-        </h1>
-        <!-- <p class="text-white text-2xl text-center font-bold uppercase ">3x Yearly Growth</p>
-        <p class="text-white text-2xl text-center font-bold uppercase ">36+ Brands & Counting</p> -->
-        <div class="mt-4 text-secondary font-bold text-3xl autotyping">
-          <span class="typing_text"></span>
-        </div>
-      </div>
-      <div class="absolute bottom-0 right-0 pb-5 pr-3">
-        <img
-          src="assets/logas/acer.png"
-          alt="EBG Partner Program"
-          class="h-8 object-cover"
-        />
-        <!-- <img src="assets/logas/daewoo.png" alt="EBG Partner Program" class="h-8 object-cover"> -->
-      </div>
-    </section>
-
-    <!-- <section class="h-screen relative bg-white">
-      <div class="particles-container" id="particlesContainer">
-        <canvas id="particlesCanvas"></canvas>
-      </div>
-
-      <div class="demo-controls">
-        <div class="control-group">
-          <label for="quantity">Particles (10-500):</label>
-          <input type="range" id="quantity" min="10" max="500" value="100" />
-          <span id="quantityValue">100</span>
-        </div>
-        <div class="control-group">
-          <label for="color">Color:</label>
-          <input type="color" id="color" value="#ffffff" />
-        </div>
-        <div class="control-group">
-          <label for="size">Size (0.1-3):</label>
-          <input type="range" id="size" min="1" max="30" value="4" />
-          <span id="sizeValue">0.4</span>
-        </div>
-        <div class="control-group">
-          <label for="staticity">Mouse Effect (1-100):</label>
-          <input type="range" id="staticity" min="1" max="100" value="50" />
-          <span id="staticityValue">50</span>
-        </div>
-      </div>
-    </section> -->
-
-    <section
-      class="h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-32"
-    >
-      <p
-        class="text-5xl font-bold text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
-      >
-        Our Core Values
+  <section class="h-screen px-20 relative">
+    <div class="absolute top-10 left-0 w-full h-28 bg-secondary/30 blur-lg -z-10 "></div>
+    <div class="flex flex-col items-center justify-center gap-2 mb-2.5 ">
+      <h1 class="text-6xl font-bold text-center mb-2">Let’s make things<span
+          class=" text-primary px-2 py-1 rounded-2xl ">right</span></h1>
+      <p class="text-base font-medium text-gray-700 text-center">Join us to build a better, more sustainable future
+        together.
       </p>
-      <div class="p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
-        <div class="space-y-0">
-          <button
-            class="tab-btn block w-full bg-gradient-to-r cursor-pointer bg-white hover:bg-gray-50 px-6 py-4  transition-all duration-200 font-bold text-lg tracking-wide focus:outline-none active"
-            data-img="0"
-          >
-            <div class="flex items-center justify-between gap-2 text-primary">
-              <img src="assets/icons/sustainable.png" alt="Sustainability" class="w-6 h-6">
-              <p class="text-primary">Sustainability</p>
-            </div>
-            
-          </button>
-          <button
-            class="tab-btn block w-full bg-gradient-to-r cursor-pointer bg-white hover:bg-gray-50 px-6 py-4  transition-all duration-200 font-bold text-lg tracking-wide focus:outline-none"
-            data-img="1"
-          >
-            <div class="flex items-center justify-between gap-2 text-primary">
-              <img src="assets/icons/collaborative.png" alt="Innovation" class="w-6 h-6">
-              <p class="text-primary">Innovation</p>
-            </div>
-          </button>
-          <button
-            class="tab-btn block w-full bg-gradient-to-r cursor-pointer bg-white hover:bg-gray-50 px-6 py-4  transition-all duration-200 font-bold text-lg tracking-wide focus:outline-none"
-            data-img="2"
-          >
-            <div class="flex items-center justify-between gap-2 text-primary">
-               <img src="./assets/icons/destination.png" alt="" class="w-6 h-6">
-              <p class="text-primary">Global</p>
-            </div>
-          </button>
+    </div>
+    <div class="flex items-center justify-center mb-10">
+      <video class="rounded-2xl shadow-2xl h-[485px] w-full object-cover" src="./assets/video.mp4" autoplay muted
+        loop></video>
+    </div>
+    <div class="flex items-center justify-center gap-10">
+      <img src="./assets/logas/acer.png" alt="" class="h-8">
+      <img src="./assets/logas/daewoo.png" alt="" class="h-8">
+    </div>
+  </section>
+
+  <section class="px-20 py-10">
+    <div class="mb-10">
+      <h2 class="text-4xl font-bold text-center text-tertiary">Driving Change Across Essential Industries</h2>
+      <p class="text-lg text-gray-700 text-center">Creating an impact across the world for a better future through three
+        core pillars</p>
+    </div>
+
+    <div class="flex">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center ">
+          <div
+            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            <img src="./assets/logas/sustain.svg" alt="" class=" h-10 ">
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-center">Sustainability</h3>
+          <p class="text-gray-700 text-center">We are committed to sustainable practices across our operations, supply
+            chain, and product development. Our goal is to minimize the environmental footprint of our business and
+            create a positive impact on the communities we serve.</p>
         </div>
-        <div class="relative space-y-4">
-          <div class="tab-img absolute inset-0 w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500" style="z-index: 2">
-            <h2 class="text-black text-2xl font-bold">Sustainability</h2>
-            <p class="text-black text-lg mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero blanditiis rem delectus. A sapiente vitae, fuga, iure quaerat consequuntur porro numquam, rem ullam voluptatum accusantium et autem earum! Odit officia aspernatur cum!</p>
-            <img
-              src="/assets/dummey.jpg"
-              alt="Sustainability"
-              class="w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500"
-            />
-            <button class="w-full text-center text-black px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50">
-              Read More >
-            </button>
-          </div>
 
-          <div class="tab-img absolute inset-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-500">
-            <h2 class="text-black text-2xl font-bold">Innovation</h2>
-            <p class="text-black text-lg mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero blanditiis rem delectus. A sapiente vitae, fuga, iure quaerat consequuntur porro numquam, rem ullam voluptatum accusantium et autem earum! Odit officia aspernatur cum!</p>
-            <img
-              src="/assets/dummey2.png"
-              alt="Innovation"
-              class="w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500"
-            />
-            <button class="w-full text-center text-black px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50">
-              Read More >
-            </button>
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
+          <div
+            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            <img src="./assets/logas/innovation.svg" alt="" class=" h-10 ">
           </div>
+          <h3 class="text-2xl font-bold mb-4 text-center">Innovation</h3>
+          <p class="text-gray-700 text-center">We are dedicated to innovation and continuous improvement. Our R&D teams
+            are constantly exploring new technologies and materials to create more efficient, sustainable, and
+            high-performing products.</p>
+        </div>
 
-          <div class="tab-img absolute inset-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-500">
-            <h2 class="text-black text-2xl font-bold">Global</h2>
-            <p class="text-black text-lg mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero blanditiis rem delectus. A sapiente vitae, fuga, iure quaerat consequuntur porro numquam, rem ullam voluptatum accusantium et autem earum! Odit officia aspernatur cum!</p>
-            <img
-              src="/assets/dummey3.png"
-              alt="Global"
-              class="w-full h-full object-cover rounded-2xl opacity-100 transition-opacity duration-500"
-            />
-            <button class="w-full text-center text-black px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200 font-bold text-lg tracking-wide border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-opacity-50">
-              Read More >
-            </button>
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
+          <div
+            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            <img src="./assets/logas/global.svg" alt="" class="w-10 h-10 ">
           </div>
-
+          <h3 class="text-2xl font-bold mb-4 text-center">Partnership</h3>
+          <p class="text-gray-700 text-center">We believe in the power of partnerships to drive change. We work closely
+            with our suppliers, customers, and communities to create shared value and drive positive impact.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="h-screen bg-white py-10 px-32">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div class="space-y-4">
-          <div
-            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-white hover:bg-gray-50"
-          >
-            <div class="flex items-center space-x-4">
-              <div
-                class="w-12 h-12 rounded-full flex items-center justify-center bg-blue-100 text-blue-600"
-              >
-                <div class="w-6 h-6">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                    ></path>
-                  </svg>
+  <section class="bg-white text-gray-800 px-20 py-10">
+    <div class="mb-10">
+      <h2 class="text-4xl font-bold text-center text-tertiary">Driving Change Across Essential Industries</h2>
+      <p class="text-lg text-gray-700 text-center">Creating an impact across the world for a better future through three
+        core pillars</p>
+    </div>
+
+    <div class="px-16">
+      <div class="relative flex justify-between items-center rounded-lg bg-gray-100 p-1 ">
+        <div
+          class="absolute bg-gradient-to-r from-primary to-secondary h-[calc(100%-8px)] rounded-md transition-all duration-300 ease-in-out slider"
+          style="width: calc(33.333% - 8px); left: 4px;"></div>
+        <button
+          class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
+          data-tab="0">Application</button>
+        <button
+          class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
+          data-tab="1">Energy</button>
+        <button
+          class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
+          data-tab="2">Mobility</button>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 py-12 space-y-16 relative h-[850px]">
+      <div class="tab-cont absolute top-0 left-0 w-full h-full">
+        <div class="bg-white text-gray-800">
+          <div class="max-w-7xl mx-auto p-8 space-y-12">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between">
+              <h1 class="text-5xl font-bold text-tertiary">Acer Appliance</h1>
+              <!-- <p class="mt-4 md:mt-0 text-gray-600">
+                Creating an impact across the world for a better future through three core pillars
+              </p> -->
+            </div>
+
+            <!-- Main content: image + copy + stats -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+              <!-- Placeholder for image/video -->
+              <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+              <!-- Copy + stats -->
+              <div class="flex flex-col justify-between">
+
+                <h2 class="text-3xl font-bold text-tertiary">
+                  Creating an impact across the world for a better future through three core pillars
+                </h2>
+                <!-- Copy block -->
+                <p class="text-gray-700  text-xl">
+                  We envision a world where technology and sustainability converge to create lasting positive impact.
+                  Our mission is to democratize access to innovative solutions that address global challenges while
+                  fostering economic growth and environmental stewardship.
+                </p>
+                <button
+              class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+              Become a partner
+            </button>
+
+                <!-- Stats -->
+                <div class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0">
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      500+</h3>
+                    <p class="text-sm text-gray-500">Active Partners</p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      $2.5B</h3>
+                    <p class="text-sm text-gray-500">Portfolio Value</p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      95%</h3>
+                    <p class="text-sm text-gray-500">Satisfaction Rate</p>
+                  </div>
                 </div>
               </div>
-              <span class="font-semibold">Sustainability</span>
             </div>
-            <img
-              src="./images/homepage/upArrow.svg"
-              alt=""
-              style="
-                width: 55px;
-                height: 55px;
-                border: 1px solid rgba(90, 156, 254, 0.35);
-                border-radius: 105px 105px 105px 105px;
-              "
-            />
-          </div>
-          <div
-            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-white hover:bg-gray-50"
-          >
-            <div class="flex items-center space-x-4">
-              <div
-                class="w-12 h-12 rounded-full flex items-center justify-center bg-blue-100 text-blue-600"
-              >
-                <div class="w-6 h-6">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-                    ></path>
-                  </svg>
+
+            <!-- Process Flow -->
+            <div class="flex items-center px-60">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 1</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step1.png" alt="">
+                    </div>
+                  </div>
                 </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center">
+                  Yoi invest in us</p>
               </div>
-              <span class="font-semibold">Innovation</span>
-            </div>
-            <img
-              src="./images/homepage/upArrow.svg"
-              alt=""
-              style="
-                width: 55px;
-                height: 55px;
-                border: 1px solid rgba(90, 156, 254, 0.35);
-                border-radius: 105px 105px 105px 105px;
-              "
-            />
-          </div>
-          <div
-            class="tab-btn flex items-center justify-between p-2 rounded-xl transition-all cursor-pointer bg-white hover:bg-gray-50"
-          >
-            <div class="flex items-center space-x-4">
-              <div
-                class="w-12 h-12 rounded-full flex items-center justify-center bg-blue-100 text-blue-600"
-              >
-                <div class="w-6 h-6">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
-                    ></path>
-                  </svg>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 2</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step2.png" alt="">
+                    </div>
+                  </div>
                 </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
+                  Your investment is used for store setup</p>
               </div>
-              <span class="font-semibold">Global</span>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 3</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class=" h-6" src="./assets/icons/step3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center">
+                  We do management from our end</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 4</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
+                  You get assured
+                  monthly income </p>
+              </div>
             </div>
-            <img
-              src="./images/homepage/upArrow.svg"
-              alt=""
-              style="
-                width: 55px;
-                height: 55px;
-                border: 1px solid rgba(90, 156, 254, 0.35);
-                border-radius: 105px 105px 105px 105px;
-              "
-            />
           </div>
         </div>
-        <div class="relative ">
-        <div class="tab-img absolute bg-white p-3 opacity-100 transition-opacity duration-500" style="z-index: 1">
-          <img
-            src="./assets/dummey.jpg"
-            alt="Company Formation"
-            class="w-64 rounded-lg mb-6"
-          />
-          <h2 class="text-2xl font-bold mb-4">COMPANY FORMATION</h2>
-          <p class="text-gray-600 mb-6">
-            Globex simplifies company setup with needs assessment, legal
-            registration, and compliance. Our tailored solutions in accounting,
-            marketing, and IT support sustainable growth.
+      </div>
+      <div class="tab-cont absolute top-0 left-0 w-full h-full">
+        <div class="bg-white text-gray-800">
+          <div class="max-w-7xl mx-auto p-8 space-y-12">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between">
+              <h1 class="text-5xl font-bold text-tertiary">Daewoo</h1>
+              <!-- <p class="mt-4 md:mt-0 text-gray-600">
+                Creating an impact across the world for a better future through three core pillars
+              </p> -->
+            </div>
+
+            <!-- Main content: image + copy + stats -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+              <!-- Placeholder for image/video -->
+              <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+              <!-- Copy + stats -->
+              <div class="flex flex-col justify-between">
+
+                <h2 class="text-3xl font-bold text-tertiary">
+                  Creating an impact across the world for a better future through three core pillars
+                </h2>
+                <!-- Copy block -->
+                <p class="text-gray-700 text-xl">
+                  We envision a world where technology and sustainability converge to create lasting positive impact.
+                  Our mission is to democratize access to innovative solutions that address global challenges while
+                  fostering economic growth and environmental stewardship.
+                </p>
+                <button
+              class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+              Become a partner
+            </button>
+
+                <!-- Stats -->
+                <div class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0">
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      500+</h3>
+                    <p class="text-sm text-gray-500">Active Partners</p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      $2.5B</h3>
+                    <p class="text-sm text-gray-500">Portfolio Value</p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      95%</h3>
+                    <p class="text-sm text-gray-500">Satisfaction Rate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Process Flow -->
+            <div class="flex items-center px-60">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 1</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center">
+                  Yoi invest in us</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 2</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
+                  Your investment is used for store setup</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 3</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class=" h-6" src="./assets/icons/step3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center">
+                  We do management from our end</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 4</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
+                  You get assured
+                  monthly income </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-cont absolute top-0 left-0 w-full h-full">
+        <div class="bg-white text-gray-800">
+          <div class="max-w-7xl mx-auto p-8 space-y-12">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between">
+              <h1 class="text-5xl font-bold text-tertiary">E-Bike Go</h1>
+              <!-- <p class="mt-4 md:mt-0 text-gray-600">
+                Creating an impact across the world for a better future through three core pillars
+              </p> -->
+            </div>
+
+            <!-- Main content: image + copy + stats -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+              <!-- Placeholder for image/video -->
+              <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+              <!-- Copy + stats -->
+              <div class="flex flex-col justify-between">
+
+                <h2 class="text-3xl font-bold text-tertiary">
+                  Creating an impact across the world for a better future through three core pillars
+                </h2>
+                <!-- Copy block -->
+                <p class="text-gray-700 text-xl">
+                  We envision a world where technology and sustainability converge to create lasting positive impact.
+                  Our mission is to democratize access to innovative solutions that address global challenges while
+                  fostering economic growth and environmental stewardship.
+                </p>
+
+                <button
+              class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+              Become a partner
+            </button>
+
+                <!-- Stats -->
+                <div class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0">
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      500+</h3>
+                    <p class="text-sm text-gray-500">Active Partners</p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      $2.5B</h3>
+                    <p class="text-sm text-gray-500">Portfolio Value</p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+                      95%</h3>
+                    <p class="text-sm text-gray-500">Satisfaction Rate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Process Flow -->
+            <div class="flex items-center px-60">
+              <!-- Step 1 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 1</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center">
+                  Yoi invest in us</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 2</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
+                  Your investment is used for store setup</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 3</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class=" h-6" src="./assets/icons/step3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center">
+                  We do management from our end</p>
+              </div>
+
+              <!-- Line -->
+              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+              <!-- Step 4 -->
+              <div class="flex flex-col items-center relative">
+                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
+                  Step 4</p>
+                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <img class="w-7 h-7" src="./assets/icons/step4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
+                  You get assured
+                  monthly income </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rounded-4xl mx-2 md:mx-20 shadow-2xl overflow-hidden my-10 mb-20">
+    <div class="flex flex-col md:flex-row items-stretch min-h-[340px] md:min-h-[420px]">
+      <div
+        class="w-full md:w-2/5 flex flex-col justify-center bg-white bg-opacity-95 rounded-none md:rounded-l-3xl shadow-lg px-6 md:px-10 py-8 md:py-12 min-h-[340px] md:min-h-[420px]">
+        <div class="flex flex-col h-full justify-center">
+          <h1
+            class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+            Visionaries Building Tomorrow</h1>
+          <h2 class="text-2xl font-semibold mb-3 text-gray-800">Our Vision</h2>
+          <p class="text-gray-700 leading-relaxed font-medium text-lg">
+            At EBG Group, recognized as one of the best business groups in India, we are driven by a no-nonsense
+            approach to solving real-world problems. We don’t just focus on ideas — we focus on tangible solutions that
+            create value and make a positive impact across industries. Our vision is to continue leading the charge as
+            the best business group in India, shaping industries that matter in today’s modern world by addressing
+            challenges head-on and delivering meaningful results.
           </p>
-          <div
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <a
-              class="text-blue-600 font-semibold flex hover:text-blue-800"
-              href="/business-setup-in-dubai-UAE/">Read more
-              <svg
-                class="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
+        </div>
+      </div>
+
+      <div class="w-full md:w-3/5 relative flex items-stretch">
+        <img src="assets/images/Irfan Sir SQ.jpg" alt="Dr. Irfan"
+          class="w-full h-full object-cover rounded-none m-0 p-0 shadow-xl" style="min-height:340px; max-height:520px;">
+        <div class="absolute top-6 left-8 text-white px-6 py-3 rounded-2xl shadow-lg flex flex-col items-start">
+          <span class="text-2xl font-bold leading-tight">Dr. Irfan</span>
+          <span class="text-base font-medium text-blue-100">CEO &amp; Founder</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1 class=" text-5xl text-center font-bold text-tertiary">Our Journey of Impact</h1>
+    <p class="text-lg text-center">From vision to reality – tracking our progress toward a sustainable future</p>
+
+    <div class=" px-4 md:px-20 py-10">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <!-- Info Section -->
+          <div class="md:w-1/2 relative min-h-[150px]">
+            <div class="info-item active absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2019</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Established EBG Partners with a vision to transform essential industries through sustainable innovation
+              </p>
+            </div>
+            <div class="info-item absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2020</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Expanded into EV & mobility solutions, entering the sustainable transport sector.
+              </p>
+            </div>
+            <div class="info-item absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2021</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Strengthened manufacturing & technology capabilities to support business growth.
+              </p>
+            </div>
+            <div class="info-item absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2022</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Partnered with global brands, securing exclusive licensing agreements.
+              </p>
+            </div>
+            <div class="info-item absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2023</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Tied up with Acer Electric & WHILL, to launch retail stores across India.
+              </p>
+            </div>
+            <div class="info-item absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2024</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Expanded dealership network & brand presence across multiple industries.
+              </p>
+            </div>
+            <div class="info-item absolute inset-0">
+              <h3 class="text-4xl font-bold text-gray-900 mb-4">2025</h3>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Targeting 100+ retail stores in key sectors.
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Section -->
+          <div class="w-1/2 h-[308px]">
+            <div class="relative rounded-lg shadow-lg">
+              <img src="./assets/timeline/1.png" alt="Innovation Technology"
+                class="image-item active h-80 object-cover absolute inset-0">
+              <img src="./assets/timeline/2.png" alt="Global Connectivity"
+                class="image-item h-80 object-cover absolute inset-0">
+              <img src="./assets/timeline/3.png" alt="Future Vision"
+                class="image-item h-80 object-cover absolute inset-0">
+              <img src="./assets/timeline/4.png" alt="Future Vision"
+                class="image-item h-80 object-cover absolute inset-0">
+              <img src="./assets/timeline/5.png" alt="Future Vision"
+                class="image-item h-80 object-cover absolute inset-0">
+              <img src="./assets/timeline/6.png" alt="Future Vision"
+                class="image-item h-80 object-cover absolute inset-0">
+              <img src="./assets/timeline/7.png" alt="Future Vision"
+                class="image-item h-80 object-cover absolute inset-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: linear-gradient(90deg, rgba(2, 127, 192, 0.11) 0%, rgba(121, 217, 225, 0.11) 100%);
+" class=" text-gray-800 px-20 py-10">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <!-- Section Heading -->
+      <h2 class="text-4xl font-bold text-center">What Our Partners Say</h2>
+      <p class="mt-2 text-lg text-center">
+        Hear from industry leaders who have transformed their businesses through our partnership program
+      </p>
+
+      <!-- Video + Stats Row -->
+      <div class="mt-8 flex flex-col md:flex-row items-start gap-8">
+        <!-- Video Placeholder -->
+        <div class="w-full md:w-1/2">
+          <div class="relative bg-white rounded-lg overflow-hidden h-64 md:h-80 flex items-center justify-center">
+            <video src="./assets/video1.mp4" autoplay muted loop></video>
+            <!-- Play Button -->
+            <div
+              class="bg-gray-200 rounded-full p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="currentColor"
+                viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
               </svg>
-            </a>
+            </div>
           </div>
         </div>
 
-        <div class="tab-img absolute bg-white p-3 opacity-0 transition-opacity duration-500" style="z-index: 1">
-          <img
-            src="./assets/dummey.jpg"
-            alt="Company Formation"
-            class="w-64 rounded-lg mb-6"
-          />
-          <h2 class="text-2xl font-bold mb-4">Trade License</h2>
-          <p class="text-gray-600 mb-6">
-            Globex simplifies company setup with needs assessment, legal
-            registration, and compliance. Our tailored solutions in accounting,
-            marketing, and IT support sustainable growth.
+        <!-- Stats & Copy -->
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-semibold">Investment Success Stories</h3>
+          <p class="mt-3 text-gray-700 leading-relaxed">
+            Our partners have consistently achieved remarkable returns while contributing to global sustainability
+            goals. From startup accelerations to enterprise transformations, discover how strategic partnerships with
+            EBG create lasting value for all stakeholders.
           </p>
-          <div
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <a
-              class="text-blue-600 font-semibold flex hover:text-blue-800"
-              href="/business-setup-in-dubai-UAE/">Read more
-              <svg
-                class="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
-              </svg>
-            </a>
+          <!-- Stats -->
+          <div class="mt-6 flex flex-wrap gap-8">
+            <div class="flex flex-col items-center">
+              <span
+                class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">500+</span>
+              <span class="text-sm text-gray-700 font-medium">Active Partners</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span
+                class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">$2.5B</span>
+              <span class="text-sm text-gray-700 font-medium">Portfolio Value</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span
+                class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">95%</span>
+              <span class="text-sm text-gray-700 font-medium">Satisfaction Rate</span>
+            </div>
+          </div>
+          <button
+              class="bap mt-8 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+              Become a partner
+            </button>
+        </div>
+      </div>
+
+      <!-- Testimonials Row -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Testimonial Card -->
+        <div class="bg-white p-6 rounded-lg">
+          <!-- Stars -->
+          <!-- <div class="flex space-x-1 text-gray-300 text-xl">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div> -->
+          <!-- Quote -->
+          <p class="mt-4 text-gray-800">
+            "EBG Partners transformed our approach to sustainable technology. Their partnership program opened doors to
+            innovations we never imagined possible."
+          </p>
+          <!-- Author -->
+          <div class="mt-6 flex items-center">
+            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+            <div class="ml-4">
+              <p class="font-semibold">Sara Chen</p>
+              <p class="text-sm text-gray-600">CEO, TechVentures Inc.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat for additional cards -->
+        <div class="bg-white p-6 rounded-lg">
+          <!-- <div class="flex space-x-1 text-gray-300 text-xl">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div> -->
+          <p class="mt-4 text-gray-800">
+            "Working with EBG Partners gave us the tools and insight to scale our green initiatives globally. Their team
+            truly cares about impact."
+          </p>
+          <div class="mt-6 flex items-center">
+            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+            <div class="ml-4">
+              <p class="font-semibold">Lena Rodríguez</p>
+              <p class="text-sm text-gray-600">Founder, GreenPulse Ltd.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg">
+          <!-- <div class="flex space-x-1 text-gray-300 text-xl">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div> -->
+          <p class="mt-4 text-gray-800">
+            "Our ROI exceeded all expectations, and we made a real difference. EBG’s partnership model is both
+            profitable and purpose-driven."
+          </p>
+          <div class="mt-6 flex items-center">
+            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+            <div class="ml-4">
+              <p class="font-semibold">David Kim</p>
+              <p class="text-sm text-gray-600">COO, EcoBuild Corp.</p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-gray-100 text-gray-900">
+    <!-- Footer -->
+    <div class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-10">
+        <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+          <!-- Brand & Tagline -->
+          <div class="md:w-1/4">
+            <h3 class="text-xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">EBG Partners</h3>
+            <p class="mt-2 text-gray-600">
+              Building a sustainable future through innovation and partnership.
+            </p>
+          </div>
+
+          <!-- Company Links -->
+          <div class="md:w-1/4">
+            <h4 class="text-lg font-semibold mb-2">Company</h4>
+            <ul class="space-y-1 text-gray-600">
+              <li><a href="#" class="hover:underline">About Us</a></li>
+              <li><a href="#" class="hover:underline">Our Brands</a></li>
+              <li><a href="#" class="hover:underline">Ideology</a></li>
+              <li><a href="#" class="hover:underline">Careers</a></li>
+            </ul>
+          </div>
+
+          <!-- Industries Links -->
+          <div class="md:w-1/4">
+            <h4 class="text-lg font-semibold mb-2">Industries</h4>
+            <ul class="space-y-1 text-gray-600">
+              <li><a href="#" class="hover:underline">Appliance</a></li>
+              <li><a href="#" class="hover:underline">Energy</a></li>
+              <li><a href="#" class="hover:underline">Mobility</a></li>
+              <li><a href="#" class="hover:underline">Innovations</a></li>
+            </ul>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="md:w-1/4">
+            <h4 class="text-lg font-semibold mb-2">Get Started</h4>
+            <p class="text-gray-600">
+              Ready to transform your business with sustainable innovation?
+            </p>
+            <button
+              class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+              Become a partner
+            </button>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-t-2 border-gray-300 mt-10" />
+
+        <!-- Copyright -->
+        <p class="mt-6 text-center text-sm text-gray-600">
+          2024 EBG Partners. All rights reserved. Building tomorrow, today.
+        </p>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <section
-      class="h-screen bg-gradient-to-br from-white via-blue-50 to-white py-10 px-32 flex flex-col items-center justify-center"
-    >
-      <h2
-        class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
-      >
-        What we do
-      </h2>
-      <!-- <div class="w-full max-w-2xl">
-        <div id="shadcn-tabs" class="flex space-x-2 bg-white/80 rounded-xl shadow p-2 mb-8">
-          <button class="tab-shadcn px-6 py-2 rounded-lg font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:z-10 relative bg-gradient-to-r from-primary to-secondary text-white shadow active" data-tab="0">Appliance</button>
-          <button class="tab-shadcn px-6 py-2 rounded-lg font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:z-10 relative" data-tab="1">Energy</button>
-          <button class="tab-shadcn px-6 py-2 rounded-lg font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:z-10 relative" data-tab="2">Mobility</button>
-        </div>
-        <div class="relative min-h-[140px]">
-          <div class="tab-content-shadcn transition-opacity duration-300 opacity-100" data-content="0">
-            <h3 class="text-2xl font-bold mb-2">Appliance</h3>
-            <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-          </div>
-          <div class="tab-content-shadcn transition-opacity duration-300 opacity-0 absolute inset-0 pointer-events-none" data-content="1">
-            <h3 class="text-2xl font-bold mb-2">Energy</h3>
-            <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-          </div>
-          <div class="tab-content-shadcn transition-opacity duration-300 opacity-0 absolute inset-0 pointer-events-none" data-content="2">
-            <h3 class="text-2xl font-bold mb-2">Mobility</h3>
-            <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-          </div>
-        </div>
-      </div> -->
-      <div class="w-full">
-        <div class="relative right-0">
-          <ul
-            class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-slate-100"
-            data-tabs="tabs"
-            role="list"
-          >
-            <li class="z-30 flex-auto text-center">
-              <a
-                class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-slate-600 bg-inherit"
-                data-tab-target=""
-                role="tab"
-                aria-selected="true"
-              >
-                Dashboard
-              </a>
-            </li>
-            <li class="z-30 flex-auto text-center">
-              <a
-                class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-sm transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-600 bg-inherit"
-                data-tab-target=""
-                role="tab"
-                aria-selected="false"
-              >
-                Profile
-              </a>
-            </li>
-            <li class="z-30 flex-auto text-center">
-              <a
-                class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
-                data-tab-target=""
-                role="tab"
-                aria-selected="false"
-              >
-                Settings
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="src/modal.js"></script>
 
-    <script src="script.js"></script>
-    <script src="src/particalEffect.js"></script>
-    <style>
-      /* Custom underline animation for nav links */
-      .menu a::after {
-        display: block;
-        content: "";
-        border-bottom: solid 2px #7c3aed; /* secondary color */
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-        transform-origin: left;
-      }
-      .menu a:hover::after {
-        transform: scaleX(1);
-      }
-      .tab-btn.active {
-        box-shadow: 0 4px 24px 0 #7c3aed33;
-        border-color: #7c3aed;
-        transform: scale(1.05);
-      }
-      .tab-img {
-        pointer-events: none;
-      }
-      .tab-shadcn.active {
-        background: linear-gradient(to right, var(--tw-gradient-stops));
-        color: #fff;
-        box-shadow: 0 4px 24px 0 #7c3aed33;
-        position: relative;
-      }
-      .tab-shadcn.active::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        width: 60%;
-        height: 3px;
-        background: #7c3aed;
-        border-radius: 2px;
-        transition: width 0.3s;
-      }
-      .tab-shadcn {
-        background: transparent;
-        color: #7c3aed;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        position: relative;
-        z-index: 1;
-      }
-      .tab-shadcn:not(.active):hover {
-        background: #ede9fe;
-        color: #5b21b6;
-      }
-      .tab-content-shadcn {
-        transition: opacity 0.3s;
-      }
-      .tab-content-shadcn:not(.opacity-100) {
-        pointer-events: none;
-      }
-    </style>
+</body>
 
-    <script>
-      var typed = new Typed(".typing_text", {
-        strings: ["3x Yearly Growth", "36+ Brands & Counting"],
-        typeSpeed: 50,
-        backSpeed: 40,
-        loop: true,
-        cursorChar: "|️",
-      });
-      // Tab functionality for 'What we do' section
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".tab-btn");
-        const images = document.querySelectorAll(".tab-img");
-        buttons.forEach((btn, idx) => {
-          btn.addEventListener("mouseover", function () {
-            // Remove active from all buttons
-            buttons.forEach((b) => b.classList.remove("active"));
-            // Hide all images
-            images.forEach((img) => {
-              img.style.opacity = 0;
-              img.style.zIndex = 1;
-            });
-            // Activate clicked button
-            btn.classList.add("active");
-            // Show corresponding image
-            images[idx].style.opacity = 1;
-            images[idx].style.zIndex = 2;
-          });
-        });
-      });
-      // Shadcn-style tabs functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const tabBtns = document.querySelectorAll(".tab-shadcn");
-        const tabContents = document.querySelectorAll(".tab-content-shadcn");
-        tabBtns.forEach((btn, idx) => {
-          btn.addEventListener("click", function () {
-            // Remove active from all buttons
-            tabBtns.forEach((b) => b.classList.remove("active"));
-            // Hide all tab contents
-            tabContents.forEach((c, i) => {
-              c.classList.remove("opacity-100");
-              c.classList.add("opacity-0", "absolute", "pointer-events-none");
-            });
-            // Activate clicked button
-            btn.classList.add("active");
-            // Show corresponding content
-            const content = document.querySelector(
-              '.tab-content-shadcn[data-content="' + idx + '"]'
-            );
-            if (content) {
-              content.classList.remove(
-                "opacity-0",
-                "absolute",
-                "pointer-events-none"
-              );
-              content.classList.add("opacity-100");
-            }
-          });
-        });
-      });
-    </script>
-  </body>
 </html>
