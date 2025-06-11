@@ -74,14 +74,6 @@
           muted
           loop
         ></video>
-        <!-- style="position: absolute; top: 0; left: 0; height: 100%; width: 100%" -->
-        <!-- <iframe
-          class="rounded-2xl shadow-2xl lg:h-[500px] w-full object-cover"
-          title="Youtube Video"
-          allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          src="https://www.youtube.com/embed/FjAkAsVUzFA?iv_load_policy=3&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=FjAkAsVUzFA&amp;color=white"
-          frameborder="0"
-        ></iframe> -->
       </div>
       <!-- <div class="flex items-center justify-center gap-10">
         <img src="./assets/logas/acer.png" alt="" class="h-4 lg:h-8" />
@@ -92,11 +84,10 @@
     <section class="px-7 lg:px-20 py-10">
       <div class="mb-10">
         <h2 class="text-xl lg:text-4xl font-bold text-center text-tertiary">
-          Driving Change Across Essential Industries
+          Driving Impact for a Positive Future
         </h2>
         <p class="text-base font-medium lg:text-lg text-gray-700 text-center">
-          Creating an impact across the world for a better future through three
-          core pillars
+          Shaping a sustainable, innovative, and collaborative future.
         </p>
       </div>
 
@@ -205,8 +196,8 @@
               <div
                 class="flex flex-col md:flex-row md:items-center justify-between"
               >
-                <h1 class="text-2xl lg:text-5xl font-bold text-tertiary">
-                  Acer
+                <h1 class="text-xl lg:text-3xl font-bold text-tertiary">
+                  Appliance Partner Program
                 </h1>
                 <!-- <p class="mt-4 md:mt-0 text-gray-600">
                 Creating an impact across the world for a better future through three core pillars
@@ -232,11 +223,18 @@
                     global challenges while fostering economic growth and
                     environmental stewardship.
                   </p>
-                  <button
-                    class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
-                  >
-                    Become a partner
-                  </button>
+                  <div class="flex flex-row gap-4 mt-4 mb-8">
+                    <button
+                      class="bap w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+                    >
+                      Become a partner
+                    </button>
+                    <button
+                      class="explore-more w-fit inline-block px-8 py-2 rounded-md font-semibold border-2 border-primary text-primary bg-white hover:bg-gradient-to-r from-primary to-secondary hover:text-white transition-colors duration-200 cursor-pointer"
+                    >
+                      Explore more
+                    </button>
+                  </div>
 
                   <!-- Stats -->
                   <div
@@ -245,28 +243,153 @@
                     <div class="text-center">
                       <h3
                         class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                        id="appliance-partner-count"
                       >
-                        500+
+                        0+
                       </h3>
                       <p class="text-sm text-gray-500">Active Partners</p>
                     </div>
                     <div class="text-center">
                       <h3
                         class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                        id="appliance-portfolio-value"
                       >
-                        $2.5B
+                        $0B
                       </h3>
                       <p class="text-sm text-gray-500">Portfolio Value</p>
                     </div>
                     <div class="text-center">
                       <h3
                         class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                        id="appliance-satisfaction-rate"
                       >
-                        95%
+                        0%
                       </h3>
                       <p class="text-sm text-gray-500">Satisfaction Rate</p>
                     </div>
                   </div>
+                  <script>
+                    // Only run once DOM is loaded
+                    document.addEventListener("DOMContentLoaded", function () {
+                      function animateValue(
+                        id,
+                        start,
+                        end,
+                        duration,
+                        prefix = "",
+                        suffix = "",
+                        decimals = 0
+                      ) {
+                        const obj = document.getElementById(id);
+                        let startTimestamp = null;
+                        const step = (timestamp) => {
+                          if (!startTimestamp) startTimestamp = timestamp;
+                          const progress = Math.min(
+                            (timestamp - startTimestamp) / duration,
+                            1
+                          );
+                          let value = start + (end - start) * progress;
+                          value =
+                            decimals > 0
+                              ? value.toFixed(decimals)
+                              : Math.floor(value);
+                          obj.textContent = prefix + value + suffix;
+                          if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                          } else {
+                            obj.textContent =
+                              prefix +
+                              (decimals > 0 ? end.toFixed(decimals) : end) +
+                              suffix;
+                          }
+                        };
+                        window.requestAnimationFrame(step);
+                      }
+
+                      // Scroll trigger logic
+                      let triggered = false;
+                      function isInViewport(element) {
+                        const rect = element.getBoundingClientRect();
+                        return rect.top < window.innerHeight && rect.bottom > 0;
+                      }
+
+                      function triggerCountersIfNeeded() {
+                        if (triggered) return;
+                        const el = document.getElementById(
+                          "appliance-partner-count"
+                        );
+                        // const el2 = document.getElementById(
+                        //   "appliance-portfolio-value1"
+                        // );
+                        if (isInViewport(el)) {
+                          triggered = true;
+                          animateValue(
+                            "appliance-partner-count",
+                            0,
+                            500,
+                            1200,
+                            "",
+                            "+"
+                          );
+                          animateValue(
+                            "appliance-portfolio-value",
+                            0,
+                            2.5,
+                            1200,
+                            "$",
+                            "B",
+                            1
+                          );
+                          animateValue(
+                            "appliance-satisfaction-rate",
+                            0,
+                            95,
+                            1200,
+                            "",
+                            "%"
+                          );
+                        }
+
+                        // if (isInViewport(el2)) {
+                        //   animateValue(
+                        //     "appliance-partner-count1",
+                        //     0,
+                        //     500,
+                        //     1200,
+                        //     "",
+                        //     "+"
+                        //   );
+
+                        //   animateValue(
+                        //     "appliance-portfolio-value1",
+                        //     0,
+                        //     2.5,
+                        //     1200,
+                        //     "$",
+                        //     "B",
+                        //     1
+                        //   );
+
+                        //   animateValue(
+                        //     "appliance-satisfaction-rate1",
+                        //     0,
+                        //     95,
+                        //     1200,
+                        //     "",
+                        //     "%"
+                        //   );
+                        // }
+                      }
+
+                      window.addEventListener(
+                        "scroll",
+                        triggerCountersIfNeeded,
+                        { passive: true }
+                      );
+                      // Also trigger on load in case already in view
+                      triggerCountersIfNeeded();
+                    });
+                  </script>
                 </div>
               </div>
 
@@ -541,7 +664,9 @@
               <div
                 class="flex flex-col md:flex-row md:items-center justify-between"
               >
-                <h1 class="text-5xl font-bold text-tertiary">Daewoo</h1>
+                <h1 class="text-xl lg:text-3xl font-bold text-tertiary">
+                  Energy Partner Program
+                </h1>
                 <!-- <p class="mt-4 md:mt-0 text-gray-600">
                 Creating an impact across the world for a better future through three core pillars
               </p> -->
@@ -566,11 +691,18 @@
                     global challenges while fostering economic growth and
                     environmental stewardship.
                   </p>
-                  <button
-                    class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
-                  >
-                    Become a partner
-                  </button>
+                  <div class="flex flex-row gap-4 mt-4 mb-8">
+                    <button
+                      class="bap w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+                    >
+                      Become a partner
+                    </button>
+                    <button
+                      class="explore-more w-fit inline-block px-8 py-2 rounded-md font-semibold border-2 border-primary text-primary bg-white hover:bg-gradient-to-r from-primary to-secondary hover:text-white transition-colors duration-200 cursor-pointer"
+                    >
+                      Explore more
+                    </button>
+                  </div>
 
                   <!-- Stats -->
                   <div
@@ -744,7 +876,9 @@
               <div
                 class="flex flex-col md:flex-row md:items-center justify-between"
               >
-                <h1 class="text-5xl font-bold text-tertiary">E-Bike Go</h1>
+                <h1 class="text-xl lg:text-3xl font-bold text-tertiary">
+                  Mobility Partner Program
+                </h1>
                 <!-- <p class="mt-4 md:mt-0 text-gray-600">
                 Creating an impact across the world for a better future through three core pillars
               </p> -->
@@ -770,11 +904,18 @@
                     environmental stewardship.
                   </p>
 
-                  <button
-                    class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
-                  >
-                    Become a partner
-                  </button>
+                  <div class="flex flex-row gap-4 mt-4 mb-8">
+                    <button
+                      class="bap w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+                    >
+                      Become a partner
+                    </button>
+                    <button
+                      class="explore-more w-fit inline-block px-8 py-2 rounded-md font-semibold border-2 border-primary text-primary bg-white hover:bg-gradient-to-r from-primary to-secondary hover:text-white transition-colors duration-200 cursor-pointer"
+                    >
+                      Explore more
+                    </button>
+                  </div>
 
                   <!-- Stats -->
                   <div
@@ -1003,7 +1144,7 @@
         future
       </p>
 
-      <div class="px-4 md:px-20 py-10 pb-0">
+      <div class="px-4 md:px-20 py-10">
         <div class="lg:max-w-7xl mx-auto px-4 py-12">
           <div
             class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0"
@@ -1103,50 +1244,6 @@
           </div>
         </div>
       </div>
-
-      <div class="flex justify-center items-center mb-7 space-x-4">
-        <button
-          id="prevBtn"
-          class="cursor-pointer text-white bg-gradient-to-r from-primary to-secondary font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-left-icon lucide-chevron-left"
-          >
-            <path d="m15 18-6-6 6-6" />
-          </svg>
-        </button>
-        <!-- <button id="pauseBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
-            Pause
-        </button> -->
-        <button
-          id="nextBtn"
-          class="cursor-pointer bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-right-icon lucide-chevron-right"
-          >
-            <path d="m9 18 6-6-6-6" />
-          </svg>
-        </button>
-      </div>
     </section>
 
     <section
@@ -1205,6 +1302,7 @@
             <div class="mt-6 flex flex-wrap gap-4 lg:gap-8">
               <div class="flex flex-col items-center">
                 <span
+                  id="appliance-partner-count1"
                   class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
                   >500+</span
                 >
@@ -1214,6 +1312,7 @@
               </div>
               <div class="flex flex-col items-center">
                 <span
+                  id="appliance-portfolio-value1"
                   class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
                   >$2.5B</span
                 >
@@ -1223,6 +1322,7 @@
               </div>
               <div class="flex flex-col items-center">
                 <span
+                  id="appliance-satisfaction-rate1"
                   class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
                   >95%</span
                 >
@@ -1231,6 +1331,96 @@
                 >
               </div>
             </div>
+
+            <!-- <script>
+              // Only run once DOM is loaded
+              document.addEventListener("DOMContentLoaded", function () {
+                function animateValue(
+                  id,
+                  start,
+                  end,
+                  duration,
+                  prefix = "",
+                  suffix = "",
+                  decimals = 0
+                ) {
+                  const obj = document.getElementById(id);
+                  let startTimestamp = null;
+                  const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min(
+                      (timestamp - startTimestamp) / duration,
+                      1
+                    );
+                    let value = start + (end - start) * progress;
+                    value =
+                      decimals > 0
+                        ? value.toFixed(decimals)
+                        : Math.floor(value);
+                    obj.textContent = prefix + value + suffix;
+                    if (progress < 1) {
+                      window.requestAnimationFrame(step);
+                    } else {
+                      obj.textContent =
+                        prefix +
+                        (decimals > 0 ? end.toFixed(decimals) : end) +
+                        suffix;
+                    }
+                  };
+                  window.requestAnimationFrame(step);
+                }
+
+                // Scroll trigger logic
+                let triggered = false;
+                function isInViewport(element) {
+                  const rect = element.getBoundingClientRect();
+                  return rect.top < window.innerHeight && rect.bottom > 0;
+                }
+
+                function triggerCountersIfNeeded() {
+                  if (triggered) return;
+                  const el = document.getElementById(
+                    "appliance-partner-count1"
+                  );
+
+                  if (isInViewport(el)) {
+                    animateValue(
+                      "appliance-partner-count1",
+                      0,
+                      500,
+                      1200,
+                      "",
+                      "+"
+                    );
+
+                    animateValue(
+                      "appliance-portfolio-value1",
+                      0,
+                      2.5,
+                      1200,
+                      "$",
+                      "B",
+                      1
+                    );
+
+                    animateValue(
+                      "appliance-satisfaction-rate1",
+                      0,
+                      95,
+                      1200,
+                      "",
+                      "%"
+                    );
+                  }
+                }
+
+                window.addEventListener("scroll", triggerCountersIfNeeded, {
+                  passive: true,
+                });
+                // Also trigger on load in case already in view
+                triggerCountersIfNeeded();
+              });
+            </script> -->
             <button
               class="bap mt-8 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
             >
