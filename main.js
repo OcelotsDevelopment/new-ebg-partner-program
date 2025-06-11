@@ -1,46 +1,48 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // new AnimatedInfoSection();
-    const buttons = document.querySelectorAll(".tab-btn");
-    const slider = document.querySelector(".slider");
-    const container = document.querySelectorAll(".tab-cont");
+document.addEventListener("DOMContentLoaded", function () {
+  // new AnimatedInfoSection();
+  const buttons = document.querySelectorAll(".tab-btn");
+  const slider = document.querySelector(".slider");
+  const container = document.querySelectorAll(".tab-cont");
 
-    // Initialize first tab as active
-    updateActiveTab(0);
+  // Initialize first tab as active
+  updateActiveTab(0);
 
-    buttons.forEach((btn) => {
-        btn.addEventListener("click", function () {
-            const tabIndex = parseInt(this.getAttribute('data-tab'));
-            updateActiveTab(tabIndex);
-        });
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const tabIndex = parseInt(this.getAttribute("data-tab"));
+      updateActiveTab(tabIndex);
+    });
+  });
+
+  function updateActiveTab(index) {
+    // Update slider position
+    const button = buttons[index];
+    const buttonRect = button.getBoundingClientRect();
+    const containerRect = button.parentElement.getBoundingClientRect();
+
+    slider.style.width = `${button.offsetWidth - 8}px`;
+    slider.style.transform = `translateX(${
+      buttonRect.left - containerRect.left + 4
+    }px)`;
+
+    // Update active state for tabs
+    buttons.forEach((btn, i) => {
+      if (i === index) {
+        btn.classList.add("text-white");
+      } else {
+        btn.classList.remove("text-white");
+      }
     });
 
-    function updateActiveTab(index) {
-        // Update slider position
-        const button = buttons[index];
-        const buttonRect = button.getBoundingClientRect();
-        const containerRect = button.parentElement.getBoundingClientRect();
-
-        slider.style.width = `${button.offsetWidth - 8}px`;
-        slider.style.transform = `translateX(${buttonRect.left - containerRect.left + 4}px)`;
-
-        // Update active state for tabs
-        buttons.forEach((btn, i) => {
-            if (i === index) {
-                btn.classList.add('text-white');
-            } else {
-                btn.classList.remove('text-white');
-            }
-        });
-
-        // Update tab content visibility
-        container.forEach((content, i) => {
-            if (i === index) {
-                content.classList.add('active');
-            } else {
-                content.classList.remove('active');
-            }
-        });
-    }
+    // Update tab content visibility
+    container.forEach((content, i) => {
+      if (i === index) {
+        content.classList.add("active");
+      } else {
+        content.classList.remove("active");
+      }
+    });
+  }
 });
 
 // class AnimatedInfoSection {
@@ -140,3 +142,88 @@ document.addEventListener('DOMContentLoaded', function () {
 //         initAnimation();
 //     }
 // });
+
+document.addEventListener("DOMContentLoaded", function () {
+  function animateValue(
+    id,
+    start,
+    end,
+    duration,
+    prefix = "",
+    suffix = "",
+    decimals = 0
+  ) {
+    const obj = document.getElementById(id);
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      let value = start + (end - start) * progress;
+      value = decimals > 0 ? value.toFixed(decimals) : Math.floor(value);
+      obj.textContent = prefix + value + suffix;
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        obj.textContent =
+          prefix + (decimals > 0 ? end.toFixed(decimals) : end) + suffix;
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  // Scroll trigger logic
+  let triggered = false;
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  function triggerCountersIfNeeded() {
+    if (triggered) return;
+    const el = document.getElementById("appliance-partner-count");
+    // const el2 = document.getElementById(
+    //   "appliance-portfolio-value1"
+    // );
+    if (isInViewport(el)) {
+      triggered = true;
+      animateValue("appliance-partner-count", 0, 500, 1200, "", "+");
+      animateValue("appliance-portfolio-value", 0, 2.5, 1200, "$", "B", 1);
+      animateValue("appliance-satisfaction-rate", 0, 95, 1200, "", "%");
+      animateValue("appliance-partner-count", 0, 36, 1200, "", "+");
+    }
+
+    // if (isInViewport(el2)) {
+    //   animateValue(
+    //     "appliance-partner-count1",
+    //     0,
+    //     500,
+    //     1200,
+    //     "",
+    //     "+"
+    //   );
+
+    //   animateValue(
+    //     "appliance-portfolio-value1",
+    //     0,
+    //     2.5,
+    //     1200,
+    //     "$",
+    //     "B",
+    //     1
+    //   );
+
+    //   animateValue(
+    //     "appliance-satisfaction-rate1",
+    //     0,
+    //     95,
+    //     1200,
+    //     "",
+    //     "%"
+    //   );
+    // }
+  }
+
+  window.addEventListener("scroll", triggerCountersIfNeeded, { passive: true });
+  // Also trigger on load in case already in view
+  triggerCountersIfNeeded();
+});
