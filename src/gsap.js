@@ -12,7 +12,7 @@ gsap.from("#a-head", {
   scrollTrigger: {
     trigger: "#a-head",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 60%",
   },
 });

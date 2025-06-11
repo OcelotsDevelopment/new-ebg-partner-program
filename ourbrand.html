@@ -5,116 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Brands Page</title>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="font-['Inter'] text-black">
+  <body class="">
     <!-- Header -->
     <header>
-        <nav class="flex justify-between items-center px-20 py-6">
-          <div>
-            <img src="./assets/logo.png" alt="EBG Partner Program" class="h-10">
-          </div>
-          <ul class="flex items-center gap-8">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Brands</a></li>
-            <li><a href="#">Ideology</a></li>
-            <li><button class=" text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary">Become a
-                Partner</button></li>
-          </ul>
-        </nav>
-      </header>
-
-    <!-- Hero Title -->
-    <section class="text-center py-12">
-      <h1 class="text-4xl md:text-6xl font-bold uppercase">Our Brands</h1>
-    </section>
-
-    <!-- Brand Sections -->
-    <section class="px-4 max-w-7xl mx-auto">
-      <!-- Repeat this block for each section -->
-      <div>
-        <h2 class="text-2xl md:text-4xl font-semibold uppercase mb-4">Electric Mobility</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-          <!-- Repeat this card -->
-          <div class="bg-stone-300 rounded-lg h-48 sm:h-64"></div>
-          <div class="bg-stone-300 rounded-lg h-48 sm:h-64"></div>
-          <div class="bg-stone-300 rounded-lg h-48 sm:h-64"></div>
-          <!-- Add as many cards as needed -->
+      <nav class="flex justify-between items-center px-20 py-6">
+        <div>
+          <img src="./assets/logo.png" alt="EBG Partner Program" class="h-10" />
         </div>
-      </div>
+        <ul class="flex items-center gap-8">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our Brands</a></li>
+          <li><a href="#">Ideology</a></li>
+          <li>
+            <button
+              class="text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary"
+            >
+              Become a Partner
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Repeat similar blocks for other categories -->
-      <!-- Example: -->
-      <div>
-        <h2 class="text-2xl md:text-4xl font-semibold uppercase mb-4">Energy Solutions</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-          <div class="bg-stone-300 rounded-lg h-48 sm:h-64"></div>
-          <div class="bg-stone-300 rounded-lg h-48 sm:h-64"></div>
-          <div class="bg-stone-300 rounded-lg h-48 sm:h-64"></div>
+    <main class="max-w-6xl mx-auto px-8 py-16">
+      <!-- Hero Section -->
+      <section
+        class="flex justify-between items-start mb-16 flex-col md:flex-row text-center md:text-left gap-8"
+      >
+        <h1 class="text-5xl font-bold text-tertiary">OUR BRANDS</h1>
+        <div class="text-right">
+          <div class="text-5xl font-bold text-tertiary">35+</div>
+          <div class="text-lg text-gray-600 font-medium">COUNTING</div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Brand Sections -->
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="mb-12 opacity-0 translate-y-8 transition-all duration-600 ease-in-out data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      >
+        <h2
+          class="text-sm font-semibold text-tertiary mb-6 uppercase tracking-wider"
+        >
+          ELECTRIC MOBILITY
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+          <div
+            class="bg-gray-300 rounded-lg aspect-square flex items-center justify-center hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/10 before:to-primary/30 before:opacity-0 before:transition-opacity hover:before:opacity-100"
+          ></div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-
-
     <footer class="bg-gray-100 text-gray-900">
-        <!-- Footer -->
-        <div class="bg-white">
-          <div class="max-w-7xl mx-auto px-6 py-10">
-            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-              <!-- Brand & Tagline -->
-              <div class="md:w-1/4">
-                <h3 class="text-xl font-bold">EBG Partners</h3>
-                <p class="mt-2 text-gray-600">
-                  Building a sustainable future through innovation and partnership.
-                </p>
-              </div>
-    
-              <!-- Company Links -->
-              <div class="md:w-1/4">
-                <h4 class="text-lg font-semibold mb-2">Company</h4>
-                <ul class="space-y-1 text-gray-600">
-                  <li><a href="#" class="hover:underline">About Us</a></li>
-                  <li><a href="#" class="hover:underline">Our Brands</a></li>
-                  <li><a href="#" class="hover:underline">Ideology</a></li>
-                  <li><a href="#" class="hover:underline">Careers</a></li>
-                </ul>
-              </div>
-    
-              <!-- Industries Links -->
-              <div class="md:w-1/4">
-                <h4 class="text-lg font-semibold mb-2">Industries</h4>
-                <ul class="space-y-1 text-gray-600">
-                  <li><a href="#" class="hover:underline">Appliance</a></li>
-                  <li><a href="#" class="hover:underline">Energy</a></li>
-                  <li><a href="#" class="hover:underline">Mobility</a></li>
-                  <li><a href="#" class="hover:underline">Innovations</a></li>
-                </ul>
-              </div>
-    
-              <!-- Call to Action -->
-              <div class="md:w-1/4">
-                <h4 class="text-lg font-semibold mb-2">Get Started</h4>
-                <p class="text-gray-600">
-                  Ready to transform your business with sustainable innovation?
-                </p>
-                <button
-                  class="mt-4 inline-block px-5 py-2 border border-gray-800 rounded-md font-semibold hover:bg-gray-50">
-                  Become a partner
-                </button>
-              </div>
+      <!-- Footer -->
+      <div class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+          <div
+            class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+          >
+            <!-- Brand & Tagline -->
+            <div class="md:w-1/4">
+              <h3 class="text-xl font-bold">EBG Partners</h3>
+              <p class="mt-2 text-gray-600">
+                Building a sustainable future through innovation and
+                partnership.
+              </p>
             </div>
-    
-            <!-- Divider -->
-            <hr class="border-t-2 border-gray-300 mt-10" />
-    
-            <!-- Copyright -->
-            <p class="mt-6 text-center text-sm text-gray-600">
-              2024 EBG Partners. All rights reserved. Building tomorrow, today.
-            </p>
+
+            <!-- Company Links -->
+            <div class="md:w-1/4">
+              <h4 class="text-lg font-semibold mb-2">Company</h4>
+              <ul class="space-y-1 text-gray-600">
+                <li><a href="#" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Our Brands</a></li>
+                <li><a href="#" class="hover:underline">Ideology</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+              </ul>
+            </div>
+
+            <!-- Industries Links -->
+            <div class="md:w-1/4">
+              <h4 class="text-lg font-semibold mb-2">Industries</h4>
+              <ul class="space-y-1 text-gray-600">
+                <li><a href="#" class="hover:underline">Appliance</a></li>
+                <li><a href="#" class="hover:underline">Energy</a></li>
+                <li><a href="#" class="hover:underline">Mobility</a></li>
+                <li><a href="#" class="hover:underline">Innovations</a></li>
+              </ul>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="md:w-1/4">
+              <h4 class="text-lg font-semibold mb-2">Get Started</h4>
+              <p class="text-gray-600">
+                Ready to transform your business with sustainable innovation?
+              </p>
+              <button
+                class="mt-4 inline-block px-5 py-2 border border-gray-800 rounded-md font-semibold hover:bg-gray-50"
+              >
+                Become a partner
+              </button>
+            </div>
           </div>
+
+          <!-- Divider -->
+          <hr class="border-t-2 border-gray-300 mt-10" />
+
+          <!-- Copyright -->
+          <p class="mt-6 text-center text-sm text-gray-600">
+            2024 EBG Partners. All rights reserved. Building tomorrow, today.
+          </p>
         </div>
-      </footer>
+      </div>
+    </footer>
+    <script type="module" src="src/modal.js"></script>
   </body>
 </html>
