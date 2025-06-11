@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="flex justify-between items-center px-20 py-6">
-            <div>
-                <a href="/">
-                    <img
-                      src="./assets/logo.png"
-                      alt="EBG Partner Program"
-                      class="h-6 lg:h-10"
-                    />
-                  </a>
-            </div>
-            <ul class="flex items-center gap-8">
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="ourbrand.html">Our Brands</a></li>
-                <li><a href="#">Ideology</a></li>
-                <li><button
-                        class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">Become
-                        a Partner</button></li>
-            </ul>
-        </nav>
+      <nav class="flex justify-between items-center px-20 py-6">
+        <div>
+          <a href="/">
+            <img
+              src="./assets/logo.png"
+              alt="EBG Partner Program"
+              class="h-6 lg:h-10"
+            />
+          </a>
+        </div>
+        <ul class="flex items-center gap-8">
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="ourbrand.html">Our Brands</a></li>
+          <li><a href="#">Ideology</a></li>
+          <li>
+            <button
+              class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer"
+            >
+              Become a Partner
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
-        <video src="./assets/video1.mp4" autoplay muted loop></video>
+    <section class="w-full flex items-center justify-center py-4">
+      <div class="relative">
+        <img src="./assets/AboutUs.png" alt="Team meeting" class="block" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10 rounded-lg"
+        ></div>
+        <div
+          class="absolute inset-0 z-20 flex flex-col items-start justify-center px-6 md:px-16"
+        >
+          <h1
+            class="text-white text-3xl md:text-5xl font-bold leading-tight mb-4 drop-shadow-lg"
+          >
+            Driving Innovation<br />
+            Shaping Futures.
+          </h1>
+          <p
+            class="text-white text-base md:text-lg font-medium drop-shadow-lg max-w-2xl"
+          >
+            We are committed to creating meaningful change by addressing
+            real-world challenges with practical, value-driven solutions. With a
+            focus on innovation, sustainability, and impact, we continue to
+            drive transformation and shape a better tomorrow.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section>
-        <div class="px-20 py-10 ">
-            <div class="mb-14">
-                <h2 class="text-3xl text-[#151414] font-bold mb-10">At EBG Group, we are driven by a <span
-                    class="leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">no-nonsense
-                        approach</span> to <br> solving real-world problems.</h2>
-                <p class="text-4xl font-bold text-center text-primary">A Step Change in Circularity</p>
-            </div>
-            <div>
-                <p
-                    class="text-7xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                    P<span id="flip-text"
-                        class="text-3xl bg-gradient-to-r from-[#027fc0] to-[#79d9e1] text-white px-2 ml-0.5 rounded">lanet</span>
-                        <!-- <span id="2-flip"
+      <div class="px-20 py-10">
+        <div class="mb-14">
+          <h2 class="text-3xl text-[#151414] font-bold mb-10">
+            At EBG Group, we are driven by a
+            <span
+              class="leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              >no-nonsense approach</span
+            >
+            to <br />
+            solving real-world problems.
+          </h2>
+          <p class="text-4xl font-bold text-center text-primary">
+            A Step Change in Circularity
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-7xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+          >
+            P<span
+              id="flip-text"
+              class="text-3xl bg-gradient-to-r from-[#027fc0] to-[#79d9e1] text-white px-2 ml-0.5 rounded"
+              >lanet</span
+            >
+            <!-- <span id="2-flip"
                         class="text-3xl bg-gradient-to-r from-[#027fc0] to-[#79d9e1] text-white px-2 ml-0.5 rounded" style="display: none;">eople</span>
                         <span id="3-flip"
                         class="text-3xl bg-gradient-to-r from-[#027fc0] to-[#79d9e1] text-white px-2 ml-0.5 rounded" style="display: none;">urpos</span> -->
-                </p>
-            </div>
+          </p>
         </div>
-        <!-- <div id="s-cont" class=" h-[400px] overflow-scroll">
+      </div>
+      <!-- <div id="s-cont" class=" h-[400px] overflow-scroll">
             <div class="flex items-center justify-center">
                 <div>
                     <p>Empowering Individuals & Communities
@@ -74,157 +112,327 @@
     </section>
 
     <section class="px-20 py-10 mb-20">
+      <div class="relative">
+        <img src="./assets/images/irfa 2.png" alt="" class="w-1/2" />
+        <div
+          class="p-14 px-20 rounded-2xl absolute top-1/2 left-[44%] transform -translate-y-1/2"
+          style="box-shadow: 0px 5px 12px 0px #00000054; background: #cfcfcf63"
+        >
+          <h2 class="text-4xl text-primary text-center font-bold">
+            “We don’t pitch dreams.We <br />
+            deliver results.”
+          </h2>
+          <p class="text-lg font-medium text-right">
+            -Dr. Irfan Khan, Founder & CEO
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="px-20 py-10 mb-20">
+      <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
+        Leadership Team
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div class="relative">
-            <img src="./assets/images/irfa 2.png" alt="" class="w-1/2">
-            <div class="p-14 px-20 rounded-2xl absolute top-1/2 left-[44%] transform -translate-y-1/2"
-                style="box-shadow: 0px 5px 12px 0px #00000054; background: #CFCFCF63;">
-                <h2 class="text-4xl text-primary text-center font-bold">“We don’t pitch dreams.We <br> deliver results.”
-                </h2>
-                <p class="text-lg font-medium text-right">-Dr. Irfan Khan, Founder & CEO</p>
-            </div>
+          <img
+            src="./assets/images/Hari Kiran.jpg"
+            alt=""
+            class="rounded-2xl h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Hari Kiran</h2>
+            <p class="text-base">Co-founder & COO</p>
+          </div>
         </div>
+        <div class="relative">
+          <img
+            src="./assets/images/Chandra Mouli.png"
+            alt=""
+            class="rounded-2xl h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Chandra Mouli</h2>
+            <p class="text-base">Chief Business Officer</p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img
+            src="./assets/images/Suresh Goyal.png"
+            alt=""
+            class="rounded-2xl h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Suresh Goyal</h2>
+            <p class="text-base">Group President</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="./assets/images/Shakun Bansal.png"
+            alt=""
+            class="rounded-2xl h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Shakun Bansal</h2>
+            <p class="text-base">Chief Sales Officer</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="./assets/images/Deepak Kumar.jpg"
+            alt=""
+            class="rounded-2xl h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Deepak Kumar</h2>
+            <p class="text-base">Growth Director</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="./assets/images/Mohinder Singh.jpg"
+            alt=""
+            class="rounded-2xl h-full object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Mohinder Singh</h2>
+            <p class="text-base">Sales Director</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="px-20 py-10 mb-20">
+      <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
+        Leadership Team
+      </h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Card 1 -->
+        <div
+          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./assets/images/Hari Kiran.jpg"
+            alt="Hari Kiran"
+            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+          >
+            <h2 class="text-2xl font-bold">Hari Kiran</h2>
+            <p class="text-base">Co-founder & COO</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./assets/images/Chandra Mouli.png"
+            alt="Chandra Mouli"
+            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+          >
+            <h2 class="text-2xl font-bold">Chandra Mouli</h2>
+            <p class="text-base">Chief Business Officer</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./assets/images/Suresh Goyal.png"
+            alt="Suresh Goyal"
+            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+          >
+            <h2 class="text-2xl font-bold">Suresh Goyal</h2>
+            <p class="text-base">Group President</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./assets/images/Shakun Bansal.png"
+            alt="Shakun Bansal"
+            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+          >
+            <h2 class="text-2xl font-bold">Shakun Bansal</h2>
+            <p class="text-base">Chief Sales Officer</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./assets/images/Deepak Kumar.jpg"
+            alt="Deepak Kumar"
+            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+          >
+            <h2 class="text-2xl font-bold">Deepak Kumar</h2>
+            <p class="text-base">Growth Director</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <img
+            src="./assets/images/Mohinder Singh.jpg"
+            alt="Mohinder Singh"
+            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+          >
+            <h2 class="text-2xl font-bold">Mohinder Singh</h2>
+            <p class="text-base">Sales Director</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="px-20 py-10 mb-20">
-        <h1 class="text-4xl font-bold text-center text-tertiary mb-10">Leadership Team</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div class="relative">
-                <img src="./assets/images/Dr. Irfan Khan.png" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Dr. Irfan Khan</h2>
-                    <p class="text-base">Founder & CEO</p>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./assets/images/Hari Kiran.jpg" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Hari Kiran</h2>
-                    <p class="text-base">Co-founder & COO</p>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./assets/images/Chandra Mouli.png" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Chandra Mouli</h2>
-                    <p class="text-base">Chief Business Officer</p>
-                </div>
-            </div>
-
-            <div class="relative">
-                <img src="./assets/images/Suresh Goyal.png" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Suresh Goyal</h2>
-                    <p class="text-base">Group President</p>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./assets/images/Shakun Bansal.png" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Shakun Bansal</h2>
-                    <p class="text-base">Chief Sales Officer</p>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./assets/images/Deepak Kumar.jpg" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Deepak Kumar</h2>
-                    <p class="text-base">Growth Director</p>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="./assets/images/Mohinder Singh.jpg" alt="" class="rounded-2xl h-full object-cover">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Mohinder Singh</h2>
-                    <p class="text-base">Sales Director</p>
-                </div>
-            </div>
+      <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
+        Advisors
+      </h1>
+      <div class="flex justify-center gap-10 px-60">
+        <div class="relative w-1/2">
+          <img
+            src="./assets/images/Deepak Ghaisas.jpg"
+            alt=""
+            class="rounded-2xl h-full object-cover w-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Deepak Ghaisas</h2>
+            <p class="text-base">Growth Advisor</p>
+          </div>
         </div>
-    </section>
-
-    <section class="px-20 py-10 mb-20">
-        <h1 class="text-4xl font-bold text-center text-tertiary mb-10">Advisors</h1>
-        <div class="flex justify-center gap-10 px-60">
-            <div class="relative w-1/2">
-                <img src="./assets/images/Deepak Ghaisas.jpg" alt="" class="rounded-2xl h-full object-cover w-full">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Deepak Ghaisas</h2>
-                    <p class="text-base">Growth Advisor</p>
-                </div>
-            </div>
-            <div class="relative w-1/2">
-                <img src="./assets/images/Anil Radhakrishnan.png" alt="" class="rounded-2xl h-full object-cover w-full">
-                <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center">
-                    <h2 class="text-2xl font-bold">Anil Radhakrishnan</h2>
-                    <p class="text-base">Strategic Advisor</p>
-                </div>
-            </div>
-
+        <div class="relative w-1/2">
+          <img
+            src="./assets/images/Anil Radhakrishnan.png"
+            alt=""
+            class="rounded-2xl h-full object-cover w-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
+          >
+            <h2 class="text-2xl font-bold">Anil Radhakrishnan</h2>
+            <p class="text-base">Strategic Advisor</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="bg-gray-100 text-gray-900">
-        <!-- Footer -->
-        <div class="bg-white">
-            <div class="max-w-7xl mx-auto px-6 py-10">
-                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-                    <!-- Brand & Tagline -->
-                    <div class="md:w-1/4">
-                        <h3
-                            class="text-xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                            EBG Partners</h3>
-                        <p class="mt-2 text-gray-600">
-                            Building a sustainable future through innovation and partnership.
-                        </p>
-                    </div>
-
-                    <!-- Company Links -->
-                    <div class="md:w-1/4">
-                        <h4 class="text-lg font-semibold mb-2">Company</h4>
-                        <ul class="space-y-1 text-gray-600">
-                            <li><a href="#" class="hover:underline">About Us</a></li>
-                            <li><a href="#" class="hover:underline">Our Brands</a></li>
-                            <li><a href="#" class="hover:underline">Ideology</a></li>
-                            <li><a href="#" class="hover:underline">Careers</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Industries Links -->
-                    <div class="md:w-1/4">
-                        <h4 class="text-lg font-semibold mb-2">Industries</h4>
-                        <ul class="space-y-1 text-gray-600">
-                            <li><a href="#" class="hover:underline">Appliance</a></li>
-                            <li><a href="#" class="hover:underline">Energy</a></li>
-                            <li><a href="#" class="hover:underline">Mobility</a></li>
-                            <li><a href="#" class="hover:underline">Innovations</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Call to Action -->
-                    <div class="md:w-1/4">
-                        <h4 class="text-lg font-semibold mb-2">Get Started</h4>
-                        <p class="text-gray-600">
-                            Ready to transform your business with sustainable innovation?
-                        </p>
-                        <button
-                            class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-                            Become a partner
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Divider -->
-                <hr class="border-t-2 border-gray-300 mt-10" />
-
-                <!-- Copyright -->
-                <p class="mt-6 text-center text-sm text-gray-600">
-                    2024 EBG Partners. All rights reserved. Building tomorrow, today.
-                </p>
+      <!-- Footer -->
+      <div class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+          <div
+            class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+          >
+            <!-- Brand & Tagline -->
+            <div class="md:w-2/5">
+              <a href="/">
+                <img
+                  src="./assets/logo.png"
+                  alt="EBG Partner Program"
+                  class="h-6 lg:h-10"
+                />
+              </a>
+              <p class="mt-2 text-gray-600">
+                Building a sustainable future through innovation and
+                partnership.
+              </p>
             </div>
+
+            <!-- Company Links -->
+            <div class="md:w-2/5">
+              <h4 class="text-lg font-semibold mb-2 lg:text-center">Company</h4>
+              <ul class="space-y-1 text-gray-600 lg:text-center">
+                <li>
+                  <a href="aboutus.html" class="hover:underline">About Us</a>
+                </li>
+                <li>
+                  <a href="ourbrand.html" class="hover:underline">Our Brands</a>
+                </li>
+                <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
+                  <li><a href="#" class="hover:underline">Careers</a></li> -->
+              </ul>
+            </div>
+
+            <!-- Industries Links -->
+            <!-- <div class="md:w-1/4">
+                <h4 class="text-lg font-semibold mb-2">Industries</h4>
+                <ul class="space-y-1 text-gray-600">
+                  <li><a href="#" class="hover:underline">Appliance</a></li>
+                  <li><a href="#" class="hover:underline">Energy</a></li>
+                  <li><a href="#" class="hover:underline">Mobility</a></li>
+                  <li><a href="#" class="hover:underline">Innovations</a></li>
+                </ul>
+              </div> -->
+
+            <!-- Call to Action -->
+            <div class="md:w-2/5">
+              <h4 class="text-lg font-semibold mb-2">Get Started</h4>
+              <p class="text-gray-600">
+                Ready to transform your business with sustainable innovation?
+              </p>
+              <button
+                class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+              >
+                Become a partner
+              </button>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <hr class="border-t-2 border-gray-300 mt-10" />
+
+          <!-- Copyright -->
+          <p class="mt-6 text-center text-sm text-gray-600">
+            2024 EBG Partners. All rights reserved. Building tomorrow, today.
+          </p>
         </div>
+      </div>
     </footer>
 
     <script type="module" src="src/modal.js"></script>
     <script type="module" src="src/gsap.js"></script>
-</body>
-
+  </body>
 </html>
