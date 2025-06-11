@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <nav class="flex justify-between items-center px-20 py-6">
+      <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
         <div>
           <a href="/">
             <img
@@ -19,10 +19,10 @@
             />
           </a>
         </div>
-        <ul class="flex items-center gap-8">
+        <ul class="hidden lg:flex items-center gap-8">
           <li><a href="aboutus.html">About us</a></li>
           <li><a href="ourbrand.html">Our Brands</a></li>
-          <li><a href="#">Ideology</a></li>
+          <!-- <li><a href="#">Ideology</a></li> -->
           <li>
             <button
               class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer"
@@ -31,14 +31,32 @@
             </button>
           </li>
         </ul>
+        <div class="lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-align-justify-icon lucide-align-justify"
+          >
+            <path d="M3 12h18" />
+            <path d="M3 18h18" />
+            <path d="M3 6h18" />
+          </svg>
+        </div>
       </nav>
     </header>
 
-    <section class="w-full flex items-center justify-center py-4">
+    <section class="w-full flex items-center justify-center ">
       <div class="relative">
-        <img src="./assets/AboutUs.png" alt="Team meeting" class="block" />
+        <img src="./assets/AboutUs.png" alt="Team meeting" class="block " />
         <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10 rounded-lg"
+          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10 "
         ></div>
         <div
           class="absolute inset-0 z-20 flex flex-col items-start justify-center px-6 md:px-16"
@@ -152,18 +170,18 @@
         </div>
       </section>
 
-    <section class="px-20 py-10 mb-20">
+    <section class="lg:px-20 lg:py-10 mb-20">
       <div class="relative">
-        <img src="./assets/images/irfa 2.png" alt="" class="w-1/2" />
+        <img src="./assets/images/irfa 2.png" alt="" class="lg:w-1/2" />
         <div
           class="p-14 px-20 rounded-2xl absolute top-1/2 left-[44%] transform -translate-y-1/2"
           style="box-shadow: 0px 5px 12px 0px #00000054; background: #cfcfcf63"
         >
-          <h2 class="text-4xl text-primary text-center font-bold">
+          <h2 class="text-2xl lg:text-4xl text-primary text-center font-bold">
             “We don’t pitch dreams.We <br />
             deliver results.”
           </h2>
-          <p class="text-lg font-medium text-right">
+          <p class="text-base lg:text-lg font-medium text-right">
             -Dr. Irfan Khan, Founder & CEO
           </p>
         </div>
@@ -256,7 +274,7 @@
         </div>
       </div>
     </section> -->
-    <section class="px-20 py-10 mb-20">
+    <section class="lg:px-20 px-8 py-10 mb-20">
       <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
         Leadership Team
       </h1>
@@ -366,12 +384,12 @@
       </div>
     </section>
 
-    <section class="px-20 py-10 mb-20">
+    <section class=" lg:px-20 py-10 mb-20">
       <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
         Advisors
       </h1>
-      <div class="flex justify-center gap-10 px-60">
-        <div class="relative w-1/2">
+      <div class="flex flex-col lg:flex-row justify-center gap-10 px-7 lg:px-60">
+        <div class="relative lg:w-1/2">
           <img
             src="./assets/images/Deepak Ghaisas.jpg"
             alt=""
@@ -384,7 +402,7 @@
             <p class="text-base">Growth Advisor</p>
           </div>
         </div>
-        <div class="relative w-1/2">
+        <div class="relative lg:w-1/2">
           <img
             src="./assets/images/Anil Radhakrishnan.png"
             alt=""

@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const button = document.querySelectorAll(".bap");
-    let closeModal;
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelectorAll(".bap");
+  let closeModal;
 
-    const modal = /*html*/`
+  const modal = /*html*/ `
     <div id="partnerModal" class="partner-modal fixed inset-0 bg-black/15 bg-opacity-40 flex justify-center items-center z-50">
     <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-6 rounded-lg shadow-lg max-w-xl w-full">
     <div class="w-commerce-commercecartheader cart-title flex justify-between items-center mb-4">
@@ -66,23 +66,21 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 </div>`;
 
-
-    button.forEach((btn) => {
-        btn.addEventListener("click", function () {
-            document.body.insertAdjacentHTML("beforeend", modal);
-            console.log("1 2 string is here");
-            closeModal = document.getElementById("closePartnerModal");
-            console.log(closeModal, "2 string is here");
-            
-        });
+  button.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      document.body.insertAdjacentHTML("beforeend", modal);
+      console.log("1 2 string is here");
+      closeModal = document.getElementById("closePartnerModal");
+      console.log(closeModal, "2 string is here");
     });
+  });
 
-    if (closeModal) {
-        closeModal.addEventListener("click", function () {
-            const modal = document.getElementById("partnerModal");
-            if (modal) {
-                modal.remove();
-            }
-        });
-    }
+  if (closeModal) {
+    closeModal.addEventListener("click", function () {
+      const modal = document.getElementById("partnerModal");
+      if (modal) {
+        modal.remove();
+      }
+    });
+  }
 });
