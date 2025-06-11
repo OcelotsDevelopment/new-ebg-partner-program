@@ -1,60 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-    new AnimatedInfoSection();
-    const buttons = document.querySelectorAll(".tab-btn");
-    const slider = document.querySelector(".slider");
-    const container = document.querySelectorAll(".tab-cont");
-
-    // Initialize first tab as active
-    updateActiveTab(0);
-
-    buttons.forEach((btn) => {
-        btn.addEventListener("click", function () {
-            const tabIndex = parseInt(this.getAttribute('data-tab'));
-            updateActiveTab(tabIndex);
-        });
-    });
-
-    function updateActiveTab(index) {
-        // Update slider position
-        const button = buttons[index];
-        const buttonRect = button.getBoundingClientRect();
-        const containerRect = button.parentElement.getBoundingClientRect();
-
-        slider.style.width = `${button.offsetWidth - 8}px`;
-        slider.style.transform = `translateX(${buttonRect.left - containerRect.left + 4}px)`;
-
-        // Update active state for tabs
-        buttons.forEach((btn, i) => {
-            if (i === index) {
-                btn.classList.add('text-white');
-            } else {
-                btn.classList.remove('text-white');
-            }
-        });
-
-        // Update tab content visibility
-        container.forEach((content, i) => {
-            if (i === index) {
-                content.classList.add('active');
-            } else {
-                content.classList.remove('active');
-            }
-        });
-    }
-});
-
 class AnimatedInfoSection {
     constructor() {
         this.currentIndex = 0;
         this.totalItems = 7;
-        this.duration = 2000; // 3 seconds
+        this.duration = 3000; // 3 seconds
         this.isPlaying = true;
         this.intervalId = null;
 
         this.infoItems = document.querySelectorAll('.info-item');
         this.imageItems = document.querySelectorAll('.image-item');
 
+        // Get navigation buttons
+        this.prevBtn = document.getElementById('prevBtn');
+        this.nextBtn = document.getElementById('nextBtn');
+        this.pauseBtn = document.getElementById('pauseBtn');
+
         this.init();
+        this.setupEventListeners();
     }
 
     init() {
@@ -62,6 +23,27 @@ class AnimatedInfoSection {
         setTimeout(() => {
             this.play();
         }, 100);
+    }
+
+    setupEventListeners() {
+        // Add click handlers for navigation buttons
+        this.prevBtn.addEventListener('click', () => {
+            this.prevSlide();
+        });
+
+        this.nextBtn.addEventListener('click', () => {
+            this.nextSlide();
+        });
+
+        this.pauseBtn.addEventListener('click', () => {
+            if (this.isPlaying) {
+                this.pause();
+                this.pauseBtn.textContent = 'Play';
+            } else {
+                this.play();
+                this.pauseBtn.textContent = 'Pause';
+            }
+        });
     }
 
     goToSlide(index) {
@@ -82,6 +64,11 @@ class AnimatedInfoSection {
         if (this.isPlaying) {
             this.resetTimer();
         }
+    }
+
+    prevSlide() {
+        const prevIndex = (this.currentIndex - 1 + this.totalItems) % this.totalItems;
+        this.goToSlide(prevIndex);
     }
 
     nextSlide() {
