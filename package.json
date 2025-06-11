@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "tailwindcss": "^4.1.8",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "vite-plugin-static-copy": "^3.0.0"
   }
 }
