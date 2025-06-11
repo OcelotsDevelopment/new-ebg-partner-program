@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        @keyframes gallery {
+          0% {
+            opacity: 1;
+          }
+          25% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 0;
+          }
+          75% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .animate-gallery {
+          animation: gallery 10s infinite alternate linear;
+        }
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 bg-gray-100">
+
+    <div class="relative max-w-[600px] h-[350px] overflow-hidden mx-auto mt-12">
+      <img
+        src="https://classicalbumsundays.com/wp-content/uploads/2018/09/Sonic-Youth-Michael-Levine-e1546245496101.jpg"
+        alt=""
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-40 animate-gallery"
+      />
+      <img
+        src="https://www.sensationrock.net/wp-content/uploads/2016/05/b9e72f5d-9837-429b-aa46-e4f372f4cbb5-620x372.jpeg"
+        alt=""
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-30 animate-gallery"
+        style="animation-delay: 2.5s;"
+      />
+      <img
+        src="http://blogs.elpais.com/.a/6a00d8341bfb1653ef01a73d6a79a2970d-pi"
+        alt=""
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-20 animate-gallery"
+        style="animation-delay: 5s;"
+      />
+      <img
+        src="https://ic.pics.livejournal.com/riobravo76fm/48745785/350022/350022_original.jpg"
+        alt=""
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-10 animate-gallery"
+        style="animation-delay: 7.5s;"
+      />
+    </div>
+
+  </body>
+</html>
