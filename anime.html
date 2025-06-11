@@ -70,7 +70,7 @@
 
                 <!-- Image Section -->
                 <div class="md:w-1/2 min-h-[200px] relative">
-                    <div class=" rounded-lg shadow-lg">
+                    <div class="rounded-lg shadow-lg">
                         <img src="./assets/dummey.jpg" alt="Innovation Technology"
                             class="image-item active h-80 object-cover absolute inset-0">
                         <img src="./assets/dummey2.png" alt="Global Connectivity"
@@ -79,6 +79,19 @@
                             class="image-item h-80 object-cover absolute inset-0">
                     </div>
                 </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-center items-center mt-8 space-x-4">
+                <button id="prevBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+                    Previous
+                </button>
+                <button id="pauseBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+                    Pause
+                </button>
+                <button id="nextBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+                    Next
+                </button>
             </div>
         </div>
     </section>
@@ -241,7 +254,13 @@
                 this.infoItems = document.querySelectorAll('.info-item');
                 this.imageItems = document.querySelectorAll('.image-item');
 
+                // Get navigation buttons
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.pauseBtn = document.getElementById('pauseBtn');
+
                 this.init();
+                this.setupEventListeners();
             }
 
             init() {
@@ -249,6 +268,27 @@
                 setTimeout(() => {
                     this.play();
                 }, 100);
+            }
+
+            setupEventListeners() {
+                // Add click handlers for navigation buttons
+                this.prevBtn.addEventListener('click', () => {
+                    this.prevSlide();
+                });
+
+                this.nextBtn.addEventListener('click', () => {
+                    this.nextSlide();
+                });
+
+                this.pauseBtn.addEventListener('click', () => {
+                    if (this.isPlaying) {
+                        this.pause();
+                        this.pauseBtn.textContent = 'Play';
+                    } else {
+                        this.play();
+                        this.pauseBtn.textContent = 'Pause';
+                    }
+                });
             }
 
             goToSlide(index) {
@@ -269,6 +309,11 @@
                 if (this.isPlaying) {
                     this.resetTimer();
                 }
+            }
+
+            prevSlide() {
+                const prevIndex = (this.currentIndex - 1 + this.totalItems) % this.totalItems;
+                this.goToSlide(prevIndex);
             }
 
             nextSlide() {
