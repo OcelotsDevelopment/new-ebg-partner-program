@@ -12,13 +12,24 @@
     <header>
       <nav class="flex justify-between items-center px-20 py-6">
         <div>
-          <img src="./assets/logo.png" alt="EBG Partner Program" class="h-10">
+          <a href="/">
+            <img
+              src="./assets/logo.png"
+              alt="EBG Partner Program"
+              class="h-10"
+            />
+          </a>
         </div>
         <ul class="flex items-center gap-8">
           <li><a href="aboutus.html">About us</a></li>
           <li><a href="ourbrand.html">Our Brands</a></li>
-          <li><a href="#">Ideology</a></li>
-          <li><button class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">Become a Partner</button></li>
+          <li>
+            <button
+              class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer"
+            >
+              Become a Partner
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,20 +41,83 @@
       >
         <h1 class="text-5xl font-bold text-tertiary">OUR BRANDS</h1>
         <div class="text-right">
-          <div class="text-5xl font-bold text-tertiary">35+</div>
+          <div class="text-5xl font-bold text-tertiary" id="Counting">0+</div>
           <div class="text-lg text-gray-600 font-medium">COUNTING</div>
         </div>
       </section>
+
+      <script>
+        // Only run once DOM is loaded
+        document.addEventListener("DOMContentLoaded", function () {
+          function animateValue(
+            id,
+            start,
+            end,
+            duration,
+            prefix = "",
+            suffix = "",
+            decimals = 0
+          ) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+              if (!startTimestamp) startTimestamp = timestamp;
+              const progress = Math.min(
+                (timestamp - startTimestamp) / duration,
+                1
+              );
+              let value = start + (end - start) * progress;
+              value =
+                decimals > 0 ? value.toFixed(decimals) : Math.floor(value);
+              obj.textContent = prefix + value + suffix;
+              if (progress < 1) {
+                window.requestAnimationFrame(step);
+              } else {
+                obj.textContent =
+                  prefix +
+                  (decimals > 0 ? end.toFixed(decimals) : end) +
+                  suffix;
+              }
+            };
+            window.requestAnimationFrame(step);
+          }
+
+          // Scroll trigger logic
+          let triggered = false;
+          function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+          }
+
+          function triggerCountersIfNeeded() {
+            if (triggered) return;
+            const el = document.getElementById("Counting");
+            // const el2 = document.getElementById(
+            //   "appliance-portfolio-value1"
+            // );
+            if (isInViewport(el)) {
+              triggered = true;
+              animateValue("Counting", 0, 36, 1200, "", "+");
+            }
+          }
+
+          window.addEventListener("scroll", triggerCountersIfNeeded, {
+            passive: true,
+          });
+          // Also trigger on load in case already in view
+          triggerCountersIfNeeded();
+        });
+      </script>
 
       <section class="py-5 flex flex-col gap-10">
         <div class="flex justify-between">
           <div>
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
               Electric Mobility
             </h2>
-            <ul class="text-2xl">
+            <ul class="text-xl pt-2.5">
               <li>Acer</li>
               <li>EbikeGo</li>
               <li>Vajram</li>
@@ -56,11 +130,11 @@
         <div class="flex justify-between">
           <div class="w-[30%]">
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
               Health
             </h2>
-            <ul class="text-2xl">
+            <ul class="text-xl pt-2.5">
               <li class="flex justify-between">
                 <p>Mexple</p>
                 <p>Trimanya</p>
@@ -91,11 +165,11 @@
         <div class="flex justify-between">
           <div class="w-[30%]">
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
-            Reality
+              Reality
             </h2>
-            <ul class="text-2xl">
+            <ul class="text-xl pt-2.5">
               <li class="flex justify-between">
                 <p>EBG Reality</p>
                 <p>Nuvun</p>
@@ -112,11 +186,11 @@
         <div class="flex justify-between">
           <div>
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
-            Technology
+              Technology
             </h2>
-            <ul class="text-2xl">
+            <ul class="text-xl pt-2.5">
               <li>Jeevayanam</li>
               <li>Franchise World</li>
               <li>FundKwick</li>
@@ -127,15 +201,14 @@
           <img src="./assets/timeline/1.png" alt="" class="rounded-2xl" />
         </div>
 
-
         <div class="flex justify-between">
           <div class="w-[40%]">
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
-            FOOD
+              FOOD
             </h2>
-            <ul class="text-2xl">
+            <ul class="text-xl pt-2.5">
               <li class="flex justify-between">
                 <p>Aroha Organic</p>
                 <p>Magic Scoop</p>
@@ -143,7 +216,7 @@
               <li>Adhira & Appa Coffee</li>
               <li>Sweet Magic</li>
               <li>NTR</li>
-              <li>Andhra  Flame</li>
+              <li>Andhra Flame</li>
             </ul>
           </div>
           <img src="./assets/timeline/1.png" alt="" class="rounded-2xl" />
@@ -152,11 +225,11 @@
         <div class="flex justify-between">
           <div>
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
-            Services
+              Services
             </h2>
-            <ul class="text-2xl">
+            <ul class="text-xl pt-2.5">
               <li>Kabebo</li>
               <li>Kustard</li>
               <li>Alphomega</li>
@@ -169,12 +242,12 @@
         <div class="flex justify-between">
           <div>
             <h2
-              class="text-6xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              class="text-4xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
             >
-            Technology
+              Technology
             </h2>
-            <ul class="text-2xl">
-              <li>Green energy mobility </li>
+            <ul class="text-xl pt-2.5">
+              <li>Green energy mobility</li>
               <li>DIYgru</li>
               <li>CDA</li>
             </ul>
@@ -185,30 +258,70 @@
     </main>
 
     <section class="px-12 py-14">
-      <h1 class="text-primary mb-8 text-6xl font-bold">POPULAR BRANDS</h1>
+      <h1 class="text-primary mb-8 text-5xl font-bold">POPULAR BRANDS</h1>
       <div class="grid grid-cols-2 gap-14">
         <div>
-          <img src="assets/timeline/4.png" alt="" class="rounded-2xl shadow-2xl mb-4 w-full">
-          <h4 class="text-2xl font-semibold">Lorem ipsum dolor sit amet consectetur</h4>
-          <p class="text-lg">Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum. Amet euismod facilisis id semper. Id ut tempor quis neque massa.</p>
+          <img
+            src="assets/timeline/4.png"
+            alt=""
+            class="rounded-2xl shadow-2xl mb-4 w-full"
+          />
+          <h4 class="text-2xl font-semibold">
+            Lorem ipsum dolor sit amet consectetur
+          </h4>
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla
+            bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum.
+            Amet euismod facilisis id semper. Id ut tempor quis neque massa.
+          </p>
         </div>
 
         <div>
-          <img src="assets/timeline/5.png" alt="" class="rounded-2xl shadow-2xl mb-4 w-full">
-          <h4 class="text-2xl font-semibold">Lorem ipsum dolor sit amet consectetur</h4>
-          <p class="text-lg">Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum. Amet euismod facilisis id semper. Id ut tempor quis neque massa.</p>
+          <img
+            src="assets/timeline/5.png"
+            alt=""
+            class="rounded-2xl shadow-2xl mb-4 w-full"
+          />
+          <h4 class="text-2xl font-semibold">
+            Lorem ipsum dolor sit amet consectetur
+          </h4>
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla
+            bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum.
+            Amet euismod facilisis id semper. Id ut tempor quis neque massa.
+          </p>
         </div>
 
         <div>
-          <img src="assets/timeline/4.png" alt="" class="rounded-2xl shadow-2xl mb-4 w-full">
-          <h4 class="text-2xl font-semibold">Lorem ipsum dolor sit amet consectetur</h4>
-          <p class="text-lg">Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum. Amet euismod facilisis id semper. Id ut tempor quis neque massa.</p>
+          <img
+            src="assets/timeline/4.png"
+            alt=""
+            class="rounded-2xl shadow-2xl mb-4 w-full"
+          />
+          <h4 class="text-2xl font-semibold">
+            Lorem ipsum dolor sit amet consectetur
+          </h4>
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla
+            bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum.
+            Amet euismod facilisis id semper. Id ut tempor quis neque massa.
+          </p>
         </div>
 
         <div>
-          <img src="assets/timeline/5.png" alt="" class="rounded-2xl shadow-2xl mb-4 w-full">
-          <h4 class="text-2xl font-semibold">Lorem ipsum dolor sit amet consectetur</h4>
-          <p class="text-lg">Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum. Amet euismod facilisis id semper. Id ut tempor quis neque massa.</p>
+          <img
+            src="assets/timeline/5.png"
+            alt=""
+            class="rounded-2xl shadow-2xl mb-4 w-full"
+          />
+          <h4 class="text-2xl font-semibold">
+            Lorem ipsum dolor sit amet consectetur
+          </h4>
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur. Sit sed amet fringilla
+            bibendum in adipiscing. Tempor morbi a augue commodo amet ipsum.
+            Amet euismod facilisis id semper. Id ut tempor quis neque massa.
+          </p>
         </div>
       </div>
     </section>
@@ -217,53 +330,67 @@
       <!-- Footer -->
       <div class="bg-white">
         <div class="max-w-7xl mx-auto px-6 py-10">
-          <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+          <div
+            class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+          >
             <!-- Brand & Tagline -->
-            <div class="md:w-1/4">
-              <h3 class="text-xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">EBG Partners</h3>
+            <div class="md:w-2/5">
+              <a href="/">
+                <img
+                  src="./assets/logo.png"
+                  alt="EBG Partner Program"
+                  class="h-6 lg:h-10"
+                />
+              </a>
               <p class="mt-2 text-gray-600">
-                Building a sustainable future through innovation and partnership.
+                Building a sustainable future through innovation and
+                partnership.
               </p>
             </div>
-  
+
             <!-- Company Links -->
-            <div class="md:w-1/4">
-              <h4 class="text-lg font-semibold mb-2">Company</h4>
-              <ul class="space-y-1 text-gray-600">
-                <li><a href="#" class="hover:underline">About Us</a></li>
-                <li><a href="#" class="hover:underline">Our Brands</a></li>
-                <li><a href="#" class="hover:underline">Ideology</a></li>
-                <li><a href="#" class="hover:underline">Careers</a></li>
+            <div class="md:w-2/5">
+              <h4 class="text-lg font-semibold mb-2 lg:text-center">Company</h4>
+              <ul class="space-y-1 text-gray-600 lg:text-center">
+                <li>
+                  <a href="aboutus.html" class="hover:underline">About Us</a>
+                </li>
+                <li>
+                  <a href="ourbrand.html" class="hover:underline">Our Brands</a>
+                </li>
+                <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
+                  <li><a href="#" class="hover:underline">Careers</a></li> -->
               </ul>
             </div>
-  
+
             <!-- Industries Links -->
-            <div class="md:w-1/4">
-              <h4 class="text-lg font-semibold mb-2">Industries</h4>
-              <ul class="space-y-1 text-gray-600">
-                <li><a href="#" class="hover:underline">Appliance</a></li>
-                <li><a href="#" class="hover:underline">Energy</a></li>
-                <li><a href="#" class="hover:underline">Mobility</a></li>
-                <li><a href="#" class="hover:underline">Innovations</a></li>
-              </ul>
-            </div>
-  
+            <!-- <div class="md:w-1/4">
+                <h4 class="text-lg font-semibold mb-2">Industries</h4>
+                <ul class="space-y-1 text-gray-600">
+                  <li><a href="#" class="hover:underline">Appliance</a></li>
+                  <li><a href="#" class="hover:underline">Energy</a></li>
+                  <li><a href="#" class="hover:underline">Mobility</a></li>
+                  <li><a href="#" class="hover:underline">Innovations</a></li>
+                </ul>
+              </div> -->
+
             <!-- Call to Action -->
-            <div class="md:w-1/4">
+            <div class="md:w-2/5">
               <h4 class="text-lg font-semibold mb-2">Get Started</h4>
               <p class="text-gray-600">
                 Ready to transform your business with sustainable innovation?
               </p>
               <button
-                class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+                class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+              >
                 Become a partner
               </button>
             </div>
           </div>
-  
+
           <!-- Divider -->
           <hr class="border-t-2 border-gray-300 mt-10" />
-  
+
           <!-- Copyright -->
           <p class="mt-6 text-center text-sm text-gray-600">
             2024 EBG Partners. All rights reserved. Building tomorrow, today.
