@@ -1,826 +1,1188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBG Partner Program</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EBG Partner Program</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header>
-    <nav class="flex justify-between items-center px-20 py-6">
-      <div>
-        <img src="./assets/logo.png" alt="EBG Partner Program" class="h-10">
-      </div>
-      <ul class="flex items-center gap-8">
-        <li><a href="aboutus.html">About us</a></li>
-        <li><a href="ourbrand.html">Our Brands</a></li>
-        <li><a href="#">Ideology</a></li>
-        <li><button class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">Become a Partner</button></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="h-screen px-20 relative">
-    <div class="absolute top-10 left-0 w-full h-28 bg-secondary/30 blur-lg -z-10 "></div>
-    <div class="flex flex-col items-center justify-center gap-2 mb-2.5 ">
-      <h1 class="text-6xl font-bold text-center mb-2">Let’s make things<span
-          class=" text-primary px-2 py-1 rounded-2xl ">right</span></h1>
-      <p class="text-base font-medium text-gray-700 text-center">Join us to build a better, more sustainable future
-        together.
-      </p>
-    </div>
-    <div class="flex items-center justify-center mb-10">
-      <video class="rounded-2xl shadow-2xl h-[485px] w-full object-cover" src="./assets/video.mp4" autoplay muted
-        loop></video>
-    </div>
-    <div class="flex items-center justify-center gap-10">
-      <img src="./assets/logas/acer.png" alt="" class="h-8">
-      <img src="./assets/logas/daewoo.png" alt="" class="h-8">
-    </div>
-  </section>
-
-  <section class="px-20 py-10">
-    <div class="mb-10">
-      <h2 class="text-4xl font-bold text-center text-tertiary">Driving Change Across Essential Industries</h2>
-      <p class="text-lg text-gray-700 text-center">Creating an impact across the world for a better future through three
-        core pillars</p>
-    </div>
-
-    <div class="flex">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center ">
-          <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
-            <img src="./assets/logas/sustain.svg" alt="" class=" h-10 ">
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-center">Sustainability</h3>
-          <p class="text-gray-700 text-center">We are committed to sustainable practices across our operations, supply
-            chain, and product development. Our goal is to minimize the environmental footprint of our business and
-            create a positive impact on the communities we serve.</p>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
+        <div>
+          <img
+            src="./assets/logo.png"
+            alt="EBG Partner Program"
+            class="h-6 lg:h-10"
+          />
         </div>
-
-        <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
-          <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
-            <img src="./assets/logas/innovation.svg" alt="" class=" h-10 ">
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-center">Innovation</h3>
-          <p class="text-gray-700 text-center">We are dedicated to innovation and continuous improvement. Our R&D teams
-            are constantly exploring new technologies and materials to create more efficient, sustainable, and
-            high-performing products.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
-          <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
-            <img src="./assets/logas/global.svg" alt="" class="w-10 h-10 ">
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-center">Partnership</h3>
-          <p class="text-gray-700 text-center">We believe in the power of partnerships to drive change. We work closely
-            with our suppliers, customers, and communities to create shared value and drive positive impact.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-white text-gray-800 px-20 py-10">
-    <div class="mb-10">
-      <h2 class="text-4xl font-bold text-center text-tertiary">Driving Change Across Essential Industries</h2>
-      <p class="text-lg text-gray-700 text-center">Creating an impact across the world for a better future through three
-        core pillars</p>
-    </div>
-
-    <div class="px-16">
-      <div class="relative flex justify-between items-center rounded-lg bg-gray-100 p-1 ">
-        <div
-          class="absolute bg-gradient-to-r from-primary to-secondary h-[calc(100%-8px)] rounded-md transition-all duration-300 ease-in-out slider"
-          style="width: calc(33.333% - 8px); left: 4px;"></div>
-        <button
-          class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
-          data-tab="0">Application</button>
-        <button
-          class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
-          data-tab="1">Energy</button>
-        <button
-          class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
-          data-tab="2">Mobility</button>
-      </div>
-    </div>
-    <div class="container mx-auto px-4 py-12 space-y-16 relative h-[850px]">
-      <div class="tab-cont absolute top-0 left-0 w-full h-full">
-        <div class="bg-white text-gray-800">
-          <div class="max-w-7xl mx-auto p-8 space-y-12">
-            <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 class="text-5xl font-bold text-tertiary">Acer</h1>
-              <!-- <p class="mt-4 md:mt-0 text-gray-600">
-                Creating an impact across the world for a better future through three core pillars
-              </p> -->
-            </div>
-
-            <!-- Main content: image + copy + stats -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
-              <!-- Placeholder for image/video -->
-              <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
-
-              <!-- Copy + stats -->
-              <div class="flex flex-col justify-between">
-
-                <h2 class="text-3xl font-bold text-tertiary">
-                  Creating an impact across the world for a better future through three core pillars
-                </h2>
-                <!-- Copy block -->
-                <p class="text-gray-700  text-xl">
-                  We envision a world where technology and sustainability converge to create lasting positive impact.
-                  Our mission is to democratize access to innovative solutions that address global challenges while
-                  fostering economic growth and environmental stewardship.
-                </p>
-                <button
-              class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-              Become a partner
-            </button>
-
-                <!-- Stats -->
-                <div class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0">
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      500+</h3>
-                    <p class="text-sm text-gray-500">Active Partners</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      $2.5B</h3>
-                    <p class="text-sm text-gray-500">Portfolio Value</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      95%</h3>
-                    <p class="text-sm text-gray-500">Satisfaction Rate</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Process Flow -->
-            <div class="flex items-center px-60">
-              <!-- Step 1 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 1</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step1.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center">
-                  Yoi invest in us</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 2 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 2</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step2.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
-                  Your investment is used for setup</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 3 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 3</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class=" h-6" src="./assets/icons/step3.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center">
-                  We do management from our end</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 4 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 4</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step4.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
-                  You get assured
-                  monthly income </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-cont absolute top-0 left-0 w-full h-full">
-        <div class="bg-white text-gray-800">
-          <div class="max-w-7xl mx-auto p-8 space-y-12">
-            <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 class="text-5xl font-bold text-tertiary">Daewoo</h1>
-              <!-- <p class="mt-4 md:mt-0 text-gray-600">
-                Creating an impact across the world for a better future through three core pillars
-              </p> -->
-            </div>
-
-            <!-- Main content: image + copy + stats -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
-              <!-- Placeholder for image/video -->
-              <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
-
-              <!-- Copy + stats -->
-              <div class="flex flex-col justify-between">
-
-                <h2 class="text-3xl font-bold text-tertiary">
-                  Creating an impact across the world for a better future through three core pillars
-                </h2>
-                <!-- Copy block -->
-                <p class="text-gray-700 text-xl">
-                  We envision a world where technology and sustainability converge to create lasting positive impact.
-                  Our mission is to democratize access to innovative solutions that address global challenges while
-                  fostering economic growth and environmental stewardship.
-                </p>
-                <button
-              class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-              Become a partner
-            </button>
-
-                <!-- Stats -->
-                <div class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0">
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      500+</h3>
-                    <p class="text-sm text-gray-500">Active Partners</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      $2.5B</h3>
-                    <p class="text-sm text-gray-500">Portfolio Value</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      95%</h3>
-                    <p class="text-sm text-gray-500">Satisfaction Rate</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Process Flow -->
-            <div class="flex items-center px-60">
-              <!-- Step 1 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 1</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step1.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center">
-                  Yoi invest in us</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 2 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 2</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step2.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
-                  Your investment is used for setup</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 3 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 3</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class=" h-6" src="./assets/icons/step3.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center">
-                  We do management from our end</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 4 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 4</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step4.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
-                  You get assured
-                  monthly income </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-cont absolute top-0 left-0 w-full h-full">
-        <div class="bg-white text-gray-800">
-          <div class="max-w-7xl mx-auto p-8 space-y-12">
-            <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 class="text-5xl font-bold text-tertiary">E-Bike Go</h1>
-              <!-- <p class="mt-4 md:mt-0 text-gray-600">
-                Creating an impact across the world for a better future through three core pillars
-              </p> -->
-            </div>
-
-            <!-- Main content: image + copy + stats -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
-              <!-- Placeholder for image/video -->
-              <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
-
-              <!-- Copy + stats -->
-              <div class="flex flex-col justify-between">
-
-                <h2 class="text-3xl font-bold text-tertiary">
-                  Creating an impact across the world for a better future through three core pillars
-                </h2>
-                <!-- Copy block -->
-                <p class="text-gray-700 text-xl">
-                  We envision a world where technology and sustainability converge to create lasting positive impact.
-                  Our mission is to democratize access to innovative solutions that address global challenges while
-                  fostering economic growth and environmental stewardship.
-                </p>
-
-                <button
-              class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-              Become a partner
-            </button>
-
-                <!-- Stats -->
-                <div class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0">
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      500+</h3>
-                    <p class="text-sm text-gray-500">Active Partners</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      $2.5B</h3>
-                    <p class="text-sm text-gray-500">Portfolio Value</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      95%</h3>
-                    <p class="text-sm text-gray-500">Satisfaction Rate</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Process Flow -->
-            <div class="flex items-center px-60">
-              <!-- Step 1 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 1</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step1.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center">
-                  Yoi invest in us</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 2 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 2</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step2.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
-                  Your investment is used for setup</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 3 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 3</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class=" h-6" src="./assets/icons/step3.png" alt="">
-                    </div>
-                  </div>
-                </div>
-
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center">
-                  We do management from our end</p>
-              </div>
-
-              <!-- Line -->
-              <div class="flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 4 -->
-              <div class="flex flex-col items-center relative">
-                <p class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center">
-                  Step 4</p>
-                <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-7 h-7" src="./assets/icons/step4.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <p
-                  class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center">
-                  You get assured
-                  monthly income </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="rounded-4xl mx-2 md:mx-20 shadow-2xl overflow-hidden my-10 mb-20">
-    <div class="flex flex-col md:flex-row items-stretch min-h-[340px] md:min-h-[420px]">
-      <div
-        class="w-full md:w-2/5 flex flex-col justify-center bg-white bg-opacity-95 rounded-none md:rounded-l-3xl shadow-lg px-6 md:px-10 py-8 md:py-12 min-h-[340px] md:min-h-[420px]">
-        <div class="flex flex-col h-full justify-center">
-          <h1
-            class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-            Visionaries Building Tomorrow</h1>
-          <h2 class="text-2xl font-semibold mb-3 text-gray-800">Our Vision</h2>
-          <p class="text-gray-700 leading-relaxed font-medium text-lg">
-            At EBG Group, recognized as one of the best business groups in India, we are driven by a no-nonsense
-            approach to solving real-world problems. We don’t just focus on ideas — we focus on tangible solutions that
-            create value and make a positive impact across industries. Our vision is to continue leading the charge as
-            the best business group in India, shaping industries that matter in today’s modern world by addressing
-            challenges head-on and delivering meaningful results.
-          </p>
-        </div>
-      </div>
-
-      <div class="w-full md:w-3/5 relative flex items-stretch">
-        <img src="assets/images/Irfan Sir SQ.jpg" alt="Dr. Irfan"
-          class="w-full h-full object-cover rounded-none m-0 p-0 shadow-xl" style="min-height:340px; max-height:520px;">
-        <div class="absolute top-6 left-8 text-white px-6 py-3 rounded-2xl shadow-lg flex flex-col items-start">
-          <span class="text-2xl font-bold leading-tight">Dr. Irfan</span>
-          <span class="text-base font-medium text-blue-100">CEO &amp; Founder</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h1 class=" text-5xl text-center font-bold text-tertiary">Our Journey of Impact</h1>
-    <p class="text-lg text-center">From vision to reality – tracking our progress toward a sustainable future</p>
-
-    <div class=" px-4 md:px-20 py-10">
-      <div class="max-w-7xl mx-auto px-4 py-12">
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          <!-- Info Section -->
-          <div class="md:w-1/2 relative min-h-[150px]">
-            <div class="info-item active absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2019</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Established EBG Partners with a vision to transform essential industries through sustainable innovation
-              </p>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2020</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Expanded into EV & mobility solutions, entering the sustainable transport sector.
-              </p>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2021</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Strengthened manufacturing & technology capabilities to support business growth.
-              </p>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2022</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Partnered with global brands, securing exclusive licensing agreements.
-              </p>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2023</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Tied up with Acer Electric & WHILL, to launch retail stores across India.
-              </p>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2024</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Expanded dealership network & brand presence across multiple industries.
-              </p>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2025</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                Targeting 100+ retail stores in key sectors.
-              </p>
-            </div>
-          </div>
-
-          <!-- Image Section -->
-          <div class="w-1/2 h-[308px]">
-            <div class="relative rounded-lg shadow-lg">
-              <img src="./assets/timeline/1.png" alt="Innovation Technology"
-                class="image-item active h-80 object-cover absolute inset-0">
-              <img src="./assets/timeline/2.png" alt="Global Connectivity"
-                class="image-item h-80 object-cover absolute inset-0">
-              <img src="./assets/timeline/3.png" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0">
-              <img src="./assets/timeline/4.png" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0">
-              <img src="./assets/timeline/5.png" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0">
-              <img src="./assets/timeline/6.png" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0">
-              <img src="./assets/timeline/7.png" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background: linear-gradient(90deg, rgba(2, 127, 192, 0.11) 0%, rgba(121, 217, 225, 0.11) 100%);
-" class=" text-gray-800 px-20 py-10">
-    <div class="max-w-7xl mx-auto px-4 py-12">
-      <!-- Section Heading -->
-      <h2 class="text-4xl font-bold text-center">What Our Partners Say</h2>
-      <p class="mt-2 text-lg text-center">
-        Hear from industry leaders who have transformed their businesses through our partnership program
-      </p>
-
-      <!-- Video + Stats Row -->
-      <div class="mt-8 flex flex-col md:flex-row items-start gap-8">
-        <!-- Video Placeholder -->
-        <div class="w-full md:w-1/2">
-          <div class="relative bg-white rounded-lg overflow-hidden h-64 md:h-80 flex items-center justify-center">
-            <video src="./assets/video1.mp4" autoplay muted loop></video>
-            <!-- Play Button -->
-            <div
-              class="bg-gray-200 rounded-full p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="currentColor"
-                viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <!-- Stats & Copy -->
-        <div class="w-full md:w-1/2">
-          <h3 class="text-2xl font-semibold">Investment Success Stories</h3>
-          <p class="mt-3 text-gray-700 leading-relaxed">
-            Our partners have consistently achieved remarkable returns while contributing to global sustainability
-            goals. From startup accelerations to enterprise transformations, discover how strategic partnerships with
-            EBG create lasting value for all stakeholders.
-          </p>
-          <!-- Stats -->
-          <div class="mt-6 flex flex-wrap gap-8">
-            <div class="flex flex-col items-center">
-              <span
-                class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">500+</span>
-              <span class="text-sm text-gray-700 font-medium">Active Partners</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span
-                class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">$2.5B</span>
-              <span class="text-sm text-gray-700 font-medium">Portfolio Value</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span
-                class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">95%</span>
-              <span class="text-sm text-gray-700 font-medium">Satisfaction Rate</span>
-            </div>
-          </div>
-          <button
-              class="bap mt-8 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-              Become a partner
-            </button>
-        </div>
-      </div>
-
-      <!-- Testimonials Row -->
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Testimonial Card -->
-        <div class="bg-white p-6 rounded-lg">
-          <!-- Stars -->
-          <!-- <div class="flex space-x-1 text-gray-300 text-xl">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div> -->
-          <!-- Quote -->
-          <p class="mt-4 text-gray-800">
-            "EBG Partners transformed our approach to sustainable technology. Their partnership program opened doors to
-            innovations we never imagined possible."
-          </p>
-          <!-- Author -->
-          <div class="mt-6 flex items-center">
-            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
-            <div class="ml-4">
-              <p class="font-semibold">Sara Chen</p>
-              <p class="text-sm text-gray-600">CEO, TechVentures Inc.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Repeat for additional cards -->
-        <div class="bg-white p-6 rounded-lg">
-          <!-- <div class="flex space-x-1 text-gray-300 text-xl">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div> -->
-          <p class="mt-4 text-gray-800">
-            "Working with EBG Partners gave us the tools and insight to scale our green initiatives globally. Their team
-            truly cares about impact."
-          </p>
-          <div class="mt-6 flex items-center">
-            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
-            <div class="ml-4">
-              <p class="font-semibold">Lena Rodríguez</p>
-              <p class="text-sm text-gray-600">Founder, GreenPulse Ltd.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg">
-          <!-- <div class="flex space-x-1 text-gray-300 text-xl">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div> -->
-          <p class="mt-4 text-gray-800">
-            "Our ROI exceeded all expectations, and we made a real difference. EBG’s partnership model is both
-            profitable and purpose-driven."
-          </p>
-          <div class="mt-6 flex items-center">
-            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
-            <div class="ml-4">
-              <p class="font-semibold">David Kim</p>
-              <p class="text-sm text-gray-600">COO, EcoBuild Corp.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="bg-gray-100 text-gray-900">
-    <!-- Footer -->
-    <div class="bg-white">
-      <div class="max-w-7xl mx-auto px-6 py-10">
-        <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <!-- Brand & Tagline -->
-          <div class="md:w-1/4">
-            <h3 class="text-xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">EBG Partners</h3>
-            <p class="mt-2 text-gray-600">
-              Building a sustainable future through innovation and partnership.
-            </p>
-          </div>
-
-          <!-- Company Links -->
-          <div class="md:w-1/4">
-            <h4 class="text-lg font-semibold mb-2">Company</h4>
-            <ul class="space-y-1 text-gray-600">
-              <li><a href="#" class="hover:underline">About Us</a></li>
-              <li><a href="#" class="hover:underline">Our Brands</a></li>
-              <li><a href="#" class="hover:underline">Ideology</a></li>
-              <li><a href="#" class="hover:underline">Careers</a></li>
-            </ul>
-          </div>
-
-          <!-- Industries Links -->
-          <div class="md:w-1/4">
-            <h4 class="text-lg font-semibold mb-2">Industries</h4>
-            <ul class="space-y-1 text-gray-600">
-              <li><a href="#" class="hover:underline">Appliance</a></li>
-              <li><a href="#" class="hover:underline">Energy</a></li>
-              <li><a href="#" class="hover:underline">Mobility</a></li>
-              <li><a href="#" class="hover:underline">Innovations</a></li>
-            </ul>
-          </div>
-
-          <!-- Call to Action -->
-          <div class="md:w-1/4">
-            <h4 class="text-lg font-semibold mb-2">Get Started</h4>
-            <p class="text-gray-600">
-              Ready to transform your business with sustainable innovation?
-            </p>
+        <ul class="hidden lg::flex items-center gap-8">
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="ourbrand.html">Our Brands</a></li>
+          <li><a href="#">Ideology</a></li>
+          <li>
             <button
-              class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-              Become a partner
+              class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer"
+            >
+              Become a Partner
             </button>
-          </div>
+          </li>
+        </ul>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-align-justify-icon lucide-align-justify"
+          >
+            <path d="M3 12h18" />
+            <path d="M3 18h18" />
+            <path d="M3 6h18" />
+          </svg>
         </div>
+      </nav>
+    </header>
 
-        <!-- Divider -->
-        <hr class="border-t-2 border-gray-300 mt-10" />
-
-        <!-- Copyright -->
-        <p class="mt-6 text-center text-sm text-gray-600">
-          2024 EBG Partners. All rights reserved. Building tomorrow, today.
+    <section class="lg:h-screen px-8 lg:px-20 relative">
+      <div
+        class="absolute top-10 left-0 w-full h-28 bg-secondary/30 blur-lg -z-10"
+      ></div>
+      <div class="flex flex-col items-center justify-center gap-2 mb-2.5">
+        <h1 class="text-2xl lg:text-6xl font-bold text-center mb-2">
+          Let’s make things<span class="text-primary px-2 py-1 rounded-2xl"
+            >right</span
+          >
+        </h1>
+        <p class="text-base font-medium text-gray-700 text-center">
+          Join us to build a better, more sustainable future together.
         </p>
       </div>
-    </div>
-  </footer>
+      <div class="flex items-center justify-center mb-10">
+        <video
+          class="rounded-2xl shadow-2xl lg:h-[485px] w-full object-cover"
+          src="./assets/video.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <!-- <div class="flex items-center justify-center gap-10">
+        <img src="./assets/logas/acer.png" alt="" class="h-4 lg:h-8" />
+        <img src="./assets/logas/daewoo.png" alt="" class="h-4 lg:h-8" />
+      </div> -->
+    </section>
 
-  <script type="module" src="./main.js"></script>
-  <script type="module" src="src/modal.js"></script>
+    <section class="px-7 lg:px-20 py-10">
+      <div class="mb-10">
+        <h2 class="text-xl lg:text-4xl font-bold text-center text-tertiary">
+          Driving Change Across Essential Industries
+        </h2>
+        <p class="text-base font-medium lg:text-lg text-gray-700 text-center">
+          Creating an impact across the world for a better future through three
+          core pillars
+        </p>
+      </div>
 
-</body>
+      <div class="flex">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div
+            class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center"
+          >
+            <div
+              class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center"
+            >
+              <img src="./assets/logas/sustain.svg" alt="" class="h-10" />
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-center">Sustainability</h3>
+            <p class="text-gray-700 text-center">
+              We are committed to sustainable practices across our operations,
+              supply chain, and product development. Our goal is to minimize the
+              environmental footprint of our business and create a positive
+              impact on the communities we serve.
+            </p>
+          </div>
 
+          <div
+            class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center"
+          >
+            <div
+              class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center"
+            >
+              <img src="./assets/logas/innovation.svg" alt="" class="h-10" />
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-center">Innovation</h3>
+            <p class="text-gray-700 text-center">
+              We are dedicated to innovation and continuous improvement. Our R&D
+              teams are constantly exploring new technologies and materials to
+              create more efficient, sustainable, and high-performing products.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center"
+          >
+            <div
+              class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center"
+            >
+              <img src="./assets/logas/global.svg" alt="" class="w-10 h-10" />
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-center">Partnership</h3>
+            <p class="text-gray-700 text-center">
+              We believe in the power of partnerships to drive change. We work
+              closely with our suppliers, customers, and communities to create
+              shared value and drive positive impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white text-gray-800 px-7 lg:px-20 py-10">
+      <div class="mb-10">
+        <h2 class="text-xl lg:text-4xl font-bold text-center text-tertiary">
+          Driving Change Across Essential Industries
+        </h2>
+        <p class="text-base font-medium lg:text-lg text-gray-700 text-center">
+          Creating an impact across the world for a better future through three
+          core pillars
+        </p>
+      </div>
+
+      <div class="lg:px-16">
+        <div
+          class="relative flex justify-between items-center rounded-lg bg-gray-100"
+        >
+          <div
+            class="absolute bg-gradient-to-r from-primary to-secondary h-[calc(100%-8px)] rounded-md transition-all duration-300 ease-in-out slider"
+            style="width: calc(33.333% - 8px); left: 4px"
+          ></div>
+          <button
+            class="tab-btn relative z-10 px-3 lg:px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
+            data-tab="0"
+          >
+            Application
+          </button>
+          <button
+            class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
+            data-tab="1"
+          >
+            Energy
+          </button>
+          <button
+            class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
+            data-tab="2"
+          >
+            Mobility
+          </button>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 py-12 space-y-16 relative h-[850px]">
+        <div class="tab-cont absolute top-0 left-0 w-full h-full">
+          <div class="bg-white text-gray-800">
+            <div
+              class="lg:max-w-7xl mx-auto p-3 lg:p-8 space-y-2.5 lg:space-y-12"
+            >
+              <!-- Header -->
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between"
+              >
+                <h1 class="text-2xl lg:text-5xl font-bold text-tertiary">
+                  Acer
+                </h1>
+                <!-- <p class="mt-4 md:mt-0 text-gray-600">
+                Creating an impact across the world for a better future through three core pillars
+              </p> -->
+              </div>
+
+              <!-- Main content: image + copy + stats -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+                <!-- Placeholder for image/video -->
+                <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+                <!-- Copy + stats -->
+                <div class="flex flex-col justify-between">
+                  <h2 class="text-3xl font-bold text-tertiary">
+                    Creating an impact across the world for a better future
+                    through three core pillars
+                  </h2>
+                  <!-- Copy block -->
+                  <p class="text-gray-700 text-xl">
+                    We envision a world where technology and sustainability
+                    converge to create lasting positive impact. Our mission is
+                    to democratize access to innovative solutions that address
+                    global challenges while fostering economic growth and
+                    environmental stewardship.
+                  </p>
+                  <button
+                    class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+                  >
+                    Become a partner
+                  </button>
+
+                  <!-- Stats -->
+                  <div
+                    class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0"
+                  >
+                    <div class="text-center">
+                      <h3
+                        class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        500+
+                      </h3>
+                      <p class="text-sm text-gray-500">Active Partners</p>
+                    </div>
+                    <div class="text-center">
+                      <h3
+                        class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        $2.5B
+                      </h3>
+                      <p class="text-sm text-gray-500">Portfolio Value</p>
+                    </div>
+                    <div class="text-center">
+                      <h3
+                        class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        95%
+                      </h3>
+                      <p class="text-sm text-gray-500">Satisfaction Rate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Process Flow -->
+              <div class="flex items-center lg:px-60">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 1
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center"
+                  >
+                    Yoi invest in us
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 2
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step2.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center"
+                  >
+                    Your investment is used for setup
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 3
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="h-6"
+                          src="./assets/icons/step3.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center"
+                  >
+                    We do management from our end
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 4
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step4.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center"
+                  >
+                    You get assured monthly income
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-cont absolute top-0 left-0 w-full h-full">
+          <div class="bg-white text-gray-800">
+            <div class="max-w-7xl mx-auto p-8 space-y-12">
+              <!-- Header -->
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between"
+              >
+                <h1 class="text-5xl font-bold text-tertiary">Daewoo</h1>
+                <!-- <p class="mt-4 md:mt-0 text-gray-600">
+                Creating an impact across the world for a better future through three core pillars
+              </p> -->
+              </div>
+
+              <!-- Main content: image + copy + stats -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+                <!-- Placeholder for image/video -->
+                <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+                <!-- Copy + stats -->
+                <div class="flex flex-col justify-between">
+                  <h2 class="text-3xl font-bold text-tertiary">
+                    Creating an impact across the world for a better future
+                    through three core pillars
+                  </h2>
+                  <!-- Copy block -->
+                  <p class="text-gray-700 text-xl">
+                    We envision a world where technology and sustainability
+                    converge to create lasting positive impact. Our mission is
+                    to democratize access to innovative solutions that address
+                    global challenges while fostering economic growth and
+                    environmental stewardship.
+                  </p>
+                  <button
+                    class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+                  >
+                    Become a partner
+                  </button>
+
+                  <!-- Stats -->
+                  <div
+                    class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0"
+                  >
+                    <div class="text-center">
+                      <h3
+                        class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        500+
+                      </h3>
+                      <p class="text-sm text-gray-500">Active Partners</p>
+                    </div>
+                    <div class="text-center">
+                      <h3
+                        class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        $2.5B
+                      </h3>
+                      <p class="text-sm text-gray-500">Portfolio Value</p>
+                    </div>
+                    <div class="text-center">
+                      <h3
+                        class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        95%
+                      </h3>
+                      <p class="text-sm text-gray-500">Satisfaction Rate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Process Flow -->
+              <div class="flex items-center px-60">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 1
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center"
+                  >
+                    Yoi invest in us
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 2
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step2.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center"
+                  >
+                    Your investment is used for setup
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 3
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="h-6"
+                          src="./assets/icons/step3.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center"
+                  >
+                    We do management from our end
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 4
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step4.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center"
+                  >
+                    You get assured monthly income
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-cont absolute top-0 left-0 w-full h-full">
+          <div class="bg-white text-gray-800">
+            <div class="max-w-7xl mx-auto p-8 space-y-12">
+              <!-- Header -->
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between"
+              >
+                <h1 class="text-5xl font-bold text-tertiary">E-Bike Go</h1>
+                <!-- <p class="mt-4 md:mt-0 text-gray-600">
+                Creating an impact across the world for a better future through three core pillars
+              </p> -->
+              </div>
+
+              <!-- Main content: image + copy + stats -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+                <!-- Placeholder for image/video -->
+                <div class="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+                <!-- Copy + stats -->
+                <div class="flex flex-col justify-between">
+                  <h2 class="text-3xl font-bold text-tertiary">
+                    Creating an impact across the world for a better future
+                    through three core pillars
+                  </h2>
+                  <!-- Copy block -->
+                  <p class="text-gray-700 text-xl">
+                    We envision a world where technology and sustainability
+                    converge to create lasting positive impact. Our mission is
+                    to democratize access to innovative solutions that address
+                    global challenges while fostering economic growth and
+                    environmental stewardship.
+                  </p>
+
+                  <button
+                    class="bap mt-4 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+                  >
+                    Become a partner
+                  </button>
+
+                  <!-- Stats -->
+                  <div
+                    class="flex flex-col justify-between sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0"
+                  >
+                    <div class="text-center">
+                      <h3
+                        class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        500+
+                      </h3>
+                      <p class="text-sm text-gray-500">Active Partners</p>
+                    </div>
+                    <div class="text-center">
+                      <h3
+                        class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        $2.5B
+                      </h3>
+                      <p class="text-sm text-gray-500">Portfolio Value</p>
+                    </div>
+                    <div class="text-center">
+                      <h3
+                        class="text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                      >
+                        95%
+                      </h3>
+                      <p class="text-sm text-gray-500">Satisfaction Rate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Process Flow -->
+              <div class="flex items-center px-60">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 1
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[38px] left-1/2 -translate-x-1/2 w-[100px] text-center"
+                  >
+                    Yoi invest in us
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 2
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step2.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center"
+                  >
+                    Your investment is used for setup
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 3
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="h-6"
+                          src="./assets/icons/step3.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[180px] text-center"
+                  >
+                    We do management from our end
+                  </p>
+                </div>
+
+                <!-- Line -->
+                <div class="flex-1 h-px bg-gray-300 mx-4"></div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center relative">
+                  <p
+                    class="text-sm font-bold mb-2 absolute -top-[24px] left-1/2 -translate-x-1/2 w-[43px] text-center"
+                  >
+                    Step 4
+                  </p>
+                  <div class="w-24 h-24 p-2 bg-white shadow-2xl rounded-full">
+                    <div
+                      class="w-full h-full p-2 bg-gradient-to-r from-primary to-secondary rounded-full"
+                    >
+                      <div
+                        class="w-full h-full bg-white rounded-full flex items-center justify-center"
+                      >
+                        <img
+                          class="w-7 h-7"
+                          src="./assets/icons/step4.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-sm font-medium mb-2 absolute -bottom-[58px] left-1/2 -translate-x-1/2 w-[150px] text-center"
+                  >
+                    You get assured monthly income
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="rounded-4xl mx-2 md:mx-20 shadow-2xl overflow-hidden my-10 mb-20"
+    >
+      <div
+        class="flex flex-col md:flex-row items-stretch min-h-[340px] md:min-h-[420px]"
+      >
+        <div
+          class="w-full md:w-2/5 flex flex-col justify-center bg-white bg-opacity-95 rounded-none md:rounded-l-3xl shadow-lg px-6 md:px-10 py-8 md:py-12 min-h-[340px] md:min-h-[420px]"
+        >
+          <div class="flex flex-col h-full justify-center">
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+            >
+              Visionaries Building Tomorrow
+            </h1>
+            <h2 class="text-2xl font-semibold mb-3 text-gray-800">
+              Our Vision
+            </h2>
+            <p class="text-gray-700 leading-relaxed font-medium text-lg">
+              At EBG Group, recognized as one of the best business groups in
+              India, we are driven by a no-nonsense approach to solving
+              real-world problems. We don’t just focus on ideas — we focus on
+              tangible solutions that create value and make a positive impact
+              across industries. Our vision is to continue leading the charge as
+              the best business group in India, shaping industries that matter
+              in today’s modern world by addressing challenges head-on and
+              delivering meaningful results.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-3/5 relative flex items-stretch">
+          <img
+            src="assets/images/Irfan Sir SQ.jpg"
+            alt="Dr. Irfan"
+            class="w-full h-full object-cover rounded-none m-0 p-0 shadow-xl"
+            style="min-height: 340px; max-height: 520px"
+          />
+          <div
+            class="absolute top-6 left-8 text-white px-6 py-3 rounded-2xl shadow-lg flex flex-col items-start"
+          >
+            <span class="text-2xl font-bold leading-tight">Dr. Irfan</span>
+            <span class="text-base font-medium text-blue-100"
+              >CEO &amp; Founder</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4">
+      <h1 class="text-3xl lg:text-5xl text-center font-bold text-tertiary">
+        Our Journey of Impact
+      </h1>
+      <p class=" text-base lg:text-lg text-center">
+        From vision to reality – tracking our progress toward a sustainable
+        future
+      </p>
+
+      <div class="px-4 md:px-20 py-10">
+        <div class="lg:max-w-7xl mx-auto px-4 py-12">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0"
+          >
+            <!-- Info Section -->
+            <div class="md:w-1/2 relative min-h-[150px]">
+              <div class="info-item active absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2019</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Established EBG Partners with a vision to transform essential
+                  industries through sustainable innovation
+                </p>
+              </div>
+              <div class="info-item absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2020</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Expanded into EV & mobility solutions, entering the
+                  sustainable transport sector.
+                </p>
+              </div>
+              <div class="info-item absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2021</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Strengthened manufacturing & technology capabilities to
+                  support business growth.
+                </p>
+              </div>
+              <div class="info-item absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2022</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Partnered with global brands, securing exclusive licensing
+                  agreements.
+                </p>
+              </div>
+              <div class="info-item absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2023</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Tied up with Acer Electric & WHILL, to launch retail stores
+                  across India.
+                </p>
+              </div>
+              <div class="info-item absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2024</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Expanded dealership network & brand presence across multiple
+                  industries.
+                </p>
+              </div>
+              <div class="info-item absolute inset-0">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">2025</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                  Targeting 100+ retail stores in key sectors.
+                </p>
+              </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="w-1/2 h-[308px]">
+              <div class="relative rounded-lg shadow-lg">
+                <img
+                  src="./assets/timeline/1.png"
+                  alt="Innovation Technology"
+                  class="image-item active h-80 object-cover absolute inset-0"
+                />
+                <img
+                  src="./assets/timeline/2.png"
+                  alt="Global Connectivity"
+                  class="image-item h-80 object-cover absolute inset-0"
+                />
+                <img
+                  src="./assets/timeline/3.png"
+                  alt="Future Vision"
+                  class="image-item h-80 object-cover absolute inset-0"
+                />
+                <img
+                  src="./assets/timeline/4.png"
+                  alt="Future Vision"
+                  class="image-item h-80 object-cover absolute inset-0"
+                />
+                <img
+                  src="./assets/timeline/5.png"
+                  alt="Future Vision"
+                  class="image-item h-80 object-cover absolute inset-0"
+                />
+                <img
+                  src="./assets/timeline/6.png"
+                  alt="Future Vision"
+                  class="image-item h-80 object-cover absolute inset-0"
+                />
+                <img
+                  src="./assets/timeline/7.png"
+                  alt="Future Vision"
+                  class="image-item h-80 object-cover absolute inset-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="
+        background: linear-gradient(
+          90deg,
+          rgba(2, 127, 192, 0.11) 0%,
+          rgba(121, 217, 225, 0.11) 100%
+        );
+      "
+      class="text-gray-800 px-6 lg:px-20 py-1 lg:py-10"
+    >
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Section Heading -->
+        <h2 class="text-4xl font-bold text-center">What Our Partners Say</h2>
+        <p class="mt-2 text-lg text-center">
+          Hear from industry leaders who have transformed their businesses
+          through our partnership program
+        </p>
+
+        <!-- Video + Stats Row -->
+        <div class="mt-8 flex flex-col md:flex-row items-start gap-8">
+          <!-- Video Placeholder -->
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative bg-white rounded-lg overflow-hidden lg:h-64 md:h-80 flex items-center justify-center"
+            >
+              <video src="./assets/video1.mp4" autoplay muted loop></video>
+              <!-- Play Button -->
+              <div
+                class="bg-gray-200 rounded-full p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-gray-700"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats & Copy -->
+          <div class="w-full md:w-1/2">
+            <h3 class="text-2xl font-semibold">Investment Success Stories</h3>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+              Our partners have consistently achieved remarkable returns while
+              contributing to global sustainability goals. From startup
+              accelerations to enterprise transformations, discover how
+              strategic partnerships with EBG create lasting value for all
+              stakeholders.
+            </p>
+            <!-- Stats -->
+            <div class="mt-6 flex flex-wrap gap-4 lg:gap-8">
+              <div class="flex flex-col items-center">
+                <span
+                  class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                  >500+</span
+                >
+                <span class="text-xs lg:text-sm text-gray-700 font-medium"
+                  >Active Partners</span
+                >
+              </div>
+              <div class="flex flex-col items-center">
+                <span
+                  class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                  >$2.5B</span
+                >
+                <span class="text-xs lg:text-sm text-gray-700 font-medium"
+                  >Portfolio Value</span
+                >
+              </div>
+              <div class="flex flex-col items-center">
+                <span
+                  class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+                  >95%</span
+                >
+                <span class="text-xs lg:text-sm text-gray-700 font-medium"
+                  >Satisfaction Rate</span
+                >
+              </div>
+            </div>
+            <button
+              class="bap mt-8 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+            >
+              Become a partner
+            </button>
+          </div>
+        </div>
+
+        <!-- Testimonials Row -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Testimonial Card -->
+          <div class="bg-white p-6 rounded-lg">
+            <!-- Stars -->
+            <!-- <div class="flex space-x-1 text-gray-300 text-xl">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div> -->
+            <!-- Quote -->
+            <p class="mt-4 text-gray-800">
+              "EBG Partners transformed our approach to sustainable technology.
+              Their partnership program opened doors to innovations we never
+              imagined possible."
+            </p>
+            <!-- Author -->
+            <div class="mt-6 flex items-center">
+              <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+              <div class="ml-4">
+                <p class="font-semibold">Sara Chen</p>
+                <p class="text-sm text-gray-600">CEO, TechVentures Inc.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for additional cards -->
+          <div class="bg-white p-6 rounded-lg">
+            <!-- <div class="flex space-x-1 text-gray-300 text-xl">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div> -->
+            <p class="mt-4 text-gray-800">
+              "Working with EBG Partners gave us the tools and insight to scale
+              our green initiatives globally. Their team truly cares about
+              impact."
+            </p>
+            <div class="mt-6 flex items-center">
+              <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+              <div class="ml-4">
+                <p class="font-semibold">Lena Rodríguez</p>
+                <p class="text-sm text-gray-600">Founder, GreenPulse Ltd.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg">
+            <!-- <div class="flex space-x-1 text-gray-300 text-xl">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div> -->
+            <p class="mt-4 text-gray-800">
+              "Our ROI exceeded all expectations, and we made a real difference.
+              EBG’s partnership model is both profitable and purpose-driven."
+            </p>
+            <div class="mt-6 flex items-center">
+              <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+              <div class="ml-4">
+                <p class="font-semibold">David Kim</p>
+                <p class="text-sm text-gray-600">COO, EcoBuild Corp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100 text-gray-900">
+      <!-- Footer -->
+      <div class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+          <div
+            class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+          >
+            <!-- Brand & Tagline -->
+            <div class="md:w-1/4">
+              <h3
+                class="text-xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+              >
+                EBG Partners
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Building a sustainable future through innovation and
+                partnership.
+              </p>
+            </div>
+
+            <!-- Company Links -->
+            <div class="md:w-1/4">
+              <h4 class="text-lg font-semibold mb-2">Company</h4>
+              <ul class="space-y-1 text-gray-600">
+                <li><a href="#" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Our Brands</a></li>
+                <li><a href="#" class="hover:underline">Ideology</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+              </ul>
+            </div>
+
+            <!-- Industries Links -->
+            <div class="md:w-1/4">
+              <h4 class="text-lg font-semibold mb-2">Industries</h4>
+              <ul class="space-y-1 text-gray-600">
+                <li><a href="#" class="hover:underline">Appliance</a></li>
+                <li><a href="#" class="hover:underline">Energy</a></li>
+                <li><a href="#" class="hover:underline">Mobility</a></li>
+                <li><a href="#" class="hover:underline">Innovations</a></li>
+              </ul>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="md:w-1/4">
+              <h4 class="text-lg font-semibold mb-2">Get Started</h4>
+              <p class="text-gray-600">
+                Ready to transform your business with sustainable innovation?
+              </p>
+              <button
+                class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+              >
+                Become a partner
+              </button>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <hr class="border-t-2 border-gray-300 mt-10" />
+
+          <!-- Copyright -->
+          <p class="mt-6 text-center text-sm text-gray-600">
+            2024 EBG Partners. All rights reserved. Building tomorrow, today.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="src/modal.js"></script>
+  </body>
 </html>

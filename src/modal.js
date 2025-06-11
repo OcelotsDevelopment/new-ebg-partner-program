@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <option value="100+">1 Crore+</option>
                   </select>
                 </div>
-                <button type="submit" class="partner-submit bg-primary-blue text-white py-3 px-6 rounded-md w-full mt-4 hover:bg-primary-blue-dark">
+                <button type="submit" class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
                   Submit
                 </button>
               </form>
