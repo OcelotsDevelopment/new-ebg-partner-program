@@ -1,17 +1,20 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
-import { viteStaticCopy } from 'vite-plugin-static-copy'
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'aboutus.html',
-          dest: '.'
-        }
-      ]
-    })
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        aboutus: resolve(__dirname, 'aboutus.html'),
+        anime: resolve(__dirname, 'anime.html'),
+        ourbrand: resolve(__dirname, 'ourbrand.html'),
+        copy: resolve(__dirname, 'copy.html')
+      }
+    }
+  }
 })
