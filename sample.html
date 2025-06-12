@@ -3,61 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animated Image Gallery</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      @layer utilities {
-        @keyframes gallery {
-          0% {
-            opacity: 1;
-          }
-          25% {
-            opacity: 0;
-          }
-          50% {
-            opacity: 0;
-          }
-          75% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
+    <title>News & Events</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Extra responsive tweaks if not using Tailwind's JIT or CDN */
+      @media (max-width: 1024px) {
+        .event-img {
+          width: 100% !important;
+          height: 220px !important;
         }
-
-        .animate-gallery {
-          animation: gallery 10s infinite alternate linear;
+      }
+      @media (max-width: 768px) {
+        .event-img {
+          width: 100% !important;
+          height: 180px !important;
+        }
+        .responsive-padding {
+          padding: 1rem !important;
+        }
+      }
+      @media (max-width: 640px) {
+        .event-img {
+          width: 100% !important;
+          height: 140px !important;
+        }
+        .responsive-padding {
+          padding: 0.5rem !important;
+        }
+        .responsive-title {
+          font-size: 1.5rem !important;
         }
       }
     </style>
   </head>
-  <body class="m-0 p-0 bg-gray-100">
-
-    <div class="relative max-w-[600px] h-[350px] overflow-hidden mx-auto mt-12">
-      <img
-        src="https://classicalbumsundays.com/wp-content/uploads/2018/09/Sonic-Youth-Michael-Levine-e1546245496101.jpg"
-        alt=""
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-40 animate-gallery"
-      />
-      <img
-        src="https://www.sensationrock.net/wp-content/uploads/2016/05/b9e72f5d-9837-429b-aa46-e4f372f4cbb5-620x372.jpeg"
-        alt=""
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-30 animate-gallery"
-        style="animation-delay: 2.5s;"
-      />
-      <img
-        src="http://blogs.elpais.com/.a/6a00d8341bfb1653ef01a73d6a79a2970d-pi"
-        alt=""
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-20 animate-gallery"
-        style="animation-delay: 5s;"
-      />
-      <img
-        src="https://ic.pics.livejournal.com/riobravo76fm/48745785/350022/350022_original.jpg"
-        alt=""
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-10 animate-gallery"
-        style="animation-delay: 7.5s;"
-      />
+  <body class="bg-gray-100 p-8 sm:p-6 xs:p-2">
+    <div class="max-w-screen-2xl mx-auto">
+      <h2
+        class="text-3xl responsive-title font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-4 text-center"
+      >
+        News & Events
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6 xs:gap-4">
+        <!-- Event 1 -->
+        <div class="bg-white p-4 responsive-padding rounded-lg shadow-md flex flex-col items-center">
+          <img class="event-img bg-gray-300 mb-4 rounded w-full max-w-[550px] h-[300px] object-cover" src="assets/event1.jpg" alt="Event 1" />
+          <h3 class="text-sm text-gray-600 text-center">
+            Growth of electric vehicles in the tourism sector
+          </h3>
+          <p class="text-lg font-semibold text-gray-800 text-center">Dec 14, 2025</p>
+        </div>
+        <!-- Event 2 -->
+        <div class="bg-white p-4 responsive-padding rounded-lg shadow-md flex flex-col items-center">
+          <img class="event-img bg-gray-300 mb-4 rounded w-full max-w-[550px] h-[300px] object-cover" src="assets/event2.jpg" alt="Event 2" />
+          <h3 class="text-sm text-gray-600 text-center">
+            Growth of electric vehicles in the tourism sector
+          </h3>
+          <p class="text-lg font-semibold text-gray-800 text-center">Dec 14, 2025</p>
+        </div>
+        <!-- Event 3 -->
+        <div class="bg-white p-4 responsive-padding rounded-lg shadow-md flex flex-col items-center">
+          <img class="event-img bg-gray-300 mb-4 rounded w-full max-w-[550px] h-[300px] object-cover" src="assets/event3.jpg" alt="Event 3" />
+          <h3 class="text-sm text-gray-600 text-center">
+            Growth of electric vehicles in the tourism sector
+          </h3>
+          <p class="text-lg font-semibold text-gray-800 text-center">Dec 14, 2025</p>
+        </div>
+        <!-- Event 4 -->
+        <div class="bg-white p-4 responsive-padding rounded-lg shadow-md flex flex-col items-center">
+          <img class="event-img bg-gray-300 mb-4 rounded w-full max-w-[550px] h-[300px] object-cover" src="assets/event4.jpg" alt="Event 4" />
+          <h3 class="text-sm text-gray-600 text-center">
+            Growth of electric vehicles in the tourism sector
+          </h3>
+          <p class="text-lg font-semibold text-gray-800 text-center">Dec 14, 2025</p>
+        </div>
+        <!-- Event 5 -->
+        <div class="bg-white p-4 responsive-padding rounded-lg shadow-md flex flex-col items-center">
+          <img class="event-img bg-gray-300 mb-4 rounded w-full max-w-[550px] h-[300px] object-cover" src="assets/event5.jpg" alt="Event 5" />
+          <h3 class="text-sm text-gray-600 text-center">
+            Growth of electric vehicles in the tourism sector
+          </h3>
+          <p class="text-lg font-semibold text-gray-800 text-center">Dec 14, 2025</p>
+        </div>
+        <!-- Event 6 -->
+        <div class="bg-white p-4 responsive-padding rounded-lg shadow-md flex flex-col items-center">
+          <img class="event-img bg-gray-300 mb-4 rounded w-full max-w-[550px] h-[300px] object-cover" src="assets/event6.jpg" alt="Event 6" />
+          <h3 class="text-sm text-gray-600 text-center">
+            Growth of electric vehicles in the tourism sector
+          </h3>
+          <p class="text-lg font-semibold text-gray-800 text-center">Dec 14, 2025</p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="mt-6 explore-more w-fit inline-block px-10 py-3 rounded-md font-semibold border-2 border-primary text-primary bg-white hover:bg-gradient-to-r from-primary to-secondary hover:text-white transition-colors duration-200 cursor-pointer"
+        >
+          View more
+        </button>
+      </div>
     </div>
-
-  </body>
+  </body>
 </html>

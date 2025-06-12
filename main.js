@@ -190,10 +190,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // );
     if (isInViewport(el)) {
       triggered = true;
-      animateValue("appliance-partner-count", 0, 500, 1200, "", "+");
-      animateValue("appliance-portfolio-value", 0, 2.5, 1200, "$", "B", 1);
-      animateValue("appliance-satisfaction-rate", 0, 95, 1200, "", "%");
-      animateValue("appliance-partner-count", 0, 36, 1200, "", "+");
+      animateValue("appliance-partner-count", 0, 100, 1200, "", "+");
+      animateValue("appliance-portfolio-value", 0, 30, 1200, "₹", "L",);
+      animateValue("appliance-satisfaction-rate", 0, 3, 1200, "", "%");
     }
 
     // if (isInViewport(el2)) {
