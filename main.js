@@ -1,3 +1,7 @@
+// import './src/slidingAnimation.js';
+// import './src/modal.js';
+import './src/mobileMenu.js';
+
 document.addEventListener("DOMContentLoaded", function () {
   // new AnimatedInfoSection();
   const buttons = document.querySelectorAll(".tab-btn");
