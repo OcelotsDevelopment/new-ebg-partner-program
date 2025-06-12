@@ -23,6 +23,7 @@ let currentIndex = 0;
 
 // Get the element to animate
 const flipText = document.getElementById("flip-text");
+const flipContainer = document.querySelectorAll(".flip-container");
 
 // Create GSAP timeline
 const tl = gsap.timeline({ repeat: -1 });
@@ -39,6 +40,12 @@ function animateTextChange() {
       // Change text while invisible
       currentIndex = (currentIndex + 1) % words.length;
       flipText.textContent = words[currentIndex];
+      flipContainer[currentIndex].classList.remove("hidden");
+      flipContainer.forEach((e, i) => {
+        if (i !== currentIndex) {
+          e.classList.add("hidden");
+        }
+      });
     },
   })
     // Animate in (scale up and fade in)
