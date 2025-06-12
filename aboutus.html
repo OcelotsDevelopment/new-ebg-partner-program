@@ -21,7 +21,7 @@
         </div>
         <ul class="hidden lg:flex items-center gap-8">
           <li><a href="aboutus.html">About us</a></li>
-          <li><a href="ourbrand.html">Our Brands</a></li>
+          <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
           <!-- <li><a href="#">Ideology</a></li> -->
           <li>
             <button
@@ -31,23 +31,43 @@
             </button>
           </li>
         </ul>
-        <div class="lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-align-justify-icon lucide-align-justify"
+        <div class="lg:hidden relative">
+          <button id="mobile-menu-button" class="focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-align-justify-icon lucide-align-justify"
+            >
+              <path d="M3 12h18" />
+              <path d="M3 18h18" />
+              <path d="M3 6h18" />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Dropdown -->
+          <div
+            id="mobile-menu"
+            class="hidden absolute right-0 z-50 mt-2 bg-white rounded-lg shadow-xl py-2 transform origin-top transition-all duration-200 ease-in-out opacity-0 scale-95"
+            style="width: calc(100vw - 28px)"
           >
-            <path d="M3 12h18" />
-            <path d="M3 18h18" />
-            <path d="M3 6h18" />
-          </svg>
+            <a
+              href="aboutus.html"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >About us</a
+            >
+            <button
+              class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center"
+            >
+              Become a Partner
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -573,9 +593,9 @@
                 <li>
                   <a href="aboutus.html" class="hover:underline">About Us</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="ourbrand.html" class="hover:underline">Our Brands</a>
-                </li>
+                </li> -->
                 <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
                   <li><a href="#" class="hover:underline">Careers</a></li> -->
               </ul>
@@ -616,7 +636,7 @@
         </div>
       </div>
     </footer>
-
+    <script type="module" src="./main.js"></script>
     <script type="module" src="src/modal.js"></script>
     <script type="module" src="src/gsap.js"></script>
   </body>
