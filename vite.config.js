@@ -11,9 +11,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         aboutus: resolve(__dirname, 'aboutus.html'),
-        anime: resolve(__dirname, 'anime.html'),
-        ourbrand: resolve(__dirname, 'ourbrand.html'),
-        copy: resolve(__dirname, 'copy.html')
+        appliance: resolve(__dirname, 'appliance.html'),
+        mobility: resolve(__dirname, 'mobility.html'),
+        energy: resolve(__dirname, 'energy.html')
       }
     }
   }
