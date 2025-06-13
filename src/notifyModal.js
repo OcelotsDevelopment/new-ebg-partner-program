@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelectorAll(".notify");
   
     const modal = /*html*/ `
-      <div id="partnerModal" class="partner-modal fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50 p-4">
-      <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-6 rounded-lg shadow-lg max-w-xl w-full mx-auto">
+      <div id="partnerModal" class="partner-modal fixed inset-0 bg-black/50 bg-opacity-40 flex justify-center items-center z-50 p-2">
+      <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-4 rounded-lg shadow-lg max-w-lg w-full mx-auto">
       <div class="w-commerce-commercecartheader cart-title flex justify-between items-center mb-4">
-        <h1 class="partner-title text-2xl md:text-3xl font-semibold text-gray-800 leading-tight">
+        <h1 class="partner-title text-xl md:text-xl font-semibold text-gray-800 leading-tight">
             Get notified when we launch — straight to your inbox.
         </h1>
         <a id="closePartnerModal" class="w-commerce-commercecartcloselink closse-button w-inline-block cursor-pointer" onclick="document.getElementById('partnerModal')?.remove()">
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <div class="w-commerce-commercecartformwrapper cart-form-wrap">
         <div class="flex justify-center mb-6">
-            <img src="./assets/notify-me.png" alt="Get notified" class="w-2/3 md:w-1/2 lg:w-2/3 h-auto" />
+            <img src="./assets/notify-me.png" alt="Get notified" class="w-1/2 md:w-1/3 lg:w-1/2 h-auto" />
         </div>
         <form>
             <div class="mb-4">
