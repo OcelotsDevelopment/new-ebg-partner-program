@@ -8,14 +8,20 @@
   </head>
   <body>
     <header>
-      <nav class="flex justify-between items-center px-20 py-6">
+      <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
         <div>
-          <img src="./assets/logo.png" alt="EBG Partner Program" class="h-10" />
+          <a href="/">
+            <img
+              src="./assets/logo.png"
+              alt="EBG Partner Program"
+              class="h-6 lg:h-10"
+            />
+          </a>
         </div>
-        <ul class="flex items-center gap-8">
+        <ul class="hidden lg:flex items-center gap-8">
           <li><a href="aboutus.html">About us</a></li>
-          <li><a href="ourbrand.html">Our Brands</a></li>
-          <li><a href="#">Ideology</a></li>
+          <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
+          <!-- <li><a href="#">Ideology</a></li> -->
           <li>
             <button
               class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer"
@@ -24,32 +30,79 @@
             </button>
           </li>
         </ul>
+        <div class="lg:hidden relative">
+          <button id="mobile-menu-button" class="focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-align-justify-icon lucide-align-justify"
+            >
+              <path d="M3 12h18" />
+              <path d="M3 18h18" />
+              <path d="M3 6h18" />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Dropdown -->
+          <div
+            id="mobile-menu"
+            class="hidden absolute right-0 z-50 mt-2 bg-white rounded-lg shadow-xl py-2 transform origin-top transition-all duration-200 ease-in-out opacity-0 scale-95"
+            style="width: calc(100vw - 28px)"
+          >
+            <a
+              href="aboutus.html"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >About us</a
+            >
+            <button
+              class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center"
+            >
+              Become a Partner
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
-    <section class="px-12 py-14 mb-10">
-      <h1 class="text-primary mb-8 text-4xl font-bold">
+
+    <section class="px-4 md:px-12 py-8 md:py-14 mb-6 md:mb-10">
+      <h1 class="text-primary mb-4 md:mb-8 text-2xl md:text-4xl font-bold">
         EBG Group's Partner Program
       </h1>
       <div
         class="shadow-lg rounded-2xl w-full object-cover flex justify-center items-center"
         style="
-          background-image: url(./assets/wind-turbines.jpg);
-          height: 384px;
+          background-image: url(./assets/wind-turbines.png);
+          height: 200px;
           background-size: cover;
           background-position: center;
         "
       >
-        <h1 class="text-7xl text-white font-bold">ENERGY PARTNER PROGRAM</h1>
-      </div>
-      <div class="flex items-center justify-center gap-10 mt-6">
-        <img src="./assets/logas/acer.png" alt="" class="h-8" />
-        <img src="./assets/logas/daewoo.png" alt="" class="h-8" />
+        <h1
+          class="text-3xl md:text-5xl lg:text-7xl text-white font-bold text-center px-4"
+        >
+          ENERGY PARTNER PROGRAM
+        </h1>
       </div>
     </section>
 
-    <section class="px-20">
+    <section class="px-4 md:px-20">
+      <p
+        class="text-lg md:text-xl lg:text-3xl text-center font-semibold mb-6 md:mb-8"
+      >
+        To address the <span class="text-[#027fc0]">₹30,000 Cr</span> Indian
+        bicycle market dominated by unbranded products
+        <span class="hidden md:inline"><br /></span>
+        with premium, connected EV cycles under Acer's name.
+      </p>
       <div
-        class="w-full py-8 shadow-2xl rounded-xl mb-8"
+        class="w-full py-6 md:py-8 shadow-2xl rounded-xl mb-6 md:mb-8"
         style="
           background: linear-gradient(
             90deg,
@@ -59,97 +112,125 @@
         "
       >
         <p
-          class="text-lg text-center leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
+          class="text-base md:text-xl lg:text-3xl font-semibold text-center leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
         >
-          Electic Bycycle
+          Electric Bicycle
         </p>
       </div>
 
-      <p class="text-xl mb-8">
-        To address the <span class="text-[#027fc0]">₹30,000 Cr</span> Indian
-        bicycle market dominated by unbranded products with premium, connected
-        EV cycles under Acer's name.
-      </p>
-
-      <!-- Timeline sections with blue dots -->
-      <div class="relative">
-        <!-- Blue line -->
-        <div
-          class="absolute left-[6px] top-0 bottom-0 w-0.5 bg-[#027fc0]"
-        ></div>
-
-        <!-- Model Summary Section -->
-        <div class="relative pl-8 mb-8">
-          <!-- Blue dot -->
-          <div class="absolute left-0 w-3 h-3 rounded-full bg-[#027fc0]"></div>
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="font-semibold text-lg mb-3">Model Summary:</h3>
-            <ul class="space-y-2">
-              <li>Type: Distributor Investment Model</li>
-              <li>Investment: ₹30 Lakhs</li>
-              <li>
-                Deployed Across: 10 dealers (₹3L inventory per dealer, 10-12
-                cycles each)
-              </li>
-            </ul>
-          </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 p-4 lg:p-6"
+      >
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl font-bold">TV</h2>
+          <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
 
-        <!-- Returns Section -->
-        <div class="relative pl-8 mb-8">
-          <!-- Blue dot -->
-          <div class="absolute left-0 w-3 h-3 rounded-full bg-[#027fc0]"></div>
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h3 class="font-semibold text-lg mb-3">Returns</h3>
-            <ul class="space-y-2">
-              <li>Guaranteed: 2% per month (₹60,000)</li>
-              <li>Or 30% of monthly net profit, whichever is higher</li>
-            </ul>
-          </div>
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl font-bold">Refrigerator</h2>
+          <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl font-bold">Washing Machine</h2>
+          <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl font-bold">Air Conditioner</h2>
+          <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl font-bold">Microwave Oven</h2>
+          <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
       </div>
 
-      <!-- Why It Works Section -->
-      <div class="mb-8 px-4 sm:px-6 md:px-0">
-        <h2 class="text-xl sm:text-2xl font-bold text-[#027fc0] mb-3 sm:mb-4">
-          Why It Works
-        </h2>
-        <ul class="space-y-2 text-sm sm:text-base leading-relaxed">
-          <li>• No upfront cost for dealers → faster inventory movement</li>
-          <li>
-            • Investors remain passive; Acer handles distribution, tracking, and
-            support
-          </li>
-          <li>
-            • Cycles include Shimano brakes, Yamaha motors, Panasonic batteries
-          </li>
-        </ul>
-      </div>
-
-      <!-- Target Section -->
-      <div class="bg-blue-50 p-6 rounded-lg mb-4">
-        <p class="text-lg">
-          <span class="font-semibold">Target: </span>Thousands of high-street
-          dealers across India
-        </p>
-      </div>
-
-      <!-- Value Prop Section -->
-      <div class="bg-blue-50 p-6 rounded-lg mb-8">
-        <p class="text-lg">
-          <span class="font-semibold">Value Prop: </span>First brand offering
-          3-year anti-rust warranty in cycles
-        </p>
-      </div>
-
-      <!-- CTA Button -->
-      <div class="flex justify-center mb-12">
+      <div class="flex justify-center md:justify-end mb-6 md:mb-10">
         <button
-          class="bap px-8 py-3 text-lg font-semibold rounded-lg bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+          class="bap mt-4 inline-block px-6 md:px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer w-full md:w-auto"
         >
-          Become a partner
+          Notify Me
         </button>
       </div>
+    </section>
+
+    <section class="px-4 md:px-20 py-6 md:py-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <!-- Model Summary Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+          <h3
+            class="text-xl font-bold bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent mb-4"
+          >
+            Model Summary
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Type: FOCO (Franchise Owned Company Operated) model</li>
+            <li>
+              Investment: ₹30 Lakhs (purely for inventory, no operational costs)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Returns Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+          <h3
+            class="text-xl font-bold bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent mb-4"
+          >
+            Returns
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Minimum guaranteed: 2% per month (₹60,000)</li>
+            <li>OR 3% of monthly sales revenue, whichever is higher</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 md:px-20 py-6 md:py-10">
+      <div
+        class="mb-6 md:mb-8 px-2 sm:px-4 md:px-0 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10"
+      >
+        <div class="w-full md:w-1/2">
+          <h2
+            class="text-xl sm:text-2xl lg:text-5xl font-bold text-[#027fc0] mb-3 sm:mb-4"
+          >
+            Why It Works
+          </h2>
+          <ul
+            class="list-disc list-inside mt-2 text-gray-800 text-sm sm:text-base lg:text-2xl"
+          >
+            <li>No upfront cost for dealers → faster inventory movement</li>
+            <li>
+              Investors remain passive; Acer handles distribution, tracking, and
+              support
+            </li>
+            <li>
+              Cycles include Shimano brakes, Yamaha motors, Panasonic batteries
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img
+            src="./assets/whyitworks.png"
+            alt="Energy"
+            class="w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+      </div>
+
+      <p
+        class="text-lg md:text-2xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] p-2 mt-4 text-white rounded-md"
+      >
+        <span>Target : </span> 100 high-street stores across India
+      </p>
+      <p
+        class="text-lg md:text-2xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] p-2 mt-4 text-white rounded-md"
+      >
+        <span>Value Prop: </span> First brand offering 3-year anti-rust warranty
+        in cycles
+      </p>
     </section>
 
     <footer class="bg-gray-100 text-gray-900">
@@ -160,12 +241,14 @@
             class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
           >
             <!-- Brand & Tagline -->
-            <div class="md:w-1/4">
-              <h3
-                class="text-xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-              >
-                EBG Partners
-              </h3>
+            <div class="md:w-2/5">
+              <a href="/">
+                <img
+                  src="./assets/logo.png"
+                  alt="EBG Partner Program"
+                  class="h-6 lg:h-10"
+                />
+              </a>
               <p class="mt-2 text-gray-600">
                 Building a sustainable future through innovation and
                 partnership.
@@ -173,13 +256,17 @@
             </div>
 
             <!-- Company Links -->
-            <div class="md:w-1/4">
-              <h4 class="text-lg font-semibold mb-2">Company</h4>
-              <ul class="space-y-1 text-gray-600">
-                <li><a href="#" class="hover:underline">About Us</a></li>
-                <li><a href="#" class="hover:underline">Our Brands</a></li>
-                <li><a href="#" class="hover:underline">Ideology</a></li>
-                <li><a href="#" class="hover:underline">Careers</a></li>
+            <div class="md:w-2/5">
+              <h4 class="text-lg font-semibold mb-2 lg:text-center">Company</h4>
+              <ul class="space-y-1 text-gray-600 lg:text-center">
+                <li>
+                  <a href="aboutus.html" class="hover:underline">About Us</a>
+                </li>
+                <!-- <li>
+                  <a href="ourbrand.html" class="hover:underline">Our Brands</a>
+                </li> -->
+                <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li> -->
               </ul>
             </div>
 
@@ -187,15 +274,21 @@
             <div class="md:w-1/4">
               <h4 class="text-lg font-semibold mb-2">Industries</h4>
               <ul class="space-y-1 text-gray-600">
-                <li><a href="#" class="hover:underline">Appliance</a></li>
-                <li><a href="#" class="hover:underline">Energy</a></li>
-                <li><a href="#" class="hover:underline">Mobility</a></li>
-                <li><a href="#" class="hover:underline">Innovations</a></li>
+                <li>
+                  <a href="appliance.html" class="hover:underline">Appliance</a>
+                </li>
+                <li>
+                  <a href="energy.html" class="hover:underline">Energy</a>
+                </li>
+                <li>
+                  <a href="mobility.html" class="hover:underline">Mobility</a>
+                </li>
+                <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
               </ul>
             </div>
 
             <!-- Call to Action -->
-            <div class="md:w-1/4">
+            <div class="md:w-2/5">
               <h4 class="text-lg font-semibold mb-2">Get Started</h4>
               <p class="text-gray-600">
                 Ready to transform your business with sustainable innovation?
@@ -220,6 +313,15 @@
     </footer>
 
     <script type="module" src="./main.js"></script>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const navMenu = document.getElementById("nav-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
 ==================Energy=====================

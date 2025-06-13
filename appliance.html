@@ -8,20 +8,20 @@
   </head>
   <body class="text-gray-800 font-sans">
     <!-- Header -->
-   <header>
+    <header>
       <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
         <div>
           <a href="/">
-          <img
-            src="./assets/logo.png"
-            alt="EBG Partner Program"
-            class="h-6 lg:h-10"
-          />
-        </a>
+            <img
+              src="./assets/logo.png"
+              alt="EBG Partner Program"
+              class="h-6 lg:h-10"
+            />
+          </a>
         </div>
         <ul class="hidden lg:flex items-center gap-8">
           <li><a href="aboutus.html">About us</a></li>
-          <li><a href="ourbrand.html">Our Brands</a></li>
+          <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
           <!-- <li><a href="#">Ideology</a></li> -->
           <li>
             <button
@@ -31,180 +31,251 @@
             </button>
           </li>
         </ul>
-        <div class="lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-align-justify-icon lucide-align-justify"
+        <div class="lg:hidden relative">
+          <button id="mobile-menu-button" class="focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-align-justify-icon lucide-align-justify"
+            >
+              <path d="M3 12h18" />
+              <path d="M3 18h18" />
+              <path d="M3 6h18" />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Dropdown -->
+          <div
+            id="mobile-menu"
+            class="hidden absolute right-0 z-50 mt-2 bg-white rounded-lg shadow-xl py-2 transform origin-top transition-all duration-200 ease-in-out opacity-0 scale-95"
+            style="width: calc(100vw - 28px)"
           >
-            <path d="M3 12h18" />
-            <path d="M3 18h18" />
-            <path d="M3 6h18" />
-          </svg>
+            <a
+              href="aboutus.html"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >About us</a
+            >
+            <button
+              class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center"
+            >
+              Become a Partner
+            </button>
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="px-6 md:px-12 py-10 md:py-14">
-      <h1 class="text-2xl md:text-4xl font-bold text-primary mb-6">EBG Group's Partner Program</h1>
-      <div class="w-full h-60 md:h-96 rounded-xl bg-cover bg-center flex items-center justify-center text-white text-3xl md:text-5xl font-bold" style="background-image: url('./assets/dummey.jpg');">
+    <section class="px-6 md:px-12 py-10 md:py-14 pb-0">
+      <h1 class="text-2xl md:text-4xl font-bold text-primary mb-6">
+        EBG Group's Partner Program
+      </h1>
+      <div
+        class="w-full h-60 md:h-96 rounded-xl bg-cover bg-center flex items-center justify-center text-white text-3xl md:text-5xl font-bold"
+        style="background-image: url('./assets/hand-shake.png')"
+      >
         APPLIANCE PARTNER PROGRAM
       </div>
-      <div class="flex justify-center gap-6 mt-4">
+      <!-- <div class="flex justify-center gap-6 mt-4">
         <img src="./assets/logas/acer.png" alt="Acer" class="h-6 md:h-8" />
         <img src="./assets/logas/daewoo.png" alt="Daewoo" class="h-6 md:h-8" />
-      </div>
+      </div> -->
     </section>
 
     <!-- Categories -->
-   <section class="px-4 sm:px-6 md:px-20 mb-10">
-  <!-- Category Cards -->
-  <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-    <div class="flex-1 py-5 sm:py-6 rounded-xl shadow-xl text-center bg-gradient-to-r from-[#027fc01c] to-[#79d9e11c]">
-      <p class="text-base sm:text-lg bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-        Electronics
+    <section class="px-4 lg:px-16 sm:px-6 md:px-20 mb-10">
+      <p
+        class="text-base text-center md:text-lg lg:text-3xl font-semibold lg:mb-8 leading-relaxed"
+      >
+        To expand Acer's
+        <span
+          class="bg-gradient-to-r from-[#027fc0] to-[#74ecf7] bg-clip-text text-transparent"
+          >₹800 Cr+</span
+        >
+        online appliance business into offline retail via
+        <span
+          class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+          >100+</span
+        ><br />
+        exclusive high-street stores by partnering with passive investors
       </p>
-    </div>
-    <div class="flex-1 py-5 sm:py-6 rounded-xl shadow-xl text-center bg-gradient-to-r from-[#027fc01c] to-[#79d9e11c]">
-      <p class="text-base sm:text-lg bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-        Home Appliances
-      </p>
-    </div>
-  </div>
-
-  <!-- Description -->
-  <p class="text-base sm:text-lg md:text-2xl mt-6 leading-relaxed">
-    To expand Acer's
-    <span class="bg-gradient-to-r from-[#027fc0] to-[#74ecf7] bg-clip-text text-transparent">₹800 Cr+</span>
-    online appliance business into offline retail via
-    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">100+</span>
-    exclusive high-street stores by partnering with passive investors
-  </p>
-</section>
-
-
-    <!-- Details Sections -->
-    <section class="relative px-4 py-12 bg-white flex justify-center">
-  <div class="relative w-full max-w-4xl">
-    <!-- Vertical Line -->
-    <div class="absolute left-5 sm:left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-
-    <!-- Timeline -->
-    <div class="space-y-16 sm:space-y-20 pl-10 sm:pl-16 w-full">
-      <!-- Timeline Item -->
-      <div class="relative flex flex-col sm:flex-row sm:items-start">
-        <!-- Dot -->
-        <div class="absolute -left-7 sm:-left-9 top-1">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="12" fill="url(#grad1)" />
-            <defs>
-              <linearGradient id="grad1" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#027fc0" />
-                <stop offset="1" stop-color="#79d9e1" />
-              </linearGradient>
-            </defs>
-          </svg>
+      <!-- Category Cards -->
+      <div class="mb-10">
+        <div
+          class="relative flex justify-between items-center rounded-lg bg-gray-100"
+        >
+          <div
+            class="absolute bg-gradient-to-r from-primary to-secondary h-[calc(100%-8px)] rounded-md transition-all duration-300 ease-in-out slider"
+            style="width: calc(50% - 8px); left: 4px"
+          ></div>
+          <button
+            class="tab-btn relative z-10 px-3 lg:px-6 py-3.5 rounded-md w-1/2 text-white font-bold transition-colors duration-300"
+            data-tab="0"
+          >
+            Appliance
+          </button>
+          <button
+            class="tab-btn relative z-10 px-6 py-3.5 rounded-md w-1/2 text-white font-bold transition-colors duration-300"
+            data-tab="1"
+          >
+            Energy
+          </button>
         </div>
 
-        <!-- Card -->
-        <div class="bg-white shadow-md rounded-md p-5 sm:p-6 w-full">
-          <h3 class="text-lg font-semibold text-[#027fc0]">Model Summary</h3>
-          <ul class="list-disc list-inside mt-2 text-gray-800 text-sm sm:text-base">
-            <li>Type: FOCO (Franchise Owned Company Operated) model</li>
-            <li>Investment: ₹30 Lakhs (purely for inventory, no operational costs)</li>
-          </ul>
+        <div
+          class="container mx-auto px-4 py-12 space-y-16 relative h-[1333px] lg:h-[530px]"
+        >
+          <div class="tab-cont absolute top-0 left-0 w-full h-full">
+            <div class="bg-white text-gray-800">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 p-4 lg:p-6"
+              >
+                <div class="flex flex-col gap-4">
+                  <h2 class="text-2xl font-bold">TV</h2>
+                  <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                  <h2 class="text-2xl font-bold">Refrigerator</h2>
+                  <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                  <h2 class="text-2xl font-bold">Washing Machine</h2>
+                  <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                  <h2 class="text-2xl font-bold">Air Conditioner</h2>
+                  <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                  <h2 class="text-2xl font-bold">Microwave Oven</h2>
+                  <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-cont absolute top-0 left-0 w-full h-full">
+            <div class="bg-white text-gray-800">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
+                <div class="flex flex-col gap-4">
+                  <h2 class="text-2xl font-bold">Electro</h2>
+                  <div class="bg-gray-200 p-4 rounded-md w-full h-48"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Timeline Item -->
-      <div class="relative flex flex-col sm:flex-row sm:items-start">
-        <div class="absolute -left-7 sm:-left-9 top-1">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="12" fill="url(#grad2)" />
-            <defs>
-              <linearGradient id="grad2" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#027fc0" />
-                <stop offset="1" stop-color="#79d9e1" />
-              </linearGradient>
-            </defs>
-          </svg>
+      <div class="flex justify-end mb-10">
+        <button
+          class="bap mt-4 inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
+        >
+          Notify Me
+        </button>
+      </div>
+      <!-- Description -->
+    </section>
+
+    <!-- Model Summary Section -->
+    <section class="px-6 md:px-20 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Model Summary Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+          <h3
+            class="text-xl font-bold bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent mb-4"
+          >
+            Model Summary
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Type: FOCO (Franchise Owned Company Operated) model</li>
+            <li>
+              Investment: ₹30 Lakhs (purely for inventory, no operational costs)
+            </li>
+          </ul>
         </div>
 
-        <div class="bg-white shadow-md rounded-md p-5 sm:p-6 w-full">
-          <h3 class="text-lg font-semibold text-[#027fc0]">Returns</h3>
-          <ul class="list-disc list-inside mt-2 text-gray-800 text-sm sm:text-base">
+        <!-- Returns Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+          <h3
+            class="text-xl font-bold bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent mb-4"
+          >
+            Returns
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
             <li>Minimum guaranteed: 2% per month (₹60,000)</li>
             <li>OR 3% of monthly sales revenue, whichever is higher</li>
           </ul>
         </div>
-      </div>
 
-      <!-- Timeline Item -->
-      <div class="relative flex flex-col sm:flex-row sm:items-start">
-        <div class="absolute -left-7 sm:-left-9 top-1">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="12" fill="url(#grad3)" />
-            <defs>
-              <linearGradient id="grad3" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#027fc0" />
-                <stop offset="1" stop-color="#79d9e1" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-
-        <div class="bg-white shadow-md rounded-md p-5 sm:p-6 w-full">
-          <h3 class="text-lg font-semibold text-[#027fc0]">Responsibility</h3>
-          <ul class="list-disc list-inside mt-2 text-gray-800 text-sm sm:text-base">
+        <!-- Responsibility Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+          <h3
+            class="text-xl font-bold bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent mb-4"
+          >
+            Responsibility
+          </h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
             <li>EBG handles store setup, rent, operations, and staffing</li>
             <li>Investor simply earns monthly return on stocked inventory</li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  <!-- Why It Works Section -->
+    <!-- Why It Works Section -->
     <section class="px-6 md:px-20 py-10">
-   <div class="mb-8 px-4 sm:px-6 md:px-0">
-  <h2 class="text-xl sm:text-2xl font-bold text-[#027fc0] mb-3 sm:mb-4">
-    Why It Works
-  </h2>
-  <!-- <ul class="space-y-2 text-sm sm:text-base leading-relaxed"> -->
-     <ul class="list-disc list-inside mt-2 text-gray-800 text-sm sm:text-base">
-    <li> Leverages Acer’s $17B global brand trust</li>
-    <li> Solves trust gap in appliance retail by offering a physical touchpoint</li>
-    <li> Offline stores help overcome post-sale service concerns</li>
-  </ul>
-</div>
-</section>
-
-    <!-- Existing Stores -->
-    <section class="px-6 md:px-20 py-10">
-      <h2 class="text-xl font-semibold mb-4 bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">Existing Stores</h2>
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-        <div class="h-36 bg-gray-100 rounded-xl"></div>
-        <div class="h-36 bg-gray-100 rounded-xl"></div>
-        <div class="h-36 bg-gray-100 rounded-xl"></div>
-        <div class="h-36 bg-gray-100 rounded-xl"></div>
-        <div class="h-36 bg-gray-100 rounded-xl"></div>
+      <div
+        class="mb-8 px-4 md:px-0 flex flex-col justify-between items-center gap-6"
+      >
+        <div class="w-full lg:w-1/2">
+          <h2
+            class="text-xl sm:text-2xl lg:text-5xl font-bold text-[#027fc0] mb-3 sm:mb-4"
+          >
+            Why It Works
+          </h2>
+          <ul
+            class="list-disc list-inside mt-2 text-gray-800 text-sm sm:text-base lg:text-2xl"
+          >
+            <li>No upfront cost for dealers → faster inventory movement</li>
+            <li>
+              Investors remain passive; Acer handles distribution, tracking, and
+              support
+            </li>
+            <li>
+              Cycles include Shimano brakes, Yamaha motors, Panasonic batteries
+            </li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <img
+            src="./assets/whyitworks.png"
+            alt="Energy"
+            class="w-full h-full object-cover rounded-2xl"
+          />
+        </div>
       </div>
-      <!-- <div class="flex justify-center mt-6">
-        <button class="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-secondary text-white">Become a partner</button>
-      </div> -->
+
+      <p
+        class="lg:text-2xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] p-2 mt-4 text-white rounded-md"
+      >
+        <span>Target : </span> 100 high-street stores across India
+      </p>
     </section>
 
     <!-- Footer -->
-     <footer class="bg-gray-100 text-gray-900">
+    <footer class="bg-gray-100 text-gray-900">
       <!-- Footer -->
       <div class="bg-white">
         <div class="max-w-7xl mx-auto px-6 py-10">
@@ -228,25 +299,35 @@
 
             <!-- Company Links -->
             <div class="md:w-2/5">
-              <h4 class="text-lg font-semibold mb-2 text-center">Company</h4>
-              <ul class="space-y-1 text-gray-600 text-center">
-                <li><a href="aboutus.html" class="hover:underline">About Us</a></li>
-                <li><a href="ourbrand.html" class="hover:underline">Our Brands</a></li>
+              <h4 class="text-lg font-semibold mb-2 lg:text-center">Company</h4>
+              <ul class="space-y-1 text-gray-600 lg:text-center">
+                <li>
+                  <a href="aboutus.html" class="hover:underline">About Us</a>
+                </li>
+                <!-- <li>
+                  <a href="ourbrand.html" class="hover:underline">Our Brands</a>
+                </li> -->
                 <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
                 <li><a href="#" class="hover:underline">Careers</a></li> -->
               </ul>
             </div>
 
             <!-- Industries Links -->
-            <!-- <div class="md:w-1/4">
+            <div class="md:w-1/4">
               <h4 class="text-lg font-semibold mb-2">Industries</h4>
               <ul class="space-y-1 text-gray-600">
-                <li><a href="#" class="hover:underline">Appliance</a></li>
-                <li><a href="#" class="hover:underline">Energy</a></li>
-                <li><a href="#" class="hover:underline">Mobility</a></li>
-                <li><a href="#" class="hover:underline">Innovations</a></li>
+                <li>
+                  <a href="appliance.html" class="hover:underline">Appliance</a>
+                </li>
+                <li>
+                  <a href="energy.html" class="hover:underline">Energy</a>
+                </li>
+                <li>
+                  <a href="mobility.html" class="hover:underline">Mobility</a>
+                </li>
+                <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
               </ul>
-            </div> -->
+            </div>
 
             <!-- Call to Action -->
             <div class="md:w-2/5">
@@ -273,8 +354,7 @@
       </div>
     </footer>
 
-      <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <script type="module" src="src/modal.js"></script>
   </body>
 </html>
-===================Appliance==================
