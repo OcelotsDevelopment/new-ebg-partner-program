@@ -69,18 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   button.forEach((btn) => {
     btn.addEventListener("click", function () {
       document.body.insertAdjacentHTML("beforeend", modal);
-      console.log("1 2 string is here");
-      closeModal = document.getElementById("closePartnerModal");
-      console.log(closeModal, "2 string is here");
     });
   });
 
-  if (closeModal) {
-    closeModal.addEventListener("click", function () {
-      const modal = document.getElementById("partnerModal");
-      if (modal) {
-        modal.remove();
-      }
-    });
-  }
 });
