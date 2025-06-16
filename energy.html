@@ -103,7 +103,7 @@
         <span class="hidden md:inline"><br /></span>
         with premium, connected EV cycles under Acer's name.
       </p>
-      <div
+      <!-- <div
         class="w-full py-6 md:py-8 shadow-lg rounded-xl mb-6 md:mb-8"
         style="
           background: linear-gradient(
@@ -118,33 +118,33 @@
         >
           Electric Bicycle
         </p>
-      </div>
+      </div> -->
 
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 p-4 lg:p-6"
       >
         <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold">TV</h2>
+          <!-- <h2 class="text-2xl font-bold">TV</h2> -->
           <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
 
         <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold">Refrigerator</h2>
+          <!-- <h2 class="text-2xl font-bold">Refrigerator</h2> -->
           <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
 
         <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold">Washing Machine</h2>
+          <!-- <h2 class="text-2xl font-bold">Washing Machine</h2> -->
           <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
 
         <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold">Air Conditioner</h2>
+          <!-- <h2 class="text-2xl font-bold">Air Conditioner</h2> -->
           <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
 
         <div class="flex flex-col gap-4">
-          <h2 class="text-2xl font-bold">Microwave Oven</h2>
+          <!-- <h2 class="text-2xl font-bold">Microwave Oven</h2> -->
           <div class="bg-gray-200 p-4 rounded-md w-full h-52"></div>
         </div>
       </div>
@@ -196,12 +196,12 @@
       >
         <div class="w-full md:w-1/2">
           <h2
-            class="text-xl sm:text-2xl lg:text-5xl font-bold text-[#027fc0] mb-3 sm:mb-4"
+            class="text-lg sm:text-2xl lg:text-2xl font-bold text-[#027fc0] mb-3 sm:mb-4"
           >
             Why It Works
           </h2>
           <ul
-            class="list-disc list-outside mt-2 text-gray-800 text-sm sm:text-base lg:text-2xl"
+            class="list-disc list-outside mt-2 text-gray-800 text-sm sm:text-base lg:text-lg"
           >
             <li>No upfront cost for dealers → faster inventory movement</li>
             <li>
@@ -222,17 +222,29 @@
         </div>
       </div>
 
-      <p
-        class="text-lg md:text-xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] p-2 mt-4 text-white rounded-md"
-      >
-        <span>Target : </span> 100 high-street stores across India
-      </p>
-      <p
-        class="text-lg md:text-2xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] p-2 mt-4 text-white rounded-md"
-      >
-        <span>Value Prop: </span> First brand offering 3-year anti-rust warranty
-        in cycles
-      </p>
+      <div class="flex items-center gap-3 mt-4">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-md">
+          <!-- Target Icon (Map Pin/Store) -->
+          <svg class="w-6 h-6 text-[#027fc0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.418 0-8-5.373-8-10A8 8 0 0112 3a8 8 0 018 8c0 4.627-3.582 10-8 10zm0-7a3 3 0 100-6 3 3 0 000 6z"/>
+          </svg>
+        </span>
+        <span class="text-lg md:text-xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+          Target: 100 high-street stores across India
+        </span>
+      </div>
+      <div class="flex items-center gap-3 mt-4">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-md">
+          <!-- Shield/Check Icon for Warranty/Value Prop -->
+          <svg class="w-6 h-6 text-[#027fc0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 5.25-3.5 9.75-7 11-3.5-1.25-7-5.75-7-11V7l7-4z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 12.5l2 2 3-3"/>
+          </svg>
+        </span>
+        <span class="text-lg md:text-2xl font-semibold bg-gradient-to-t from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
+          Value Prop: First brand offering 3-year anti-rust warranty in cycles
+        </span>
+      </div>
     </section>
 
     <footer class="bg-gray-100 text-gray-900">
