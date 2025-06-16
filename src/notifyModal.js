@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-4 rounded-lg shadow-lg max-w-lg w-full mx-auto">
       <div class="w-commerce-commercecartheader cart-title flex justify-between items-center mb-4">
         <h1 class="partner-title text-xl md:text-xl font-semibold text-gray-800 leading-tight">
-            Get notified when we launch — straight to your inbox.
+            Get notified when we launch.Straight to your inbox.
         </h1>
         <a id="closePartnerModal" class="w-commerce-commercecartcloselink closse-button w-inline-block cursor-pointer" onclick="document.getElementById('partnerModal')?.remove()">
           <svg class="cart-closer w-4 h-4" width="16px" height="16px" viewBox="0 0 16 16">
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <div class="w-commerce-commercecartformwrapper cart-form-wrap">
         <div class="flex justify-center mb-6">
-            <img src="./assets/notify-me.png" alt="Get notified" class="w-1/2 md:w-1/3 lg:w-1/2 h-auto" />
+            <img src="../assets/notify-me.png" alt="" aria-label="Get notified" class="w-1/2 md:w-1/3 lg:w-1/2 h-auto" />
         </div>
         <form>
             <div class="mb-4">
