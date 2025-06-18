@@ -23,7 +23,7 @@ let currentIndex = 0;
 
 // Get the element to animate
 const flipText = document.getElementById("flip-text");
-const flipContainer = document.querySelectorAll(".flip-container");
+const flipContainer = document.querySelectorAll(".flip-box");
 
 // Create GSAP timeline
 const tl = gsap.timeline({ repeat: -1 });

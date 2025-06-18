@@ -1,5 +1,6 @@
 // import './src/slidingAnimation.js';
 // import './src/modal.js';
+import '@fontsource/poppins';
 import './src/mobileMenu.js';
 
 document.addEventListener("DOMContentLoaded", function () {

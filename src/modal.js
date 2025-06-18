@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let closeModal;
 
   const modal = /*html*/ `
+
     <div id="partnerModal" class="partner-modal fixed inset-0 bg-black/15 bg-opacity-40 flex justify-center items-center z-50">
     <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-6 rounded-lg shadow-lg max-w-xl w-full">
     <div class="w-commerce-commercecartheader cart-title flex justify-between items-center mb-4">
@@ -27,12 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <p class="partner-subtitle text-lg mb-6">
                 Join us and unlock exclusive benefits! Fill out the form below, and our team will get in touch with you.
               </p>
-              <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-              <script>
-                emailjs.init({
-                  publicKey: "YOUR_PUBLIC_KEY",
-                });
-              </script>
+              
               <form id="partnerForm" class="partner-form">
                 <div class="form-row flex space-x-4 mb-4">
                   <input type="text" id="firstName" name="firstName" placeholder="First Name" required class="p-3 border border-gray-300 rounded-md w-full" />
@@ -44,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="form-row mb-4">
                   <input type="email" id="email" name="email" placeholder="Email Address" required class="p-3 border border-gray-300 rounded-md w-full" />
                 </div>
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_captcha" value="false">
                 <div class="form-row mb-4">
                   <label for="investment" class="investment-label block text-sm mb-2">Optimal Investment *</label>
                   <select id="investment" name="investment" required class="p-3 border border-gray-300 rounded-md w-full">
@@ -58,18 +56,82 @@ document.addEventListener("DOMContentLoaded", function () {
                   Submit
                 </button>
               </form>
+
+              <script>
+
+const form = document.getElementById('partnerForm');
+if (form) {
+  form.addEventListener('submit', submitForm);
+}
+
+async function submitForm(e) {
+  e.preventDefault(); // Prevent default form submission
+  console.log("Soejjjjjjjjjjjj")
+  const form = e.target;
+  const submitBtn = form.querySelector('.submit-btn');
+  const messageDiv = document.getElementById('submitMessage');
+
+  // Get FormData directly
+  const formData = new FormData(form);
+
+  // Show loading state
+  submitBtn.textContent = 'Submitting...';
+  submitBtn.disabled = true;
+  messageDiv.classList.add('hidden');
+
+  try {
+    const response = await fetch("https://formsubmit.co/vishnuv@ocelots.in", {
+      method: "POST",
+      body: formData
+      // Do NOT set Content-Type — browser sets it automatically when using FormData
+    });
+
+    if (response.ok) {
+      messageDiv.textContent = 'Thank you! Your application has been submitted successfully.';
+      messageDiv.className = 'mt-4 text-center text-green-600 font-medium';
+      messageDiv.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => {
+        document.getElementById('partnerModal')?.remove();
+      }, 2000);
+    } else {
+      throw new Error('Submission failed');
+    }
+
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    messageDiv.textContent = 'Sorry, there was an error submitting your application. Please try again.';
+    messageDiv.className = 'mt-4 text-center text-red-600 font-medium';
+    messageDiv.classList.remove('hidden');
+  } finally {
+    submitBtn.textContent = 'Submit';
+    submitBtn.disabled = false;
+  }
+}
+
+</script>
             </div>
           </section>
         </div>
       </div>
     </div>
   </div>
-</div>`;
+</div>
+`;
 
   button.forEach((btn) => {
     btn.addEventListener("click", function () {
       document.body.insertAdjacentHTML("beforeend", modal);
     });
   });
+
+
+  async function submitForm(e) {
+    e.pr
+    const response = await fetch("https://formsubmit.co/vishnuv@ocelots.in", {
+      method: "POST",
+      body: JSON.stringify({ username: "example" }),
+    });
+  }
 
 });
