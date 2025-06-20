@@ -1,7 +1,7 @@
 class AnimatedInfoSection {
     constructor() {
         this.currentIndex = 0;
-        this.totalItems = 7;
+        this.totalItems = 9;
         this.duration = 3000; // 3 seconds
         this.isPlaying = true;
         this.intervalId = null;
