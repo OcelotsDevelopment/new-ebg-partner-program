@@ -125,17 +125,14 @@ async function submitForm(e) {
     });
   });
 
-
   async function submitForm(e) {
-    e.pr
+    e.pr;
     const response = await fetch("https://formsubmit.co/vishnuv@ocelots.in", {
       method: "POST",
       body: JSON.stringify({ username: "example" }),
     });
   }
-
 });
-
 
 // https://script.google.com/macros/s/AKfycbyRZ2wwObDPtaQikax0Y0_9G3UgrpsAemf1-yvifLznW07yRCrxwK_jnBjkUONJPUpz/exec
 // AKfycbyRZ2wwObDPtaQikax0Y0_9G3UgrpsAemf1-yvifLznW07yRCrxwK_jnBjkUONJPUpz
