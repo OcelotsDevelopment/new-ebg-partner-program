@@ -231,3 +231,27 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.slider-container {
+  overflow: hidden;
+}
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider-item {
+  flex: 0 0 calc(33.333% - 1rem);
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .slider-item {
+      flex: 0 0 calc(100% - 1rem);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slider-item {
+      flex: 0 0 calc(50% - 1rem);
+  }
+}

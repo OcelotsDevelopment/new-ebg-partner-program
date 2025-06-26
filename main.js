@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelectorAll(".tab-cont");
 
   // Initialize first tab as active
-  updateActiveTab(0);
+  updateActiveTab(1);
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", function () {
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // );
     if (isInViewport(el)) {
       triggered = true;
-      animateValue("appliance-partner-count", 0, 18, 1200, "", "%");
+      animateValue("appliance-partner-count", 0, 24, 1200, "", "%");
       animateValue("appliance-portfolio-value", 0, 92, 1200, "", "%",);
       animateValue("appliance-satisfaction-rate", 0, 100, 1200, "", "+");
     }
