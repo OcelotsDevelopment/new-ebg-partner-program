@@ -1,597 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    href="https://framerusercontent.com/images/tbDFTjddM6Hq81HFcplVXP5gUeM.png"
-    rel="icon"
-    media="(prefers-color-scheme: light)"
-  />
-  <link
-    href="https://framerusercontent.com/images/OwQjdDhS57aORqal8JlwJMiNbI.png"
-    rel="icon"
-    media="(prefers-color-scheme: dark)"
-  />
-  <link
-    rel="apple-touch-icon"
-    href="https://framerusercontent.com/images/OwQjdDhS57aORqal8JlwJMiNbI.png"
-  />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://framerusercontent.com/images/tbDFTjddM6Hq81HFcplVXP5gUeM.png" rel="icon"
+        media="(prefers-color-scheme: light)" />
+    <link href="https://framerusercontent.com/images/OwQjdDhS57aORqal8JlwJMiNbI.png" rel="icon"
+        media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/OwQjdDhS57aORqal8JlwJMiNbI.png" />
     <title>About Us</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <style>
+        :root {
+            --color-primary: #027fc0;
+            --color-secondary: #79d9e1;
+            --color-tertiary: #10638e;
+        }
 
-  <body>
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
+        .bg-tertiary {
+            background-color: var(--color-tertiary);
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        .text-tertiary {
+            color: var(--color-tertiary);
+        }
+
+        .border-primary {
+            border-color: var(--color-primary);
+        }
+
+        .border-secondary {
+            border-color: var(--color-secondary);
+        }
+
+        .from-primary {
+            --tw-gradient-from: var(--color-primary);
+        }
+
+        .to-secondary {
+            --tw-gradient-to: var(--color-secondary);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(2, 127, 192, 0.15);
+        }
+
+        .icon-bg {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-tertiary));
+        }
+
+        .section-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 7));
+            }
+        }
+
+        .slider {
+            height: 100px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider .slide-track {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+
+        .slider .slide {
+            height: 100px;
+            width: 250px;
+        }
+
+        .inner-shadow-sides {
+            box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.5),
+            inset -20px 0 20px -20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
     <header>
-      <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
-        <div>
-          <a href="/">
-            <img
-              src="./assets/logo.png"
-              alt="EBG Partner Program"
-              class="h-6 lg:h-16"
-            />
-          </a>
-        </div>
-        <ul class="hidden lg:flex items-center gap-8">
-          <li><a href="aboutus.html">About us</a></li>
-          <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
-          <!-- <li><a href="#">Ideology</a></li> -->
-          <li>
-            <button
-              class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer"
-            >
-              Earn now
-            </button>
-          </li>
-        </ul>
-        <div class="lg:hidden relative">
-          <button id="mobile-menu-button" class="focus:outline-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-align-justify-icon lucide-align-justify"
-            >
-              <path d="M3 12h18" />
-              <path d="M3 18h18" />
-              <path d="M3 6h18" />
-            </svg>
-          </button>
+        <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
+            <div>
+                <a href="/">
+                    <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-16" />
+                </a>
+            </div>
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a href="aboutus.html">About us</a></li>
+                <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
+                <!-- <li><a href="#">Ideology</a></li> -->
+                <li>
+                    <button
+                        class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">
+                        Earn now
+                    </button>
+                </li>
+            </ul>
+            <div class="lg:hidden relative">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-align-justify-icon lucide-align-justify">
+                        <path d="M3 12h18" />
+                        <path d="M3 18h18" />
+                        <path d="M3 6h18" />
+                    </svg>
+                </button>
 
-          <!-- Mobile Menu Dropdown -->
-          <div
-            id="mobile-menu"
-            class="hidden absolute right-0 z-50 mt-2 bg-white rounded-lg shadow-xl py-2 transform origin-top transition-all duration-200 ease-in-out opacity-0 scale-95"
-            style="width: calc(100vw - 28px)"
-          >
-            <a
-              href="aboutus.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >About us</a
-            >
-            <button
-              class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center"
-            >
-              Earn now
-            </button>
-          </div>
-        </div>
-      </nav>
+                <!-- Mobile Menu Dropdown -->
+                <div id="mobile-menu"
+                    class="hidden absolute right-0 z-50 mt-2 bg-white rounded-lg shadow-xl py-2 transform origin-top transition-all duration-200 ease-in-out opacity-0 scale-95"
+                    style="width: calc(100vw - 28px)">
+                    <a href="aboutus.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About us</a>
+                    <button
+                        class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center">
+                        Earn now
+                    </button>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section class="w-full flex items-center justify-center">
-      <div class="relative">
-        <img
-          src="./assets/aboutus/about.jpeg"
-          alt="Team meeting"
-          class="block"
-        />
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10"
-        ></div>
-        <div
-          class="absolute inset-0 z-20 flex flex-col items-start justify-center px-6 md:px-16"
-        >
-          <h1
-            class="text-white text-xl md:text-5xl font-bold leading-tight mb-4 drop-shadow-lg"
-          >
-            Driving Innovation<br />
-            Shaping Futures.
-          </h1>
-          <p
-            class="text-white text-xs md:text-lg font-medium drop-shadow-lg max-w-2xl"
-          >
-            We are committed to creating meaningful change by addressing
-            real-world challenges with practical, value-driven solutions. With a
-            focus on innovation, sustainability, and impact, we continue to
-            drive transformation and shape a better tomorrow.
-          </p>
+        <div class="relative overflow-y-hidden h-[90vh] ">
+            <img src="./assets/aboutus/about.jpeg" alt="Team meeting" class="block w-full min-w-screen" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/50 to-transparent z-10"></div>
+
+            <div
+                class="absolute lg:min-w-7xl top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 inset-0 z-20 flex flex-col items-center justify-center px-6 text-white text-center">
+                <h1 class="text-4xl md:text-7xl font-bold mb-6 ">Unleash Wealth Creation with <br> <span
+                        class="bg-gradient-to-r from-primary to-secondary px-2 bg-clip-text text-transparent rounded-lg font-[900] hover:scale-105">EBG
+                        Partner Network</span></h1>
+                <p class="text-lg md:text-2xl mb-8">Join a revolutionary platform that empowers entrepreneurs and
+                    investors to
+                    build wealth through innovative real estate ventures, cutting-edge technology, and unparalleled
+                    market access.
+                </p>
+                <!-- <a href="#contact"
+                    class="cta-button inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg">Invest
+                    in
+                    the Future</a> -->
+                <!-- <button
+                    class="bap card-hover text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">
+                    Earn now
+                </button> -->
+                <button
+                    class="bap min-w-2xs bg-gradient-to-t cursor-pointer from-primary to-secondary text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                    Earn Now
+                </button>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="w-full mb-[400px]">
-      <div class="header sticky top-0 px-7 lg:px-20 py-10 bg-white z-40">
-
-        <div class="mb-7 lg:mb-14">
-          <p class="text-2xl lg:text-4xl font-bold text-center text-primary">
-            A Step Change in Circularity
-          </p>
-        </div>
-        <div class="mb-4">
-          <p
-            class="text-5xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-          >
-            P<span
-              id="topicTitle"
-              class="text-lg lg:text-3xl bg-gradient-to-r from-[#027fc0] to-[#79d9e1] text-white px-0.5 lg:px-2 ml-0.5 rounded-sm lg:rounded"
-              >lanet</span>
-          </p>
-        </div>
-      </div>
-    
-      <div class="main-section h-[1000px] w-full  px-7 lg:px-20 py-10 " id="mainSection">
-        <div class="content-div planet h-[500px]" id="planetDiv">
-          <div class="content-text">
-            <div class=" max-h-[500px] overflow-y-auto bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8">
-              <h4
-                class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 text-center sm:text-left border-b-2 border-secondary pb-2">
-                Driving Sustainability & Environmental Change
-              </h4>
-              <ul
-                class="list-disc list-inside space-y-2 sm:space-y-3 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg text-gray-600 pl-2 sm:pl-4">
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Reduce emissions via EV rentals, eBikes, and electric cycles
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Promote circular economy practices durable, reusable products
-                  like anti-rust wheels, battery swapping, etc.
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Target Net-Zero Value Chain by 2040
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Operate with low-carbon logistics and green buildings
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Offer organic wellness and food brands that reduce chemical
-                  footprints
-                </li>
-                </ol>
-      
-                <p
-                  class="text-sm sm:text-base lg:text-lg font-medium text-primary italic text-center sm:text-left bg-blue-50 p-3 sm:p-4 rounded-md border-l-4 border-primary">
-                  Every ride, every appliance, every cycle moves us toward
-                  a greener India.
+    <section class="py-20 px-6 bg-gradient-to-t from-secondary to-white">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Why Invest in <span
+                        class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">EBG</span> ?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Join thousands of investors who trust EBG for consistent returns and innovative real estate
+                    solutions
                 </p>
             </div>
-          </div>
-        </div>
-      
-        <div class="content-div people h-[500px] " id="peopleDiv">
 
-          <div class="content-text">
-            <div class="overflow-y-auto bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8">
-              <h4
-                class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 text-center sm:text-left border-b-2 border-secondary pb-2">
-                Empowering Individuals & Communities
-              </h4>
-    
-              <ul
-                class="list-disc list-inside space-y-2 sm:space-y-3 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg text-gray-600 pl-2 sm:pl-4">
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Enable income generation through EV rental partnerships (delivery
-                  riders, gig workers)
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Create opportunities for underserved youth, homemakers, retired
-                  professionals
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Offer health & wellness
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Establish safe workplaces, skilled jobs, and access to affordable
-                  technology
-                </li>
-                </ol>
-      
-                <p
-                  class="text-sm sm:text-base lg:text-lg font-medium text-primary italic text-center sm:text-left bg-blue-50 p-3 sm:p-4 rounded-md border-l-4 border-primary">
-                  You're not just funding a business you're funding livelihoods
-                </p>
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100">
+                    <div
+                        class="bg-gradient-to-r from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Proven Wealth Creation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our platform has facilitated over $500M in real estate transactions, delivering consistent
+                        returns to our partners.
+                    </p>
+                    <p
+                        class="flex items-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-semibold">
+                        <span class="text-3xl font-bold mr-2">$500M+</span>
+                        <span class="text-sm">Transactions</span>
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100">
+                    <div
+                        class="bg-gradient-to-r from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2a2 2 0 01-2 2H9a2 2 0 01-2-2v-1a2 2 0 00-2-2H3.055z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Global Market Reach</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Access a network of 3M+ developers and investors across 50+ countries, amplifying your
+                        investment potential.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-center">
+                            <div
+                                class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                                3M+</div>
+                            <div class="text-xs text-gray-500">Developers</div>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                                50+</div>
+                            <div class="text-xs text-gray-500">Countries</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 card-hover border border-gray-100">
+                    <div
+                        class="bg-gradient-to-r from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovative Technology</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Leverage our AI-driven tools and composable web architecture to stay ahead in a rapidly evolving
+                        market.
+                    </p>
+                    <div class="flex items-center text-primary font-semibold">
+                        <div class="flex space-x-2">
+                            <span
+                                class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent px-3 py-1 rounded-full text-sm">AI-Driven</span>
+                            <span
+                                class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent px-3 py-1 rounded-full text-sm">Web3</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        
-        </div>
-      
-        <div class="content-div profit h-[500px] " id="profitDiv">
-          <div class="content-text">
-      
-            <div class=" max-h-[500px] overflow-y-auto bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8">
-              <h4
-                class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 text-center sm:text-left border-b-2 border-secondary pb-2">
-                Financial Strength & Shared Wealth
-              </h4>
-              <ul
-                class="list-disc list-inside space-y-2 sm:space-y-3 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg text-gray-600 pl-2 sm:pl-4">
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Provide recurring monthly income to passive investors (up to 20%+
-                  ROI)
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Build profitable, scalable business units (EV fleet, appliances,
-                  organic products)
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Offer franchise & partner programs that balance ROI with ethics
-                </li>
-                <li class="leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                  Enable investors to diversify safely (vs. gold/mutual funds/stock
-                  volatility)
-                </li>
-                </ol>
-      
-                <p
-                  class="text-sm sm:text-base lg:text-lg font-medium text-primary italic text-center sm:text-left bg-blue-50 p-3 sm:p-4 rounded-md border-l-4 border-primary">
-                  You earn steady income. We manage the hassle. The
-                  planet benefits too.
-                </p>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-16">
+                <!-- <button
+                    class="bap min-w-2xs bg-gradient-to-t cursor-pointer from-primary to-secondary text-white font-bold py-4 px-8 rounded-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                    Earn Now
+                </button> -->
+                <button
+                    class="bap min-w-2xs cursor-pointer inline-block bg-white font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Earn Now
+                    </span>
+                </button>
+                <p class="text-sm text-white mt-4">No hidden fees • Transparent process • Secure investments</p>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
+    <!-- Game-Changing Opportunity Section -->
+    <section class="py-20 px-6 relative overflow-hidden ">
 
-    <section class="bg-[#f8fbfc] py-10 px-4 md:px-40 rounded-2xl">
-      <!-- Vision -->
-      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-14 mb-12">
-        <!-- Left Text -->
-        <div class="flex-1 text-center md:text-left">
-          <h3
-            class="text-sm md:text-3xl md:font-bold font-semibold text-[#027fc0] uppercase mb-2"
-          >
-            Vision
-          </h3>
-          <h2 class="text-xl md:text-2xl font-bold leading-snug text-black">
-            Elevating Efficiency And Empowering Businesses Through Innovative
-            Automation And Transformative Digital Solutions.
-          </h2>
-          <p class="text-xs text-gray-700 mt-2 leading-snug">
-            To Be A Global Leader In Automation And Digital Transformation,
-            Empowering Businesses To Achieve Unparalleled Efficiency,
-            Innovation, And Growth Through Cutting-Edge Technology.
-          </p>
-        </div>
-        <!-- Right Image -->
-        <div class="flex-1 h-[300px] md:h-[400px]">
-          <img
-            src="assets/dummey.jpg"
-            alt="Vision Image"
-            class="rounded-xl shadow-md w-full h-full object-cover"
-          />
-        </div>
-      </div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+                A <span
+                    class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Game-Changing</span>
+                Opportunity
+            </h2>
+            <p class="text-xl mb-16 text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                The EBG Partner Program is more than a platform—it's a movement. We're redefining wealth creation by
+                connecting visionary entrepreneurs with high-impact real estate projects and cutting-edge tech
+                solutions.
+            </p>
 
-      <!-- Mission -->
-      <div
-        class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-14 mb-12"
-      >
-        <!-- Left Text -->
-        <div class="flex-1 text-center md:text-left">
-          <h3
-            class="text-sm md:text-3xl md:font-bold font-semibold text-[#027fc0] uppercase mb-2"
-          >
-            Mission
-          </h3>
-          <h2 class="text-xl md:text-2xl font-bold leading-snug text-black">
-            Delivering Efficient, Technology-Driven Automation Solutions That
-            Simplify Operations And Enhance Business Processes.
-          </h2>
-          <p class="text-xs text-gray-700 mt-2 leading-snug">
-            To Revolutionize Business Processes By Delivering Innovative
-            Automation Solutions That Simplify Operations, Increase Efficiency,
-            And Drive Digital Transformation For Corporate Businesses, Insurance
-            Companies, And Intermediaries Worldwide.
-          </p>
-        </div>
-        <!-- Right Image -->
-        <div class="flex-1 h-[300px] md:h-[400px]">
-          <img
-            src="assets/aboutus/mission.jpeg"
-            alt="Mission Image"
-            class="rounded-xl shadow-md w-full h-full object-cover"
-          />
-        </div>
-      </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div
+                    class="bg-white rounded-2xl p-8 text-left shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-gradient-to-r from-primary to-secondary w-fit p-2 rounded-xl flex items-center justify-center mb-6 ">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 11l5-5m0 0l5 5m-5-5v12" />
+                        </svg>
+                    </div>
+                    <h3
+                        class="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Scalable Investments</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        From boutique developments to large-scale commercial projects, our platform offers diverse
+                        opportunities tailored to your investment goals.
+                    </p>
+                    <!-- <div class="mt-6 pt-4 border-t border-gray-100">
+                        <span class="text-primary font-semibold text-sm">→ Explore Opportunities</span>
+                    </div> -->
+                </div>
 
-      <!-- Feature Goals -->
-      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-14">
-        <!-- Left Text -->
-        <div class="flex-1 text-center md:text-left">
-          <h3
-            class="text-sm md:text-3xl md:font-bold font-semibold text-[#027fc0] uppercase mb-2"
-          >
-            Feature Goals
-          </h3>
-          <h2 class="text-xl md:text-2xl font-bold leading-snug text-black">
-            Delivering Efficient, Technology-Driven Automation Solutions That
-            Simplify Operations And Enhance Business Processes.
-          </h2>
-          <p class="text-xs text-gray-700 mt-2 leading-snug">
-            Our goal is to become a billion-dollar enterprise by 2030—empowering
-            over 5,000 startups worldwide, expanding into high-potential
-            emerging markets, and driving sustainable innovation that creates
-            global impact.
-          </p>
-        </div>
-        <!-- Right Image -->
-        <div class="flex-1 h-[300px] md:h-[400px]">
-          <img
-            src="assets/aboutus/feature.jpeg"
-            alt="Mission Image"
-            class="rounded-xl shadow-md w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="lg:px-20 lg:py-10 mb-20">
-      <div class="relative">
-        <img src="./assets/images/irfa 2.png" alt="" class="lg:w-1/2" />
-        <div
-          class="p-2.5 lg:p-14 lg:px-20 rounded-2xl absolute top-[100%] lg:top-1/2 left-1/2 lg:left-[60%] transform -translate-y-1/2 -translate-x-1/2"
-          style="box-shadow: 0px 5px 12px 0px #00000054; background: #cfcfcf63"
-        >
-          <h2
-            class="text-xl lg:text-4xl text-primary text-center font-bold w-[300px] lg:w-auto"
-          >
-            "We don't pitch dreams.We<br />
-            deliver results."
-          </h2>
-          <p class="text-base lg:text-lg font-medium text-center lg:text-right">
-            -Dr. Irfan Khan, Founder & CEO
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="px-20 py-10 mb-20">
-      <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
-        Leadership Team
-      </h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div class="relative">
-          <img
-            src="./assets/images/Hari Kiran.jpg"
-            alt=""
-            class="rounded-2xl h-full object-cover"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
-          >
-            <h2 class="text-2xl font-bold">Hari Kiran</h2>
-            <p class="text-base">Co-founder & COO</p>
-          </div>
-        </div>
-        <div class="relative">
-          <img
-            src="./assets/images/Chandra Mouli.png"
-            alt=""
-            class="rounded-2xl h-full object-cover"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
-          >
-            <h2 class="text-2xl font-bold">Chandra Mouli</h2>
-            <p class="text-base">Chief Business Officer</p>
-          </div>
-        </div>
-
-        <div class="relative">
-          <img
-            src="./assets/images/Suresh Goyal.png"
-            alt=""
-            class="rounded-2xl h-full object-cover"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
-          >
-            <h2 class="text-2xl font-bold">Suresh Goyal</h2>
-            <p class="text-base">Group President</p>
-          </div>
-        </div>
-        <div class="relative">
-          <img
-            src="./assets/images/Shakun Bansal.png"
-            alt=""
-            class="rounded-2xl h-full object-cover"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
-          >
-            <h2 class="text-2xl font-bold">Shakun Bansal</h2>
-            <p class="text-base">Chief Sales Officer</p>
-          </div>
-        </div>
-        <div class="relative">
-          <img
-            src="./assets/images/Deepak Kumar.jpg"
-            alt=""
-            class="rounded-2xl h-full object-cover"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
-          >
-            <h2 class="text-2xl font-bold">Deepak Kumar</h2>
-            <p class="text-base">Growth Director</p>
-          </div>
-        </div>
-        <div class="relative">
-          <img
-            src="./assets/images/Mohinder Singh.jpg"
-            alt=""
-            class="rounded-2xl h-full object-cover"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 rounded-b-2xl text-center"
-          >
-            <h2 class="text-2xl font-bold">Mohinder Singh</h2>
-            <p class="text-base">Sales Director</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section class="lg:px-20 px-8 py-10 mb-20">
-      <h1 class="text-4xl font-bold text-center text-tertiary mb-10">
-        Leadership Team
-      </h1>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <!-- Card 1 -->
-        <div
-          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-        >
-          <img
-            src="./assets/images/Hari Kiran.jpg"
-            alt="Hari Kiran"
-            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
-          >
-            <h2 class="text-2xl font-bold">Hari Kiran</h2>
-            <p class="text-base">Co-founder & COO</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-        >
-          <img
-            src="./assets/images/Chandra Mouli.png"
-            alt="Chandra Mouli"
-            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
-          >
-            <h2 class="text-2xl font-bold">Chandra Mouli</h2>
-            <p class="text-base">Chief Business Officer</p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-        >
-          <img
-            src="./assets/images/Suresh Goyal.png"
-            alt="Suresh Goyal"
-            class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
-          >
-            <h2 class="text-2xl font-bold">Suresh Goyal</h2>
-            <p class="text-base">Group President</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-gray-100 text-gray-900">
-      <!-- Footer -->
-      <div class="bg-white">
-        <div class="max-w-7xl mx-auto px-6 py-10">
-          <div
-            class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
-          >
-            <!-- Brand & Tagline -->
-            <div class="md:w-2/5">
-              <a href="/">
-                <img
-                  src="./assets/logo.png"
-                  alt="EBG Partner Program"
-                  class="h-6 lg:h-10"
-                />
-              </a>
-              <p class="mt-2 text-gray-600">
-                Building a sustainable future through innovation and
-                partnership.
-              </p>
+                <div
+                    class="bg-white rounded-2xl p-8 text-left shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="bg-gradient-to-r from-primary to-secondary w-fit p-2 rounded-xl flex items-center justify-center mb-6 ">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3
+                        class="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Exclusive Benefits</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Gain access to co-marketing opportunities, exclusive webinars, and dedicated support to maximize
+                        your ROI.
+                    </p>
+                    <!-- <div class="mt-6 pt-4 border-t border-gray-100">
+                        <span class="text-primary font-semibold text-sm">→ Learn More</span>
+                    </div> -->
+                </div>
             </div>
-
-            <!-- Company Links -->
-            <div class="md:w-2/5">
-              <h4 class="text-lg font-semibold mb-2 lg:text-center">Company</h4>
-              <ul class="space-y-1 text-gray-600 lg:text-center">
-                <li>
-                  <a href="aboutus.html" class="hover:underline">About Us</a>
-                </li>
-                <!-- <li>
-                  <a href="ourbrand.html" class="hover:underline">Our Brands</a>
-                </li> -->
-                <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
-                <li><a href="#" class="hover:underline">Careers</a></li> -->
-              </ul>
-            </div>
-
-            <!-- Industries Links -->
-            <div class="md:w-1/4">
-              <h4 class="text-lg font-semibold mb-2">Sector's</h4>
-              <ul class="space-y-1 text-gray-600">
-                <li>
-                  <a href="appliance.html" class="hover:underline">Appliance</a>
-                </li>
-                <li>
-                  <a href="energy.html" class="hover:underline">Energy</a>
-                </li>
-                <li>
-                  <a href="mobility.html" class="hover:underline">Mobility</a>
-                </li>
-              </ul>
-            </div>
-            <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
 
             <!-- Call to Action -->
-            <!-- <div class="md:w-2/5">
-              <h4 class="text-lg font-semibold mb-2">Get Started</h4>
-              <p class="text-gray-600">
-                Ready to transform your business with sustainable innovation?
-              </p>
-              <button
-                class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer"
-              >
-                Earn now
-              </button>
-            </div> -->
-          </div>
-
-          <!-- <form action="" method="post" ></form> -->
-
-          <!-- Divider -->
-          <hr class="border-t-2 border-gray-300 mt-10" />
-
-          <!-- Copyright -->
-          <p class="mt-6 text-center text-sm text-gray-600">
-            2024 EBG Partners. All rights reserved. Building tomorrow, today.
-          </p>
+            <div class="mt-16">
+                <button
+                    class="bap min-w-2xs cursor-pointer bg-gradient-to-r from-primary to-secondary hover:from-tertiary hover:to-primary text-white font-bold py-4 px-10 rounded-xl transition duration-300 transform hover:scale-105 shadow-lg text-lg">
+                    Earn Now
+                </button>
+            </div>
         </div>
-      </div>
-    </footer>
+    </section>
+
+    <!-- Brand Logo Scrolling -->
+    <section class="pb-16">
+        <p class="text-center text-4xl font-semibold mb-10">Our Trusted Partners</p>
+        <div class="inner-shadow-sides mx-2">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="assets/partner-logo/acer.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/brillen.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/daewoo.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/ebygo.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/nonstop.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/nuvun.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/pravekta.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/vajram.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/acer.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/brillen.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/daewoo.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/ebygo.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/partner-logo/nonstop.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <!-- <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250"
+                            alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
+                            alt="" />
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 px-6 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Ready to Shape the Future of Wealth?</h2>
+            <p class="text-xl mb-10 text-white/90 max-w-3xl mx-auto leading-relaxed">
+                Join the EBG Partner Program today and unlock a world of opportunities. Let's build wealth together.
+            </p>
+            <button
+                class="bap min-w-2xs inline-block bg-white font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg">
+                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Earn Now
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <section class="lg:px-20 px-8 py-10 lg:pt-36 mb-20">
+        <h1 class="text-4xl font-bold text-center text-tertiary mb-10 lg:mb-24">
+          Leadership Team
+        </h1>
+  
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Card 1 -->
+          <div
+            class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/Hari Kiran.jpg"
+              alt="Hari Kiran"
+              class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+            >
+              <h2 class="text-2xl font-bold">Hari Kiran</h2>
+              <p class="text-base">Co-founder & COO</p>
+            </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div
+            class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/Chandra Mouli.png"
+              alt="Chandra Mouli"
+              class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+            >
+              <h2 class="text-2xl font-bold">Chandra Mouli</h2>
+              <p class="text-base">Chief Business Officer</p>
+            </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div
+            class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="./assets/images/Suresh Goyal.png"
+              alt="Suresh Goyal"
+              class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+            >
+              <h2 class="text-2xl font-bold">Suresh Goyal</h2>
+              <p class="text-base">Group President</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto text-center flex flex-col md:flex-row items-center md:text-left">
+            <div class="w-1/2">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-gray-900">Connect With Us</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Interested in learning more? Reach out to our team to explore how EBG can accelerate your investment
+                    journey.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md mx-auto w-1/2 ">
+                <form class="space-y-6">
+                    <div class="relative">
+                        <input type="email" placeholder="Enter your email address"
+                            class="w-full p-4 rounded-xl border-2 border-gray-200 focus:border-primary focus:outline-none transition-colors text-lg"
+                            required>
+                    </div>
+                    <button type="submit"
+                        class="cursor-pointer w-full bg-gradient-to-r from-primary to-secondary hover:from-tertiary hover:to-primary text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
+                        Get Started
+                    </button>
+                </form>
+
+                <!-- <div class="mt-8 pt-6 border-t border-gray-100">
+                    <p class="text-sm text-gray-500 mb-4">Or reach out directly:</p>
+                    <div
+                        class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                        <a href="mailto:partners@ebg.com"
+                            class="text-primary hover:text-tertiary font-semibold transition-colors">
+                            partners@ebg.com
+                        </a>
+                        <span class="hidden sm:block text-gray-300">|</span>
+                        <a href="tel:+1234567890"
+                            class="text-primary hover:text-tertiary font-semibold transition-colors">
+                            +1 (234) 567-8900
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-gray-100 text-gray-900">
+        <!-- Footer -->
+        <div class="bg-white">
+          <div class="max-w-7xl mx-auto px-6 py-10">
+            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+              <!-- Brand & Tagline -->
+              <div class="md:w-2/5">
+                <a href="/">
+                  <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-10" />
+                </a>
+                <p class="mt-2 text-gray-600">
+                  Building a sustainable future through innovation and
+                  partnership.
+                </p>
+    
+                <p class="mt-6 text-sm text-gray-600">
+                  <br />
+                  info@ebgpartner.com <br />
+                  +91-9071325969
+                </p>
+              </div>
+    
+              <!-- Company Links -->
+              <div class="md:w-fit">
+                <h4 class="text-lg font-semibold mb-2 ">Company</h4>
+                <ul class="space-y-1 text-gray-600 ">
+                  <li>
+                    <a href="aboutus.html" class="hover:underline">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <li>
+                      <a href="ourbrand.html" class="hover:underline">Our Brands</a>
+                    </li> -->
+              <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li> -->
+              <!-- Industries Links -->
+              <div class="md:w-fit">
+                <h4 class="text-lg font-semibold mb-2">Sector's</h4>
+                <ul class="space-y-1 text-gray-600">
+                  <li>
+                    <a href="appliance.html" class="hover:underline">Appliance</a>
+                  </li>
+                  <li>
+                    <a href="energy.html" class="hover:underline">Energy</a>
+                  </li>
+                  <li>
+                    <a href="mobility.html" class="hover:underline">Mobility</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
+              <!-- Call to Action -->
+              <!-- <div class="md:w-2/5">
+                <h4 class="text-lg font-semibold mb-2">Get Started</h4>
+                <p class="text-gray-600">
+                  Ready to transform your business with sustainable innovation?
+                </p>
+                <button
+                  class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+                  Earn now
+                </button>
+              </div> -->
+            </div>
+    
+            <!-- Divider -->
+            <hr class="border-t-2 border-gray-300 mt-10" />
+    
+            <!-- Copyright -->
+            <p class="mt-6 text-center text-sm text-gray-600">
+              EBG Partner Network © 2025. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     <script type="module" src="./main.js"></script>
     <script type="module" src="src/modal.js"></script>
-    <script type="module" src="src/gsap.js"></script>
-    <script type="module" src="src/scrollTrigger.js"></script>
-  </body>
+</body>
+
 </html>
