@@ -90,10 +90,13 @@
             margin: auto;
             overflow: hidden;
             position: relative;
-            width: auto;
+            width: 100%;
+            /* Make sure the slider container takes up full width */
             display: flex;
             align-items: center;
+            /* Center the content vertically */
             justify-content: center;
+            /* Center the content horizontally */
         }
 
         .slider .slide-track {
@@ -105,11 +108,29 @@
         .slider .slide {
             height: 100px;
             width: 250px;
+            display: flex;
+            justify-content: center;
+            /* Center the image inside each slide */
+            align-items: center;
+            /* Center the image inside each slide */
+        }
+
+        .slider img {
+            max-height: 100%;
+            /* Ensure the images fit within the 100px height */
+            width: auto;
+            /* Maintain the image aspect ratio */
+        }
+
+
+        .slide img {
+            /* height: 100px; */
+            width: 200px;
         }
 
         .inner-shadow-sides {
             box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.5),
-            inset -20px 0 20px -20px rgba(0, 0, 0, 0.5);
+                inset -20px 0 20px -20px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
@@ -374,72 +395,48 @@
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide">
-                        <img src="assets/partner-logo/acer.png" height="100" width="250"
-                            alt="" />
+                        <div class="flex items-center h-full">
+                            <img src="assets/partner-logo/acer.png" alt="" />
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/brillen.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/brillen.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/daewoo.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/daewoo.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/ebygo.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/ebygo.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/nonstop.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/nonstop.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/nuvun.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/nuvun.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/pravekta.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/pravekta.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/vajram.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/vajram.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/acer.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/acer.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/brillen.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/brillen.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/daewoo.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/daewoo.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/partner-logo/ebygo.png" height="100" width="250"
-                            alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="assets/partner-logo/nonstop.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/ebygo.png" alt="" />
                     </div>
                     <!-- <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/nonstop.png" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250"
-                            alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250"
-                            alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
-                            alt="" />
+                        <img src="assets/partner-logo/nuvun.png" alt="" />
                     </div> -->
                 </div>
             </div>
@@ -463,64 +460,66 @@
         </div>
     </section>
 
-    <section class="lg:px-20 px-8 py-10 lg:pt-36 mb-20">
-        <h1 class="text-4xl font-bold text-center text-tertiary mb-10 lg:mb-24">
-          Leadership Team
-        </h1>
-  
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <!-- Card 1 -->
+    <section class="lg:px-20 lg:py-10">
+        <div class="relative">
+          <img src="./assets/images/irfa 2.png" alt="" class="lg:w-1/2" />
           <div
-            class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+            class="p-2.5 lg:p-14 lg:px-20 rounded-2xl absolute top-[100%] lg:top-1/2 left-1/2 lg:left-[60%] transform -translate-y-1/2 -translate-x-1/2"
+            style="box-shadow: 0px 5px 12px 0px #00000054; background: #cfcfcf63"
           >
-            <img
-              src="./assets/images/Hari Kiran.jpg"
-              alt="Hari Kiran"
-              class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div
-              class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
+            <h2
+              class="text-xl lg:text-4xl text-primary text-center font-bold w-[300px] lg:w-auto"
             >
-              <h2 class="text-2xl font-bold">Hari Kiran</h2>
-              <p class="text-base">Co-founder & COO</p>
-            </div>
-          </div>
-  
-          <!-- Card 2 -->
-          <div
-            class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <img
-              src="./assets/images/Chandra Mouli.png"
-              alt="Chandra Mouli"
-              class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div
-              class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
-            >
-              <h2 class="text-2xl font-bold">Chandra Mouli</h2>
-              <p class="text-base">Chief Business Officer</p>
-            </div>
-          </div>
-  
-          <!-- Card 3 -->
-          <div
-            class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <img
-              src="./assets/images/Suresh Goyal.png"
-              alt="Suresh Goyal"
-              class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div
-              class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70"
-            >
-              <h2 class="text-2xl font-bold">Suresh Goyal</h2>
-              <p class="text-base">Group President</p>
-            </div>
+              "We don't pitch dreams.We<br />
+              deliver results."
+            </h2>
+            <p class="text-base lg:text-lg font-medium text-center lg:text-right">
+              -Dr. Irfan Khan, Founder & CEO
+            </p>
           </div>
         </div>
       </section>
+
+    <section class="lg:px-20 px-8 py-10 lg:pt-24 mb-20">
+        <h1 class="text-4xl font-bold text-center text-tertiary mb-10 lg:mb-24">
+            Leadership Team
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Card 1 -->
+            <div class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./assets/images/Hari Kiran.jpg" alt="Hari Kiran"
+                    class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70">
+                    <h2 class="text-2xl font-bold">Hari Kiran</h2>
+                    <p class="text-base">Co-founder & COO</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./assets/images/Chandra Mouli.png" alt="Chandra Mouli"
+                    class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70">
+                    <h2 class="text-2xl font-bold">Chandra Mouli</h2>
+                    <p class="text-base">Chief Business Officer</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative group transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="./assets/images/Suresh Goyal.png" alt="Suresh Goyal"
+                    class="rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <div
+                    class="absolute bottom-0 left-0 right-0 p-4 bg-white/50 backdrop-blur-sm rounded-b-2xl text-center transition duration-300 hover:bg-white/70">
+                    <h2 class="text-2xl font-bold">Suresh Goyal</h2>
+                    <p class="text-base">Group President</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 bg-gray-50">
@@ -570,58 +569,58 @@
     <footer class="bg-gray-100 text-gray-900">
         <!-- Footer -->
         <div class="bg-white">
-          <div class="max-w-7xl mx-auto px-6 py-10">
-            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-              <!-- Brand & Tagline -->
-              <div class="md:w-2/5">
-                <a href="/">
-                  <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-10" />
-                </a>
-                <p class="mt-2 text-gray-600">
-                  Building a sustainable future through innovation and
-                  partnership.
-                </p>
-    
-                <p class="mt-6 text-sm text-gray-600">
-                  <br />
-                  info@ebgpartner.com <br />
-                  +91-9071325969
-                </p>
-              </div>
-    
-              <!-- Company Links -->
-              <div class="md:w-fit">
-                <h4 class="text-lg font-semibold mb-2 ">Company</h4>
-                <ul class="space-y-1 text-gray-600 ">
-                  <li>
-                    <a href="aboutus.html" class="hover:underline">About Us</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- <li>
+            <div class="max-w-7xl mx-auto px-6 py-10">
+                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+                    <!-- Brand & Tagline -->
+                    <div class="md:w-2/5">
+                        <a href="/">
+                            <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-10" />
+                        </a>
+                        <p class="mt-2 text-gray-600">
+                            Building a sustainable future through innovation and
+                            partnership.
+                        </p>
+
+                        <p class="mt-6 text-sm text-gray-600">
+                            <br />
+                            info@ebgpartner.com <br />
+                            <!-- +91-9071325969 -->
+                        </p>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="md:w-fit">
+                        <h4 class="text-lg font-semibold mb-2 ">Company</h4>
+                        <ul class="space-y-1 text-gray-600 ">
+                            <li>
+                                <a href="aboutus.html" class="hover:underline">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <li>
                       <a href="ourbrand.html" class="hover:underline">Our Brands</a>
                     </li> -->
-              <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
+                    <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
                     <li><a href="#" class="hover:underline">Careers</a></li> -->
-              <!-- Industries Links -->
-              <div class="md:w-fit">
-                <h4 class="text-lg font-semibold mb-2">Sector's</h4>
-                <ul class="space-y-1 text-gray-600">
-                  <li>
-                    <a href="appliance.html" class="hover:underline">Appliance</a>
-                  </li>
-                  <li>
-                    <a href="energy.html" class="hover:underline">Energy</a>
-                  </li>
-                  <li>
-                    <a href="mobility.html" class="hover:underline">Mobility</a>
-                  </li>
-                </ul>
-              </div>
-    
-              <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
-              <!-- Call to Action -->
-              <!-- <div class="md:w-2/5">
+                    <!-- Industries Links -->
+                    <div class="md:w-fit">
+                        <h4 class="text-lg font-semibold mb-2">Sector's</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>
+                                <a href="appliance.html" class="hover:underline">Appliance</a>
+                            </li>
+                            <li>
+                                <a href="energy.html" class="hover:underline">Energy</a>
+                            </li>
+                            <li>
+                                <a href="mobility.html" class="hover:underline">Mobility</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
+                    <!-- Call to Action -->
+                    <!-- <div class="md:w-2/5">
                 <h4 class="text-lg font-semibold mb-2">Get Started</h4>
                 <p class="text-gray-600">
                   Ready to transform your business with sustainable innovation?
@@ -631,18 +630,18 @@
                   Earn now
                 </button>
               </div> -->
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-t-2 border-gray-300 mt-10" />
+
+                <!-- Copyright -->
+                <p class="mt-6 text-center text-sm text-gray-600">
+                    EBG Partner Network © 2025. All rights reserved.
+                </p>
             </div>
-    
-            <!-- Divider -->
-            <hr class="border-t-2 border-gray-300 mt-10" />
-    
-            <!-- Copyright -->
-            <p class="mt-6 text-center text-sm text-gray-600">
-              EBG Partner Network © 2025. All rights reserved.
-            </p>
-          </div>
         </div>
-      </footer>
+    </footer>
     <script type="module" src="./main.js"></script>
     <script type="module" src="src/modal.js"></script>
 </body>
