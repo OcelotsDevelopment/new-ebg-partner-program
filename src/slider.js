@@ -18,34 +18,34 @@ class AutoSlider {
   init() {
     this.updateSliderPosition();
     this.startAutoSlide();
-    this.bindEvents();
-    this.updateDots();
+    // this.bindEvents();
+    // this.updateDots();
   }
 
-  bindEvents() {
-    this.prevBtn.addEventListener("click", () => this.prevSlide());
-    this.nextBtn.addEventListener("click", () => this.nextSlide());
-    this.pauseBtn.addEventListener("click", () => this.toggleAutoSlide());
+  // bindEvents() {
+  //   this.prevBtn.addEventListener("click", () => this.prevSlide());
+  //   this.nextBtn.addEventListener("click", () => this.nextSlide());
+  //   this.pauseBtn.addEventListener("click", () => this.toggleAutoSlide());
 
-    // Dot navigation
-    const dots = this.dotsContainer.querySelectorAll("button");
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => this.goToSlide(index));
-    });
+  //   // Dot navigation
+  //   const dots = this.dotsContainer.querySelectorAll("button");
+  //   dots.forEach((dot, index) => {
+  //     dot.addEventListener("click", () => this.goToSlide(index));
+  //   });
 
-    // Pause on hover
-    this.sliderTrack.addEventListener("mouseenter", () => {
-      if (this.isPlaying) {
-        this.pauseAutoSlide();
-      }
-    });
+  //   // Pause on hover
+  //   this.sliderTrack.addEventListener("mouseenter", () => {
+  //     if (this.isPlaying) {
+  //       this.pauseAutoSlide();
+  //     }
+  //   });
 
-    this.sliderTrack.addEventListener("mouseleave", () => {
-      if (this.isPlaying) {
-        this.startAutoSlide();
-      }
-    });
-  }
+  //   this.sliderTrack.addEventListener("mouseleave", () => {
+  //     if (this.isPlaying) {
+  //       this.startAutoSlide();
+  //     }
+  //   });
+  // }
 
   updateSliderPosition() {
     const translateX = -this.currentSlide * this.slideWidth;
@@ -55,34 +55,34 @@ class AutoSlider {
   nextSlide() {
     this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
     this.updateSliderPosition();
-    this.updateDots();
+    // this.updateDots();
   }
 
   prevSlide() {
     this.currentSlide =
       (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
     this.updateSliderPosition();
-    this.updateDots();
+    // this.updateDots();
   }
 
   goToSlide(slideIndex) {
     this.currentSlide = slideIndex;
     this.updateSliderPosition();
-    this.updateDots();
+    // this.updateDots();
   }
 
-  updateDots() {
-    const dots = this.dotsContainer.querySelectorAll("button");
-    dots.forEach((dot, index) => {
-      if (index === this.currentSlide) {
-        dot.classList.remove("bg-gray-300");
-        dot.classList.add("bg-blue-500");
-      } else {
-        dot.classList.remove("bg-blue-500");
-        dot.classList.add("bg-gray-300");
-      }
-    });
-  }
+  // updateDots() {
+  //   const dots = this.dotsContainer.querySelectorAll("button");
+  //   dots.forEach((dot, index) => {
+  //     if (index === this.currentSlide) {
+  //       dot.classList.remove("bg-gray-300");
+  //       dot.classList.add("bg-blue-500");
+  //     } else {
+  //       dot.classList.remove("bg-blue-500");
+  //       dot.classList.add("bg-gray-300");
+  //     }
+  //   });
+  // }
 
   startAutoSlide() {
     this.autoSlideInterval = setInterval(() => {
