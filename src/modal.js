@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelectorAll(".bap");
+  // const stateSelect = document.getElementById('states');
+
+  // data.states.forEach(state => {
+  //   const option = document.createElement('option');
+  //   option.value = state;
+  //   option.textContent = state;
+  //   stateSelect.appendChild(option);
+  // });
   let closeModal;
 
   const modal = /*html*/ `
@@ -40,16 +48,67 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="form-row mb-4">
                   <input type="email" id="email" name="email" placeholder="Email Address" required class="p-3 border border-gray-300 rounded-md w-full" />
                 </div>
+                 <div class="form-row mb-4">
+                  <label for="Product Category" class="investment-label block text-sm mb-2">Product Category*</label>
+                  <select id="productCategory" name="Product category" required class="p-3 border border-gray-300 rounded-md w-full">
+                    <option value="">Select Product Category</option>
+                    <option value="Appliance">Appliance</option>
+                    <option value="Mobility">Mobility</option>
+                    <option value="Battery(BaaS)">Battery(BaaS)</option>
+                  </select>
+                </div>
+                <div class="form-row mb-4">
+                  <label for="location" class="investment-label block text-sm mb-2">Location *</label>
+                  <select id="investment" name="investment" required class="p-3 border border-gray-300 rounded-md w-full">
+                   <option value="">Select State</option>
+  <option value="andhra-pradesh">Andhra Pradesh</option>
+  <option value="arunachal-pradesh">Arunachal Pradesh</option>
+  <option value="assam">Assam</option>
+  <option value="bihar">Bihar</option>
+  <option value="chhattisgarh">Chhattisgarh</option>
+  <option value="goa">Goa</option>
+  <option value="gujarat">Gujarat</option>
+  <option value="haryana">Haryana</option>
+  <option value="himachal-pradesh">Himachal Pradesh</option>
+  <option value="jharkhand">Jharkhand</option>
+  <option value="karnataka">Karnataka</option>
+  <option value="kerala">Kerala</option>
+  <option value="madhya-pradesh">Madhya Pradesh</option>
+  <option value="maharashtra">Maharashtra</option>
+  <option value="manipur">Manipur</option>
+  <option value="meghalaya">Meghalaya</option>
+  <option value="mizoram">Mizoram</option>
+  <option value="nagaland">Nagaland</option>
+  <option value="odisha">Odisha</option>
+  <option value="punjab">Punjab</option>
+  <option value="rajasthan">Rajasthan</option>
+  <option value="sikkim">Sikkim</option>
+  <option value="tamil-nadu">Tamil Nadu</option>
+  <option value="telangana">Telangana</option>
+  <option value="tripura">Tripura</option>
+  <option value="uttar-pradesh">Uttar Pradesh</option>
+  <option value="uttarakhand">Uttarakhand</option>
+  <option value="west-bengal">West Bengal</option>
+  <option value="andaman-nicobar">Andaman and Nicobar Islands</option>
+  <option value="chandigarh">Chandigarh</option>
+  <option value="dadra-nagar-haveli">Dadra and Nagar Haveli and Daman & Diu</option>
+  <option value="delhi">Delhi</option>
+  <option value="jammu-kashmir">Jammu and Kashmir</option>
+  <option value="ladakh">Ladakh</option>
+  <option value="lakshadweep">Lakshadweep</option>
+  <option value="puducherry">Puducherry</option>
+                  </select>
+                </div>
                 <input type="hidden" name="_subject" value="New submission!">
                 <input type="hidden" name="_captcha" value="false">
                 <div class="form-row mb-4">
                   <label for="investment" class="investment-label block text-sm mb-2">Optimal Investment *</label>
                   <select id="investment" name="investment" required class="p-3 border border-gray-300 rounded-md w-full">
                     <option value="">Select Investment</option>
-                    <option value="10-25">10 Lakhs - 25 Lakhs</option>
-                    <option value="25-50">25 Lakhs - 50 Lakhs</option>
-                    <option value="50-100">50 Lakhs - 1 Crore</option>
-                    <option value="100+">1 Crore+</option>
+                    <option value="5-20">5 Lakhs - 20 Lakhs</option>
+                    <option value="20-50">20 Lakhs - 50 Lakhs</option>
+                    <option value="50-100000">50 Lakhs - 1 Lakh</option>
+                    <option value="100000+">1 Lakh+</option>
                   </select>
                 </div>
                 <button type="submit" class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
