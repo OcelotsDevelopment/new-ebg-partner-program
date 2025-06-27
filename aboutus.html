@@ -133,6 +133,28 @@
                 inset -20px 0 20px -20px rgba(0, 0, 0, 0.5);
         }
     </style>
+
+
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3579445095522732');
+        fbq('track', 'PageView');
+    </script>
+
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -237,14 +259,14 @@
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Proven Wealth Creation</h3>
                     <p class="text-gray-600 leading-relaxed mb-6">
-                        Our platform has facilitated over $500M in real estate transactions, delivering consistent
-                        returns to our partners.
+                        We’ve helped our partners achieve significant growth, consistently delivering strong and
+                        dependable returns through our platform
                     </p>
-                    <p
+                    <!-- <p
                         class="flex items-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-semibold">
                         <span class="text-3xl font-bold mr-2">$500M+</span>
                         <span class="text-sm">Transactions</span>
-                    </p>
+                    </p> -->
                 </div>
 
                 <!-- Card 2 -->
@@ -258,10 +280,10 @@
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Global Market Reach</h3>
                     <p class="text-gray-600 leading-relaxed mb-6">
-                        Access a network of 3M+ developers and investors across 50+ countries, amplifying your
-                        investment potential.
+                        Connect with a thriving global network across dozens of countries, expanding your reach and
+                        opening the door to greater growth opportunities
                     </p>
-                    <div class="flex items-center justify-between">
+                    <!-- <div class="flex items-center justify-between">
                         <div class="text-center">
                             <div
                                 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -274,7 +296,7 @@
                                 50+</div>
                             <div class="text-xs text-gray-500">Countries</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Card 3 -->
@@ -288,17 +310,17 @@
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovative Technology</h3>
                     <p class="text-gray-600 leading-relaxed mb-6">
-                        Leverage our AI-driven tools and composable web architecture to stay ahead in a rapidly evolving
-                        market.
+                        Stay ahead in a fast-changing market with powerful tools and a flexible, future-ready digital
+                        foundation.
                     </p>
-                    <div class="flex items-center text-primary font-semibold">
+                    <!-- <div class="flex items-center text-primary font-semibold">
                         <div class="flex space-x-2">
                             <span
                                 class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent px-3 py-1 rounded-full text-sm">AI-Driven</span>
                             <span
                                 class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent px-3 py-1 rounded-full text-sm">Web3</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -462,23 +484,19 @@
 
     <section class="lg:px-20 lg:py-10">
         <div class="relative">
-          <img src="./assets/images/irfa 2.png" alt="" class="lg:w-1/2" />
-          <div
-            class="p-2.5 lg:p-14 lg:px-20 rounded-2xl absolute top-[100%] lg:top-1/2 left-1/2 lg:left-[60%] transform -translate-y-1/2 -translate-x-1/2"
-            style="box-shadow: 0px 5px 12px 0px #00000054; background: #cfcfcf63"
-          >
-            <h2
-              class="text-xl lg:text-4xl text-primary text-center font-bold w-[300px] lg:w-auto"
-            >
-              "We don't pitch dreams.We<br />
-              deliver results."
-            </h2>
-            <p class="text-base lg:text-lg font-medium text-center lg:text-right">
-              -Dr. Irfan Khan, Founder & CEO
-            </p>
-          </div>
+            <img src="./assets/images/irfa 2.png" alt="" class="lg:w-1/2" />
+            <div class="p-2.5 lg:p-14 lg:px-20 rounded-2xl absolute top-[100%] lg:top-1/2 left-1/2 lg:left-[60%] transform -translate-y-1/2 -translate-x-1/2"
+                style="box-shadow: 0px 5px 12px 0px #00000054; background: #cfcfcf63">
+                <h2 class="text-xl lg:text-4xl text-primary text-center font-bold w-[300px] lg:w-auto">
+                    "We don't pitch dreams.We<br />
+                    deliver results."
+                </h2>
+                <p class="text-base lg:text-lg font-medium text-center lg:text-right">
+                    -Dr. Irfan Khan, Founder & CEO
+                </p>
+            </div>
         </div>
-      </section>
+    </section>
 
     <section class="lg:px-20 px-8 py-10 lg:pt-24 mb-20">
         <h1 class="text-4xl font-bold text-center text-tertiary mb-10 lg:mb-24">
@@ -644,6 +662,10 @@
     </footer>
     <script type="module" src="./main.js"></script>
     <script type="module" src="src/modal.js"></script>
+
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3579445095522732&ev=PageView&noscript=1" /></noscript>
 </body>
 
 </html>
