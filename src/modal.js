@@ -145,6 +145,7 @@ async function submitForm(e) {
       // Do NOT set Content-Type — browser sets it automatically when using FormData
     });
 
+    
     if (response.ok) {
       messageDiv.textContent = 'Thank you! Your application has been submitted successfully.';
       messageDiv.className = 'mt-4 text-center text-green-600 font-medium';

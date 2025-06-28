@@ -3,27 +3,27 @@ document
   .addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    const form = e.target
+    const form = e.target;
     const submitBtn = document.querySelector("#submit-btn");
     const spinner = document.querySelector(".loading-spinner");
-    const btnText = submitBtn.querySelector('.btn-text');
+    const btnText = submitBtn.querySelector(".btn-text");
     // const messageDiv = document.getElementById('message');
 
     // Show loading state
     submitBtn.disabled = true;
     spinner.style.display = "inline-block";
-    btnText.style.display = 'none';
+    btnText.style.display = "none";
     // messageDiv.style.display = 'none';
 
     // Create FormData object (alternative to JSON)
     const formData = {
-        name: `${form.name.value} ${form.lastname.value}`,
-        email: form.email.value,
-        phone: form.mobileno.value,
-        product_category: form.productcategory.value,
-        state: form.state.value,
-        investment: form.investment.value
-      };
+      name: `${form.name.value} ${form.lastname.value}`,
+      email: form.email.value,
+      phone: form.mobileno.value,
+      product_category: form.productcategory.value,
+      state: form.state.value,
+      investment: form.investment.value,
+    };
     // console.log(form.investment.value);
 
     // for (const value of formData.values()) {
@@ -33,15 +33,17 @@ document
     try {
       // Replace with your Google Apps Script URL
       // "https://script.google.com/macros/s/AKfycbw-CYr1Of6r0as-izzdOVKNFCQED_Upd8C2eNVcOveAGAbh0qLjwKGo-m0_HW0DeRJKyw/exec",
-      const response = await fetch(
-        "https://www.zohoapis.com/crm/v7/functions/partnernetworkformsubmit/actions/execute?auth_type=apikey&zapikey=1003.ba088828d562e4eca4a11996f2dbd892.5404c13299356b3b7db0a4151c22430c",
-        {
-            method: "POST",
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          }
+      let response= await fetch("https://partner-network.theebg.com/submit-to-zoho.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      console.log(
+        response,
+        "responseresponseresponseresponseresponseresponseresponse"
       );
 
       const result = await response.json();
@@ -62,12 +64,12 @@ document
       // messageDiv.textContent = '❌ Sorry, there was an error sending your message. Please try again.';
       // messageDiv.className = 'message error';
       // messageDiv.style.display = 'block';
-      console.error("Form submission error:", error);
+      console.log("Form submission error:", error);
     } finally {
       // Reset button state
       submitBtn.disabled = false;
       spinner.style.display = "none";
-      btnText.style.display = 'block';
+      btnText.style.display = "block";
       // btnText.textContent = 'Send Message';
       form.reset();
     }
