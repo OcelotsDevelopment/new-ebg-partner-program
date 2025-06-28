@@ -130,7 +130,7 @@
                     </div>
 
                     <p class="text-gray-100">
-                      Unlock new growth opportunities through EBG’s trusted
+                      Unlock new growth opportunities through EBG's trusted
                       partner network
                     </p>
                   </div>
@@ -144,15 +144,15 @@
               </div>
             </div>
 
-            <form
+            <form id="contactForm"
               class="h-full bg-white/10  p-6 rounded-2xl space-y-4 shadow-xl border border-white/30 backdrop-blur-lg">
               <div class="flex space-x-3 text-sm">
                 <div class="w-1/2">
-                  <input type="text" placeholder="First Name"
+                  <input name="name" type="text" placeholder="First Name"
                     class="w-full p-1.5 rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition" />
                 </div>
                 <div class="w-1/2">
-                  <input type="text" placeholder="Last Name"
+                  <input type="text" name="lastname" placeholder="Last Name"
                     class="w-full p-1.5 rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition" />
                 </div>
               </div>
@@ -162,30 +162,30 @@
                   <input type="text" value="+91" readonly
                     class="p-1.5 w-full rounded-md bg-white border border-gray-200 text-gray-500 cursor-not-allowed" />
                 </div>
-                <input type="tel" placeholder="Phone Number"
+                <input type="tel" placeholder="Phone Number" name="mobileno"
                   class="w-full p-1.5 text-sm rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition" />
               </div>
 
-              <input type="email" placeholder="Email Address"
+              <input type="email" placeholder="Email Address" name="email"
                 class="w-full p-1.5 text-sm rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition" />
 
               <div>
                 <label class="block text-white font-semibold mb-2 text-sm">
                   Product Category <span class="text-red-500">*</span>
                 </label>
-                <select
+                <select name="productcategory"
                   class="w-full p-1.5 rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 transition">
-                  <option>-Select-</option>
-                  <option>Appliance</option>
-                  <option>Mobility</option>
-                  <option>Battery (BaaS)</option>
+                  <option value="">-Select-</option>
+                  <option value="Appliance">Appliance</option>
+                  <option value="Mobility">Mobility</option>
+                  <option value="Battery (BaaS)">Battery (BaaS)</option>
                 </select>
               </div>
 
               <div class="form-row mb-4">
                 <label for="location" class="block text-white font-semibold mb-2 text-sm">Location <span
                     class="text-red-500">*</span></label>
-                <select id="investment" name="investment" required
+                <select id="location" name="state" required
                   class="p-1.5 border border-gray-300 rounded-md w-full bg-white ">
                   <option value="">Select State</option>
                   <option value="andhra-pradesh">Andhra Pradesh</option>
@@ -226,8 +226,7 @@
                   <option value="puducherry">Puducherry</option>
                 </select>
               </div>
-              <input type="hidden" name="_subject" value="New submission!">
-              <input type="hidden" name="_captcha" value="false">
+
               <div class="form-row mb-4">
                 <label for="investment" class="block text-white font-semibold mb-2 text-sm">Optimal Investment <span
                     class="text-red-500">*</span></label>
@@ -241,9 +240,19 @@
                 </select>
               </div>
 
-              <button type="submit"
-                class="w-full bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 rounded-md shadow-md hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-primary">
-                Submit
+              <input type="hidden" name="_subject" value="New submission!">
+              <input type="hidden" name="_captcha" value="false">
+
+              <button type="submit" id="submit-btn"
+                class="w-full min-h-10 bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 rounded-md shadow-md hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-primary flex justify-center">
+                <span class="btn-text">Submit</span>
+                <span class="loading-spinner hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="loading-spinner animate-spin lucide lucide-loader-circle-icon lucide-loader-circle">
+                  <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                </svg>
+                </span>
               </button>
             </form>
           </div>
@@ -924,6 +933,7 @@
   <script type="module" src="./main.js"></script>
   <script type="module" src="src/modal.js"></script>
   <script type="module" src="src/notifyModal.js"></script>
+  <script type="module" src="src/sheetform.js"></script>
   <script>
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById("mobile-menu-button");
