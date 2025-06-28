@@ -1,17 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelectorAll(".bap");
-  // const stateSelect = document.getElementById('states');
-
-  // data.states.forEach(state => {
-  //   const option = document.createElement('option');
-  //   option.value = state;
-  //   option.textContent = state;
-  //   stateSelect.appendChild(option);
-  // });
-  let closeModal;
 
   const modal = /*html*/ `
-
     <div id="partnerModal" class="partner-modal fixed inset-0 bg-black/15 bg-opacity-40 flex justify-center items-center z-50">
     <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-6 rounded-lg shadow-lg max-w-xl w-full">
     <div class="w-commerce-commercecartheader cart-title flex justify-between items-center mb-4">
@@ -111,65 +101,77 @@ document.addEventListener("DOMContentLoaded", function () {
                     <option value="100000+">1 Lakh+</option>
                   </select>
                 </div>
-                <button type="submit" class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
-                  Submit
-                </button>
+                <button type="submit" id="modal-submit-btn"
+                class="w-full min-h-10 bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 rounded-md shadow-md hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-primary flex justify-center">
+                <span class="modal-btn-text">Submit</span>
+                <span class="modal-loading-spinner hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="loading-spinner animate-spin lucide lucide-loader-circle-icon lucide-loader-circle">
+                  <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                </svg>
+                </span>
+              </button>
               </form>
 
               <script>
+                document
+  .getElementById("partnerForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-const form = document.getElementById('partnerForm');
-if (form) {
-  form.addEventListener('submit', submitForm);
-}
+    const form = e.target;
+    const submitBtn = document.querySelector("#modal-submit-btn");
+    const spinner = document.querySelector(".modal-loading-spinner");
+    const btnText = submitBtn.querySelector(".modal-btn-text");
 
-async function submitForm(e) {
-  e.preventDefault(); // Prevent default form submission
-  console.log("Soejjjjjjjjjjjj")
-  const form = e.target;
-  const submitBtn = form.querySelector('.submit-btn');
-  const messageDiv = document.getElementById('submitMessage');
+    // Show loading state
+    submitBtn.disabled = true;
+    spinner.style.display = "inline-block";
+    btnText.style.display = "none";
 
-  // Get FormData directly
-  const formData = new FormData(form);
+    // Create FormData object (alternative to JSON)
+    const formData = {
+      name: form.name.value + " " + form.lastname.value,
+      email: form.email.value,
+      phone: form.mobileno.value,
+      product_category: form.productcategory.value,
+      state: form.state.value,
+      investment: form.investment.value,
+    };
 
-  // Show loading state
-  submitBtn.textContent = 'Submitting...';
-  submitBtn.disabled = true;
-  messageDiv.classList.add('hidden');
+    try {
+      let response= await fetch("https://partner-network.theebg.com/submit-to-zoho.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-  try {
-    const response = await fetch("https://formsubmit.co/vishnuv@ocelots.in", {
-      method: "POST",
-      body: formData
-      // Do NOT set Content-Type — browser sets it automatically when using FormData
-    });
+      console.log(
+        response,
+        "responseresponseresponseresponseresponseresponseresponse"
+      );
 
-    
-    if (response.ok) {
-      messageDiv.textContent = 'Thank you! Your application has been submitted successfully.';
-      messageDiv.className = 'mt-4 text-center text-green-600 font-medium';
-      messageDiv.classList.remove('hidden');
+      const result = await response.json();
+
+      if (result.status === "success") {
+        form.reset();
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.log("Form submission error:", error);
+    } finally {
+      // Reset button state
+      submitBtn.disabled = false;
+      spinner.style.display = "none";
+      btnText.style.display = "block";
       form.reset();
-      setTimeout(() => {
-        document.getElementById('partnerModal')?.remove();
-      }, 2000);
-    } else {
-      throw new Error('Submission failed');
     }
-
-  } catch (error) {
-    console.error('Error submitting form:', error);
-    messageDiv.textContent = 'Sorry, there was an error submitting your application. Please try again.';
-    messageDiv.className = 'mt-4 text-center text-red-600 font-medium';
-    messageDiv.classList.remove('hidden');
-  } finally {
-    submitBtn.textContent = 'Submit';
-    submitBtn.disabled = false;
-  }
-}
-
-</script>
+  });
+              </script>
             </div>
           </section>
         </div>
@@ -185,13 +187,6 @@ async function submitForm(e) {
     });
   });
 
-  async function submitForm(e) {
-    e.pr;
-    const response = await fetch("https://formsubmit.co/vishnuv@ocelots.in", {
-      method: "POST",
-      body: JSON.stringify({ username: "example" }),
-    });
-  }
 });
 
 // https://script.google.com/macros/s/AKfycbyRZ2wwObDPtaQikax0Y0_9G3UgrpsAemf1-yvifLznW07yRCrxwK_jnBjkUONJPUpz/exec
