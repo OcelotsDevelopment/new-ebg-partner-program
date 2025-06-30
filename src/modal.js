@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
       investment: form.investment.value,
     };
 
-    console.log("Submitting form data:", formData);
+    // console.log("Submitting form data:", formData);
 
     try {
       const response = await fetch(
@@ -171,22 +171,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       );
 
-      console.log("Response status:", response.status);
+      // console.log("Response status:", response.status);
 
       if (!response.ok) {
         // throw new Error(\`HTTP error! status: \${response.status}\`);
       }
+      form.reset();
 
       const result = await response.json();
       console.log("Result:", result);
 
-      if (result.status === "success") {
-        // alert("Form submitted successfully! Our team will contact you soon.");
-        form.reset();
-        document.getElementById("partnerModal")?.remove();
-      } else {
-        throw new Error(result.message || "Failed to submit form");
-      }
+      // if (result.status === "success") {
+      //   // alert("Form submitted successfully! Our team will contact you soon.");
+      //   document.getElementById("partnerModal")?.remove();
+      // } else {
+      //   throw new Error(result.message || "Failed to submit form");
+      // }
     } catch (error) {
       console.error("Form submission error:", error);
       alert("There was an error submitting the form. Please try again.");
