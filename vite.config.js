@@ -34,7 +34,8 @@ export default defineConfig({
         aboutus: resolve(__dirname, 'aboutus.html'),
         appliance: resolve(__dirname, 'appliance.html'),
         mobility: resolve(__dirname, 'mobility.html'),
-        energy: resolve(__dirname, 'energy.html')
+        energy: resolve(__dirname, 'energy.html'),
+        "thank-you": resolve(__dirname, 'thank-you.html'),
       },
       output: {
         entryFileNames: (chunkInfo) => {

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://framerusercontent.com/images/tbDFTjddM6Hq81HFcplVXP5gUeM.png" rel="icon"
+        media="(prefers-color-scheme: light)" />
+    <link href="https://framerusercontent.com/images/OwQjdDhS57aORqal8JlwJMiNbI.png" rel="icon"
+        media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/OwQjdDhS57aORqal8JlwJMiNbI.png" />
+    <title>EBG Partner Network</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="partical.css" />
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #79d9e1 100%);
+        }
+
+        .glass-effect {
+            background-color: white;
+            /* backdrop-filter: blur(10px); */
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(
+            window,
+            document,
+            "script",
+            "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "3579445095522732");
+        fbq("track", "PageView");
+    </script>
+</head>
+
+<body>
+    <header class="fixed top-0 left-0 right-0 z-20">
+        <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
+            <div>
+                <a href="/">
+                    <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-16" />
+                </a>
+            </div>
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a href="aboutus.html">About us</a></li>
+                <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
+                <!-- <li><a href="#">Ideology</a></li> -->
+                <li>
+                    <button
+                        class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">
+                        Start Earning
+                    </button>
+                </li>
+            </ul>
+            <div class="lg:hidden relative z-50">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-align-justify-icon lucide-align-justify">
+                        <path d="M3 12h18" />
+                        <path d="M3 18h18" />
+                        <path d="M3 6h18" />
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Dropdown -->
+                <div id="mobile-menu"
+                    class="hidden absolute right-0 z-50 mt-2 bg-white rounded-lg shadow-xl py-2 transform origin-top transition-all duration-200 ease-in-out opacity-0 scale-95"
+                    style="width: calc(100vw - 28px)">
+                    <a href="aboutus.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About us</a>
+                    <button
+                        class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center">
+                        Start Earning
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="particlesContainer" class="fixed inset-0 w-full h-full z-0">
+        <canvas id="particlesCanvas" class="w-full h-full"></canvas>
+    </div>
+    <!-- Main Content -->
+    <div class="relative z-10 flex items-center justify-center min-h-screen px-2">
+        <div class="w-full max-w-2xl mx-auto text-center animate-fadeIn flex flex-col items-center justify-center">
+            <!-- Success Icon -->
+            <div class="flex justify-center mb-8 animate-scaleIn" style="animation-delay: 0.3s">
+                <div class="relative">
+                    <div class="w-24 h-24 bg-gradient-to-l from-primary to-secondary rounded-full flex items-center justify-center shadow-2xl animate-bounce-slow icon-glow">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <!-- Glow Effect -->
+                    <div class="absolute inset-0 w-24 h-24 bg-[#79d9e1] rounded-full opacity-30 animate-ping"></div>
+                </div>
+            </div>
+            <!-- Thank You Card -->
+            <div class="glass-effect rounded-3xl p-6 md:p-12 shadow-2xl animate-slideUp w-full max-w-lg" style="animation-delay: 0.5s">
+                <div class="bg-white rounded-2xl p-2 md:p-4">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                        <span class="text-primary">Thank You!</span>
+                    </h1>
+                </div>
+                <div class="space-y-4 mb-8">
+                    <p class="text-lg md:text-2xl text-black font-medium">
+                        Thanks for submitting your interest.
+                    </p>
+                    <p class="text-base md:text-xl text-gray-600 text-opacity-90">
+                        Our team will get in touch with you shortly.
+                    </p>
+                </div>
+                <!-- Back to Home Button -->
+                <div class="animate-slideUp" style="animation-delay: 0.9s">
+                    <button onclick="window.location.href='/'"
+                        class="group inline-flex items-center px-6 py-3 md:px-8 md:py-4 font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-white/25 text-white text-base md:text-lg"
+                        style="background: linear-gradient(135deg, #027fc0 0%, #79d9e1 100%);">
+                        <svg class="w-5 h-5 mr-3 group-hover:-translate-x-1 transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        <span>Back to Home Page</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Footer Message -->
+            <div class="mt-8 animate-slideUp" style="animation-delay: 1.1s">
+                <p class="text-white text-opacity-60 text-sm md:text-base">
+                    We're excited to connect with you and discuss your needs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 text-gray-900 relative z-10">
+        <!-- Footer -->
+        <div class="bg-white">
+            <div class="max-w-7xl mx-auto px-6 py-10">
+                <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+                    <!-- Brand & Tagline -->
+                    <div class="md:w-2/5">
+                        <a href="/">
+                            <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-10" />
+                        </a>
+                        <p class="mt-2 text-gray-600">
+                            Building a sustainable future through innovation and
+                            partnership.
+                        </p>
+
+                        <p class="mt-6 text-sm text-gray-600">
+                            <br />
+                            info@ebgpartner.com <br />
+                            <!-- +91-9071325969 -->
+                        </p>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="md:w-fit">
+                        <h4 class="text-lg font-semibold mb-2">Company</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>
+                                <a href="aboutus.html" class="hover:underline">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <li>
+                      <a href="ourbrand.html" class="hover:underline">Our Brands</a>
+                    </li> -->
+                    <!-- <li><a href="#" class="hover:underline">Ideology</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li> -->
+                    <!-- Industries Links -->
+                    <div class="md:w-fit">
+                        <h4 class="text-lg font-semibold mb-2">Sector's</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>
+                                <a href="appliance.html" class="hover:underline">Appliance</a>
+                            </li>
+                            <li>
+                                <a href="energy.html" class="hover:underline">Energy</a>
+                            </li>
+                            <li>
+                                <a href="mobility.html" class="hover:underline">Mobility</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <li><a href="#" class="hover:underline">Innovations</a></li> -->
+                    <!-- Call to Action -->
+                    <!-- <div class="md:w-2/5">
+                <h4 class="text-lg font-semibold mb-2">Get Started</h4>
+                <p class="text-gray-600">
+                  Ready to transform your business with sustainable innovation?
+                </p>
+                <button
+                  class="bap mt-4 inline-block px-5 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
+                  Start Earning
+                </button>
+              </div> -->
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-t-2 border-gray-300 mt-10" />
+
+                <!-- Copyright -->
+                <p class="mt-6 text-center text-sm text-gray-600">
+                    EBG Partner Network © 2025. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/modal.js"></script>
+    <script type="module" src="src/particalEffect.js"></script>
+
+    <noscript><img height="1" width="1" style="display: none"
+            src="https://www.facebook.com/tr?id=3579445095522732&ev=PageView&noscript=1" /></noscript>
+</body>
+
+</html>
