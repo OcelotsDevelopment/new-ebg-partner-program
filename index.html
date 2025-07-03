@@ -30,6 +30,52 @@
     fbq('track', 'PageView');
   </script>
 
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-250px * 2.5));
+      }
+    }
+
+    .sliders {
+      height: 100px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sliders .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 15);
+    }
+
+    .sliders .slide {
+      height: 100px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sliders img {
+      width: auto;
+    }
+
+
+    .slide img {
+      width: 200px;
+    }
+  </style>
+
   <!-- End Meta Pixel Code -->
 </head>
 
@@ -226,6 +272,8 @@
       </div>
     </div>
   </section>
+
+  <!-- Brand Logo Scrolling -->
 
   <section class="bg-white text-gray-800 px-7 lg:px-20 py-10">
     <div class="mb-10">
@@ -896,6 +944,54 @@
       </div>
     </div>
   </section>
+
+  <section class="py-16 mb-18">
+    <p class="text-center text-2xl lg:text-4xl font-semibold mb-10">Our Brands</p>
+    <div class=" mx-2">
+        <div class="sliders">
+            <div class="slide-track">
+                <div class="slide">
+                    <div class="flex items-center h-full">
+                      <img src="assets/partner-logo/acer.png" alt="" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/brillen.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/daewoo.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/ebygo.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/nonstop.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/nuvun.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/vajram.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/brillen.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/daewoo.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/ebygo.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/acer.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/partner-logo/carlton.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
   <section class="px-4">
     <h1 class="text-3xl lg:text-5xl text-center font-bold text-tertiary">
