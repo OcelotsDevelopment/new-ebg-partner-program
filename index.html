@@ -93,7 +93,7 @@
         <!-- <li><a href="ourbrand.html">Our Brands</a></li> -->
         <!-- <li><a href="#">Ideology</a></li> -->
         <li>
-          <button class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-r from-primary to-secondary cursor-pointer">
+          <button class="bap text-white px-6 py-2 rounded-lg bg-gradient-to-b from-primary to-secondary cursor-pointer">
             Invest Now
           </button>
         </li>
@@ -115,7 +115,7 @@
           style="width: calc(100vw - 28px)">
           <a href="aboutus.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About us</a>
           <button
-            class="bap block text-white px-4 py-2 bg-gradient-to-r from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center">
+            class="bap block text-white px-4 py-2 bg-gradient-to-t from-primary to-secondary cursor-pointer rounded-lg mx-2 w-[95%] text-center">
             Invest Now
           </button>
         </div>
@@ -123,36 +123,32 @@
     </nav>
   </header>
 
-  <section class="px-8 lg:px-20 relative py-6">
-    <div class="absolute top-10 left-0 w-full h-28 bg-secondary/30 blur-lg -z-10"></div>
-    <div class="flex flex-col items-center justify-center mb-5">
-      <h1 class="text-2xl lg:text-6xl font-bold text-center ">
-        Join the EBG Partner<span class="text-primary px-2 py-1 rounded-2xl">Network</span>
-      </h1>
-      <p class="text-base font-medium text-gray-700 text-center py-4">
-        <!-- Invest in India’s Fastest-Growing Rental Ecosystem: Appliances, Electric
-        2/3-Wheelers, and Battery-as-a-Service (BaaS). -->
-        A private platform for investing in professionally managed, income-generating assets like office infrastructure,
-        electric vehicles, and smart batteries.
-      </p>
-    </div>
-    <div class="flex items-center justify-center mb-10">
-      <video class="rounded-2xl shadow-2xl lg:h-[500px] w-full object-cover" src="./assets/EBGHero.mp4" autoplay muted
-        loop></video>
+  <section class="px-8 lg:px-20 relative py-6 h-[98vh]" 
+    style="background: linear-gradient(179.89deg, rgba(0, 0, 0, 0) 0.1%, rgba(0, 0, 0, 0.8) 53.37%), url(./assets/landing-bg.png);">
+
+    <div class="flex flex-col md:flex-row justify-between gap-3.5 absolute bottom-0 left-0 right-0 mb-7 md:mb-24 md:px-14 px-3.5 ">
+      <div class="flex flex-col text-white justify-center">
+        <h1 class="text-2xl lg:text-[50px] font-bold text-left ">
+          Join the EBG Partner Network
+        </h1>
+        <p class="text-lg font-medium text-[#D9D9D9] text-left py-4">
+          A private platform for investing in professionally managed, income-generating <br>assets like office
+          infrastructure,
+          electric vehicles, and smart batteries.
+        </p>
+        <h2 class="text-[20px] font-bold ">
+          Earn up to 22–30% annual returns with zero operational hassle.
+        </h2>
+        <button class="bap max-w-3xs bg-white text-[20px] text-black font-semibold px-8 py-3 rounded-lg mt-5">
+          Invest Now
+        </button>
+      </div>
+      <div class="flex items-center justify-center">
+        <video class="rounded-2xl shadow-2xl lg:h-[260px] w-[417px] object-cover" src="./assets/EBGHero.mp4" autoplay
+          muted loop></video>
+      </div>
     </div>
 
-    <div class="text-center mb-10">
-      <h2 class="text-2xl font-bold text-primary">
-        Earn up to 22–30% annual returns with zero operational hassle.
-      </h2>
-      <button class="bap max-w-2xs bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-lg mt-5">
-        Invest Now
-      </button>
-    </div>
-    <!-- <div class="flex items-center justify-center gap-10">
-        <img src="./assets/logas/acer.png" alt="" class="h-4 lg:h-8" />
-        <img src="./assets/logas/daewoo.png" alt="" class="h-4 lg:h-8" />
-      </div> -->
   </section>
 
   <!-- <section class="px-7 lg:px-20 py-10">
@@ -197,12 +193,11 @@
   </div>
 </section> -->
 
-  <section class="px-7 lg:px-20 pb-10 md:h-[80vh] flex flex-col items-center justify-center gap-10 ">
+  <section class="px-7 lg:px-20 pb-10 md:h-[80vh] flex flex-col items-center justify-center gap-10 mt-10 md:mt-20">
     <div class="mb-10">
-      <!-- <h2 class="text-xl lg:text-4xl mb-3 font-bold text-center text-tertiary">
-        Creating Real Change, Together
-      </h2> -->
-      <h2 class="text-xl lg:text-4xl mb-3 font-bold text-center text-tertiary">
+
+      <h2
+        class="text-xl md:text-4xl mb-3 font-extrabold text-center          bg-gradient-to-r from-[#1D2836] to-[#004FC3] bg-clip-text text-transparent">
         Why Choose EBG Partner Network?
       </h2>
 
@@ -211,7 +206,7 @@
         <br>India’s fastest-growing sectors.
       </p>
       <p class="text-base font-medium mb-6 lg:text-lg text-center">
-        <span class="font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <span class="font-bold bg-gradient-to-r from-[#1D2836] to-[#004FC3] bg-clip-text text-transparent">
           Building a better world, together.
         </span>
       </p>
@@ -221,7 +216,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
         <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
           <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            class="rounded-lg bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
             <img src="./assets/logas/high-returns.svg" alt="" class="h-10" />
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">High Returns</h3>
@@ -233,7 +228,7 @@
 
         <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
           <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            class="rounded-lg bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
             <img src="./assets/logas/hassle-free.svg" alt="" class="h-10" />
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Hassle Free</h3>
@@ -245,7 +240,7 @@
 
         <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
           <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            class="rounded-lg bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
             <img src="./assets/logas/innovation.svg" alt="" class="h-10" />
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">
@@ -259,7 +254,7 @@
 
         <div class="bg-white p-8 rounded-lg shadow-xl hover:bg-gray-50 flex flex-col items-center">
           <div
-            class="rounded-full bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
+            class="rounded-lg bg-gradient-to-r from-primary to-secondary w-16 h-16 mb-4 flex justify-center items-center">
             <img src="./assets/logas/sustain.svg" alt="" class="w-10 h-10" />
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">
@@ -278,7 +273,8 @@
 
   <section class="bg-white text-gray-800 px-7 lg:px-20 py-10">
     <div class="mb-10">
-      <h2 class="text-xl mb-4 lg:text-4xl font-bold text-center text-tertiary">
+      <h2
+        class="text-xl mb-4 lg:text-4xl font-extrabold text-center bg-gradient-to-r from-[#1D2836] to-[#004FC3] bg-clip-text text-transparent ">
         Three High Growth Investment Opportunities
       </h2>
       <p class="text-base font-medium mb-2 lg:text-lg text-gray-700 text-center">
@@ -290,7 +286,7 @@
     <div class="lg:px-16">
       <div class="relative flex justify-between items-center rounded-lg bg-gray-100">
         <div
-          class="absolute bg-gradient-to-r from-primary to-secondary h-[calc(100%-8px)] rounded-md transition-all duration-300 ease-in-out slider"
+          class="absolute bg-gradient-to-t from-primary to-secondary h-[calc(100%-8px)] rounded-md transition-all duration-300 ease-in-out slider"
           style="width: calc(33.333% - 8px); left: 4px"></div>
         <button
           class="tab-btn relative z-10 px-3 lg:px-6 py-3.5 rounded-md w-1/3 text-white font-bold transition-colors duration-300"
@@ -309,19 +305,15 @@
         </button>
       </div>
     </div>
-    <div class="container mx-auto px-4 py-12 space-y-16 relative h-[1740px] lg:h-[850px]">
+    <div class="container mx-auto px-4 py-12 space-y-16 relative h-[840px] lg:h-[574px]">
       <div class="tab-cont absolute top-0 left-0 w-full h-full">
         <div class="bg-white text-gray-800">
           <div class="lg:max-w-7xl mx-auto p-3 lg:p-8 space-y-2.5 lg:space-y-12">
             <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 class="text-xl lg:text-3xl font-bold text-tertiary">
-                Appliance Partner Program
-              </h1>
-              <!-- <p class="mt-4 md:mt-0 text-gray-600">
-                Creating an impact across the world for a better future through three core pillars
-              </p> -->
-            </div>
+            <h1
+              class="text-xl lg:text-3xl text-center font-extrabold bg-gradient-to-r from-[#1D2836] to-[#004FC3] bg-clip-text text-transparent ">
+              Appliance Partner Program
+            </h1>
 
             <!-- Main content: image + copy + stats -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-16 pb-10">
@@ -340,6 +332,29 @@
                   units—to co-working hubs, startups, campuses, and tech parks.
                 </p>
                 <p class="font-semibold">Why It Works:</p>
+                <!-- Stats -->
+                <div class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0">
+                  <div class="text-center">
+                    <h3 class="text-xl lg:text-3xl font-bold leading-tight text-secondary">
+                      upto <span id="appliance-partner-count"> 0%</span>
+                    </h3>
+                    <p class="text-sm text-gray-500">Annual ROI</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-portfolio-value">
+                      0%
+                    </h3>
+                    <p class="text-sm text-gray-500">Utilization Rate</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-satisfaction-rate">
+                      0+
+                    </h3>
+                    <p class="text-sm text-gray-500">Trusted by businesses</p>
+                  </div>
+                </div>
                 <div class="space-y-3 ">
                   <div class="flex items-center space-x-3">
                     <div
@@ -365,7 +380,7 @@
                     </p>
                   </div>
 
-                  <div class="flex items-center space-x-3">
+                  <!-- <div class="flex items-center space-x-3">
                     <div
                       class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
                       <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -375,7 +390,7 @@
                     <p class="">
                       We source premium assets in bulk and lease via long-term B2B contracts.
                     </p>
-                  </div>
+                  </div> -->
                   <!-- <div class="flex items-center space-x-3">
                     <div
                       class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
@@ -400,119 +415,11 @@
                     </a>
                   </div>
                 </div>
-                <!-- Stats -->
-                <div class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0">
-                  <div class="text-center">
-                    <h3
-                      class="text-xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-                      upto <span id="appliance-partner-count"> 0%</span>
-                    </h3>
-                    <p class="text-sm text-gray-500">Annual ROI</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-portfolio-value">
-                      0%
-                    </h3>
-                    <p class="text-sm text-gray-500">Utilization Rate</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-satisfaction-rate">
-                      0+
-                    </h3>
-                    <p class="text-sm text-gray-500">Trusted by businesses</p>
-                  </div>
-                </div>
+
               </div>
             </div>
 
-            <!-- Process Flow -->
-            <div class="flex flex-wrap justify-between items-center gap-10 lg:px-20 pb-10">
-              <!-- Step 1 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 1
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step1.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  Explore and invest in opportunities tailored to your financial goals.
-                </p>
-              </div>
 
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 2 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 2
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  EBG handles leasing, maintenance, and partnerships for
-                  seamless operations.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 3 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 3
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[180px] mt-5">
-                  Choose your vertical(s), e-sign agreements, and fund your
-                  investment securely.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 4 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 4
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <!-- <div
-                          class="w-4 h-4 lg:w-7 lg:h-7 bg-orange-500 rounded-sm"
-                        ></div> -->
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  Sit back and start receiving monthly payouts as your investment goes to work.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -520,14 +427,10 @@
         <div class="bg-white text-gray-800">
           <div class="lg:max-w-7xl mx-auto p-3 lg:p-8 space-y-2.5 lg:space-y-12">
             <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 class="text-xl lg:text-3xl font-bold text-tertiary">
-                Mobility Partner Program
-              </h1>
-              <!-- <p class="mt-4 md:mt-0 text-gray-600">
-                Creating an impact across the world for a better future through three core pillars
-              </p> -->
-            </div>
+            <h1
+              class="text-xl lg:text-3xl text-center font-extrabold bg-gradient-to-r from-[#1D2836] to-[#004FC3] bg-clip-text text-transparent ">
+              Mobility Partner Program
+            </h1>
 
             <!-- Main content: image + copy + stats -->
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-16 pb-10">
@@ -545,6 +448,31 @@
                   transport, partnering with platforms like Swiggy, Zomato, Flipkart, and Zepto
                 </p>
                 <p class="font-semibold">Why It Works:</p>
+                <!-- Stats -->
+                <div class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0">
+                  <div class="text-center">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-partner-count">
+                      18–24%
+                    </h3>
+                    <p class="text-sm text-gray-500">Annual ROI</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-satisfaction-rate">
+                      Leased
+                    </h3>
+                    <p class="text-sm text-gray-500">delivery players</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-satisfaction-rate">
+                      Zero
+                    </h3>
+                    <p class="text-sm text-gray-500">emission vehicles</p>
+                  </div>
+                </div>
+
                 <div class="space-y-3 ">
                   <div class="flex items-center space-x-3">
                     <div
@@ -570,7 +498,7 @@
                     </p>
                   </div>
 
-                  <div class="flex items-center space-x-3">
+                  <!-- <div class="flex items-center space-x-3">
                     <div
                       class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
                       <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -580,7 +508,7 @@
                     <p class="">
                       Streamlined digital KYC enables quick, secure vehicle assignment through leasing contracts
                     </p>
-                  </div>
+                  </div> -->
                 </div>
 
                 <div class="flex flex-col lg:flex-row gap-4">
@@ -595,120 +523,10 @@
                     </a>
                   </div>
                 </div>
-                <!-- Stats -->
-                <div class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0">
-                  <div class="text-center">
-                    <h3
-                      class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-partner-count">
-                      18–24%
-                    </h3>
-                    <p class="text-sm text-gray-500">Annual ROI</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-satisfaction-rate">
-                      Leased
-                    </h3>
-                    <p class="text-sm text-gray-500">delivery players</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-satisfaction-rate">
-                      Zero
-                    </h3>
-                    <p class="text-sm text-gray-500">emission vehicles</p>
-                  </div>
-                </div>
+
               </div>
             </div>
 
-            <!-- Process Flow -->
-            <div class="flex flex-wrap justify-between items-center gap-10 lg:px-20 pb-10">
-              <!-- Step 1 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 1
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step1.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  Explore and invest in opportunities tailored to your financial goals.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 2 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 2
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  EBG handles leasing, maintenance, and partnerships for
-                  seamless operations.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 3 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 3
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[180px] mt-5">
-                  Choose your vertical(s), e-sign agreements, and fund your
-                  investment securely.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 4 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 4
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <!-- <div
-                          class="w-4 h-4 lg:w-7 lg:h-7 bg-orange-500 rounded-sm"
-                        ></div> -->
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  Sit back and start receiving monthly payouts as your investment goes to work.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -716,14 +534,11 @@
         <div class="bg-white text-gray-800">
           <div class="lg:max-w-7xl mx-auto p-3 lg:p-8 space-y-2.5 lg:space-y-12">
             <!-- Header -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 class="text-xl lg:text-3xl font-bold text-tertiary">
-                Battery(BaaS) Partner Program
-              </h1>
-              <!-- <p class="mt-4 md:mt-0 text-gray-600">
-                Creating an impact across the world for a better future through three core pillars
-              </p> -->
-            </div>
+
+            <h1
+              class="text-xl lg:text-3xl text-center font-extrabold bg-gradient-to-r from-[#1D2836] to-[#004FC3] bg-clip-text text-transparent ">
+              Battery(BaaS) Partner Program
+            </h1>
 
             <!-- Main content: image + copy + stats -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10">
@@ -742,6 +557,30 @@
                   swapping stations via Battery-as-a-Service (BaaS) plans.
                 </p>
                 <p class="font-semibold">Why It Works:</p>
+                <!-- Stats -->
+                <div class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0">
+                  <div class="text-center">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-partner-count">
+                      22–28%
+                    </h3>
+                    <p class="text-sm text-gray-500">Annual ROI</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-portfolio-value">
+                      98.2%
+                    </h3>
+                    <p class="text-sm text-gray-500">Uptime</p>
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight text-secondary"
+                      id="appliance-satisfaction-rate">
+                      IoT
+                    </h3>
+                    <p class="text-sm text-gray-500">enabled monitoring</p>
+                  </div>
+                </div>
                 <div class="space-y-4">
                   <div class="flex items-center space-x-3">
                     <div
@@ -767,7 +606,7 @@
                     </p>
                   </div>
 
-                  <div class="flex items-center space-x-3">
+                  <!-- <div class="flex items-center space-x-3">
                     <div
                       class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
                       <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -777,7 +616,7 @@
                     <p class="">
                       We retain ownership, managing swaps, replacements, and re-leasing
                     </p>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="flex flex-col lg:flex-row gap-4">
                   <div class="flex flex-col gap-3 w-full items-center lg:flex-row lg:items-center lg:gap-4">
@@ -791,121 +630,46 @@
                     </a>
                   </div>
                 </div>
-                <!-- Stats -->
-                <div class="flex justify-between sm:space-x-8 space-y-6 sm:space-y-0">
-                  <div class="text-center">
-                    <h3
-                      class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-partner-count">
-                      22–28%
-                    </h3>
-                    <p class="text-sm text-gray-500">Annual ROI</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-portfolio-value">
-                      98.2%
-                    </h3>
-                    <p class="text-sm text-gray-500">Uptime</p>
-                  </div>
-                  <div class="text-center">
-                    <h3
-                      class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent"
-                      id="appliance-satisfaction-rate">
-                      IoT
-                    </h3>
-                    <p class="text-sm text-gray-500">enabled monitoring</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- Process Flow -->
-            <div class="flex flex-wrap justify-between items-center gap-10 lg:px-20 pb-10">
-              <!-- Step 1 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 1
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step1.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  Explore and invest in opportunities tailored to your financial goals.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 2 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 2
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  EBG handles leasing, maintenance, and partnerships for
-                  seamless operations.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 3 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 3
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[180px] mt-5">
-                  Choose your vertical(s), e-sign agreements, and fund your
-                  investment securely.
-                </p>
-              </div>
-
-              <!-- Line -->
-              <div class="hidden lg:block flex-1 h-px bg-gray-300 mx-4"></div>
-
-              <!-- Step 4 -->
-              <div class="flex flex-col items-center w-full lg:w-auto">
-                <p class="text-xs lg:text-sm font-bold mb-4 text-center">
-                  Step 4
-                </p>
-                <div class="w-16 h-16 lg:w-24 lg:h-24 p-1 lg:p-2 bg-white shadow-2xl rounded-full">
-                  <div class="w-full h-full p-1 lg:p-2 bg-gradient-to-r from-primary to-secondary rounded-full">
-                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                      <!-- <div
-                          class="w-4 h-4 lg:w-7 lg:h-7 bg-orange-500 rounded-sm"
-                        ></div> -->
-                      <img class="w-4 h-4 lg:w-7 lg:h-7" src="./assets/icons/step4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <p class="text-xs lg:text-sm font-medium text-center w-[80%] lg:w-[150px] mt-5">
-                  Sit back and start receiving monthly payouts as your investment goes to work.
-                </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-3xl text-center font-semibold mb-14">
+        Renting Made Easy in 3 Steps
+      </p>
+      <div class="flex flex-col md:flex-row gap-16 justify-center">
+        <div class="flex flex-col items-start gap-3 ">
+          <div class="flex items-center justify-center rounded-lg w-10 h-10 bg-gradient-to-b from-primary to-secondary">
+            <span class="text-lg text-white">1</span></div>
+          <p class="text-lg font-semibold ">Find What Fits You</p>
+          <p class="text-[10px]">Explore and invest in <br> opportunities tailored <br> to your financial goals.</p>
+        </div>
+
+        <div class="flex flex-col items-start gap-3 ">
+          <div class="flex items-center justify-center rounded-lg w-10 h-10 bg-gradient-to-b from-primary to-secondary">
+            <span class="text-lg text-white">2</span></div>
+          <p class="text-lg font-semibold ">We do the rest</p>
+          <p class="text-[10px]">EBG handles leasing, <br> maintenance, and <br> partnerships for <br> seamless
+            operations. </p>
+        </div>
+
+        <div class="flex flex-col items-start gap-3 ">
+          <div class="flex items-center justify-center rounded-lg w-10 h-10 bg-gradient-to-b from-primary to-secondary">
+            <span class="text-lg text-white">3</span></div>
+          <p class="text-lg font-semibold "> Lock your deal in</p>
+          <p class="text-[10px]">Choose your vertical(s), <br> e-sign agreements, and <br> fund your investment <br> securely.</p>
+        </div>
+
+        <div class="flex flex-col items-start gap-3 ">
+          <div class="flex items-center justify-center rounded-lg w-10 h-10 bg-gradient-to-b from-primary to-secondary">
+            <span class="text-lg text-white">4</span></div>
+          <p class="text-lg font-semibold ">Let profits roll in</p>
+          <p class="text-[10px]">Sit back and start <br> receiving monthly payouts <br> as your investment goes to <br> work.</p>
         </div>
       </div>
     </div>
@@ -917,8 +681,8 @@
         class="w-full lg:w-1/2 flex flex-col justify-center bg-white bg-opacity-95 rounded-none md:rounded-l-3xl px-6 md:px-10 py-8 md:py-12 min-h-[340px] md:min-h-[420px]">
         <div class="flex flex-col h-full justify-center">
           <h1
-            class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
-            Visionary Building Tomorrow
+            class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent">
+            Visionary Building
           </h1>
           <h2 class="text-2xl font-bold mb-3 text-gray-800">Our Vision</h2>
           <p class="text-gray-700 text-base">
@@ -949,632 +713,51 @@
   <section class="py-16 mb-18">
     <p class="text-center text-2xl lg:text-4xl font-semibold mb-10">Our Brands</p>
     <div class=" mx-2">
-        <div class="sliders">
-            <div class="slide-track">
-                <div class="slide">
-                    <div class="flex items-center h-full">
-                      <img src="assets/partner-logo/acer.png" alt="" />
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/brillen.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/daewoo.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/ebygo.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/nonstop.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/nuvun.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/vajram.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/brillen.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/daewoo.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/ebygo.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/acer.png" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="assets/partner-logo/carlton.png" alt="" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <section class="px-4">
-    <h1 class="text-3xl lg:text-5xl text-center font-bold text-tertiary">
-      Our Journey of Impact
-    </h1>
-    <p class="text-base lg:text-lg text-center">
-      From vision to reality – tracking our progress toward a sustainable
-      future
-    </p>
-
-    <div class="px-4 md:px-20 py-10">
-      <div class="lg:max-w-7xl mx-auto px-4 py-12">
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          <!-- Info Section -->
-          <div class="w-full md:w-1/2 relative min-h-[350px]">
-            <div class="info-item active absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2019</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                Established eBikeGo Rentals, laying the foundation for a
-                diverse ebikes portfolio.
-                Launched as an EV rental startup with 150+ electric bikes.
-                Pioneered sustainable mobility in Indian urban centers.
-                Focused on affordability, convenience, and green transit.
-                Laid the foundation for future expansion.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Launched as an EV rental startup with 150+ electric bikes.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Pioneered sustainable mobility in Indian urban centers.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Focused on affordability, convenience, and green transit.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Laid the foundation for future expansion.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2020</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                Expanded into EV & mobility solutions, entering the
-                sustainable transport sector.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Scaled to become India’s largest EV two-wheeler rental service.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Fleet crossed 2,000+ EVs, operating across multiple cities.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Built strong operational backend for fleet management.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Established brand presence in the EV rental space.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2021</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                Strengthened manufacturing & technology capabilities to
-                support business growth.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Acquired Kustard Technologies for $2M to strengthen tech stack.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Enabled real-time fleet tracking and data analytics.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Enhanced efficiency, uptime, and predictive maintenance.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Positioned technology as a key business driver.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2022</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                <!-- Partnered with global brands, securing exclusive licensing
-                agreements.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Transitioned from rental to manufacturing as a full OEM.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Acquired MUVI from European EV giant Torrot.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Gained access to global R&D, design, and IP.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Set the stage for in-house product development.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2023</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                Tied up with Acer Electric & WHILL, to launch retail stores
-                across India.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Partnered with Acer to launch co-branded EVs in India.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Entered the league of India’s top 5 EV two-wheeler brands.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Rebranded as EBG Group — a tech-driven mobility powerhouse.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Expanded focus across EVs, software, and energy solutions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2024</h3>
-              <p class="text-gray-600 text-lg leading-relaxed">
-                <!-- Expanded dealership network & brand presence across multiple
-                industries.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Rolled out nationwide dealership network to scale retail.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Onboarded over 60 centers across urban and semi-urban areas.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Trained dealer partners on EV operations and service.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Built a strong distribution and after-sales backbone.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2025</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                Targeting 100+ retail stores in key sectors.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Opened 15 EBG retail stores PAN India; 10 more underway.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Targeting 50 exclusive outlets by year-end.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Strengthening brand visibility and consumer access.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Driving the next phase of EV adoption across India.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2026</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                Advancing R&D, sustainability initiatives & smart technology
-                integration
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Investing heavily in R&D and smart tech integration.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Accelerating sustainability and green manufacturing goals.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Developing next-gen EV platforms and battery tech.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Preparing groundwork for global product launches.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="info-item absolute inset-0">
-              <h3 class="text-4xl font-bold text-gray-900 mb-4">2027</h3>
-              <!-- <p class="text-gray-600 text-lg leading-relaxed">
-                EBG Partner Program set to launch IPO in 2027, marking a major milestone in sustainable innovation.
-              </p> -->
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    EBG Group to launch IPO and enter the public markets.
-                  </p>
-                </div>
-
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Marking a major milestone in EV and tech industry leadership.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Funds to fuel further innovation, expansion, and impact.
-                  </p>
-                </div>
-
-                <div class="flex items-center space-x-3">
-                  <div
-                    class="w-6 h-6 rounded-full bg-gradient-to-b from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <p class="">
-                    Poised to lead India’s clean mobility revolution globally.
-                  </p>
-                </div>
-              </div>
+      <div class="sliders">
+        <div class="slide-track">
+          <div class="slide">
+            <div class="flex items-center h-full">
+              <img src="assets/partner-logo/acer.png" alt="" />
             </div>
           </div>
-
-          <!-- Image Section -->
-          <div class="w-full lg:w-1/2 h-[308px]">
-            <div class="relative rounded-lg shadow-lg">
-              <img src="./assets/timeline/2019.jpg" alt="Innovation Technology"
-                class="image-item active h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/2020.jpg" alt="Global Connectivity"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/2021.avif" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/2022.webp" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/2023.webp" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/2024.jpg" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/2025.webp" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/4.jpeg" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-              <img src="./assets/timeline/8.jpg" alt="Future Vision"
-                class="image-item h-80 object-cover absolute inset-0" />
-            </div>
+          <div class="slide">
+            <img src="assets/partner-logo/brillen.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/daewoo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/ebygo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/nonstop.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/nuvun.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/vajram.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/brillen.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/daewoo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/ebygo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/acer.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/partner-logo/carlton.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-
-    <div class="flex justify-center items-center mb-7 space-x-4">
-      <button id="prevBtn"
-        class="cursor-pointer text-white bg-gradient-to-r from-primary to-secondary font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="lucide lucide-chevron-left-icon lucide-chevron-left">
-          <path d="m15 18-6-6 6-6" />
-        </svg>
-      </button>
-      <!-- <button id="pauseBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
-            Pause
-        </button> -->
-      <button id="nextBtn"
-        class="cursor-pointer bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="lucide lucide-chevron-right-icon lucide-chevron-right">
-          <path d="m9 18 6-6-6-6" />
-        </svg>
-      </button>
-    </div>
   </section>
+
 
   <section style="
         background: linear-gradient(
@@ -1612,17 +795,82 @@
         </div>
 
         <!-- Stats & Copy -->
-        <div class="w-full md:w-1/2">
-          <h3 class="text-2xl font-semibold">Investment Success Stories</h3>
-          <p class="mt-3 text-gray-700 leading-relaxed text-justify">
+        <div class="w-full md:w-1/2 h-full">
+          <h3 class="text-2xl font-semibold mb-7">Investment Success Stories</h3>
+          <!-- <p class="mt-3 text-gray-700 leading-relaxed text-justify">
             Our partners have consistently achieved remarkable returns while
             contributing to global sustainability goals. From startup
             accelerations to enterprise transformations, discover how
             strategic partnerships with EBG create lasting value for all
             stakeholders.
-          </p>
+          </p> -->
+          <div class="flex flex-col h-full justify-between gap-10 ">
+            <div class="flex items-center gap-7">
+              <div
+                class="flex items-center justify-center h-11 w-11 rounded-lg bg-gradient-to-b from-primary to-secondary ">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_44_59)">
+                    <path
+                      d="M19.4138 18.828H18.7888V7.26562C18.7888 6.94203 18.5265 6.67969 18.2029 6.67969H15.8592C15.5356 6.67969 15.2732 6.94203 15.2732 7.26562V18.828H14.1014V11.1718C14.1014 10.8482 13.839 10.5859 13.5154 10.5859H11.1717C10.8481 10.5859 10.5858 10.8482 10.5858 11.1718V18.828H9.41393V13.3202C9.41393 12.9966 9.15159 12.7343 8.828 12.7343H6.48429C6.1607 12.7343 5.89836 12.9966 5.89836 13.3202V18.828H4.7265V14.7265C4.7265 14.4029 4.46416 14.1405 4.14057 14.1405H1.79685C1.47326 14.1405 1.21092 14.4029 1.21092 14.7265V18.828H0.58593C0.26234 18.828 0 19.0903 0 19.4139C0 19.7375 0.26234 19.9998 0.58593 19.9998H19.4138C19.7374 19.9998 19.9997 19.7375 19.9997 19.4139C19.9997 19.0903 19.7374 18.828 19.4138 18.828Z"
+                      fill="white" />
+                    <path
+                      d="M0.58593 12.5899C4.24283 12.5899 8.20848 11.2766 11.7524 8.89184C14.528 7.02409 16.8416 4.63807 18.2788 2.19486L18.8479 4.31854C18.918 4.58033 19.2567 4.8065 19.5655 4.73283C19.8802 4.65775 20.0635 4.3278 19.9798 4.01522L19.0203 0.434412C18.9365 0.121878 18.6154 -0.0636667 18.3027 0.0201212L14.7219 0.9796C14.4093 1.06335 14.2238 1.38463 14.3076 1.69721C14.3914 2.00978 14.7125 2.19533 15.0252 2.1115L17.332 1.49338C15.9912 3.82327 13.7753 6.11808 11.0982 7.91958C7.74556 10.1756 4.01225 11.4181 0.58593 11.4181C0.26234 11.4181 0 11.6804 0 12.004C0 12.3276 0.26234 12.5899 0.58593 12.5899Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_44_59">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="">Partners consistently achieve remarkable returns.</p>
+            </div>
+            <div class="flex items-center gap-7">
+              <div
+                class="flex items-center justify-center h-11 w-11 rounded-lg bg-gradient-to-b from-primary to-secondary ">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_44_62)">
+                    <path
+                      d="M18.5688 4.43575L18.2696 4.53061L16.6761 4.67257L16.226 5.39131L15.8995 5.28755L14.6313 4.14418L14.4473 3.54958L14.201 2.91551L13.4039 2.20058L12.4636 2.0166L12.442 2.44696L13.3632 3.34586L13.8139 3.8768L13.3071 4.14163L12.8946 4.02004L12.2765 3.76221L12.2975 3.26374L11.4864 2.93015L11.2171 4.10216L10.3997 4.28742L10.4806 4.94123L11.5456 5.14622L11.7296 4.10153L12.6088 4.2314L13.0175 4.47076H13.6732L14.122 5.36967L15.3119 6.5767L15.2246 7.04589L14.2653 6.92366L12.6075 7.76081L11.4138 9.19256L11.2585 9.82663H10.8301L10.0317 9.45867L9.25635 9.82663L9.44924 10.6447L9.78665 10.2557L10.38 10.2373L10.3386 10.9719L10.8301 11.1158L11.3209 11.6671L12.1224 11.4417L13.0379 11.5862L14.101 11.8721L14.632 11.9345L15.5321 12.9562L17.2695 13.978L16.1458 16.1247L14.9598 16.676L14.5097 17.9028L12.7934 19.0487L12.6107 19.7095C16.9983 18.6527 20.2622 14.7114 20.2622 9.99916C20.264 8.01749 19.6744 6.08036 18.5688 4.43575Z"
+                      fill="white" />
+                    <path
+                      d="M11.1503 15.226L10.422 13.8757L11.0904 12.4828L10.422 12.2829L9.6714 11.5292L8.00855 11.1561L7.45661 10.0013V10.6869H7.21342L5.78039 8.74396V7.14796L4.72997 5.43991L3.06203 5.73721H1.9384L1.37308 5.3667L2.09437 4.79502L1.37499 4.96117C0.476318 6.48856 0.00243372 8.22849 0.00244141 10.0006C0.00244141 15.522 4.4785 20 10.0005 20C10.4258 20 10.8428 19.9624 11.2553 19.9128L11.1509 18.7013C11.1509 18.7013 11.6099 16.9022 11.6099 16.8411C11.6093 16.7794 11.1503 15.226 11.1503 15.226ZM3.71775 3.22448L5.49391 2.97683L6.3126 2.52802L7.23379 2.79349L8.70565 2.712L9.20985 1.91941L9.94515 2.04037L11.7309 1.87294L12.223 1.33054L12.9169 0.86708L13.8985 1.01478L14.2563 0.960663C12.9259 0.329866 11.4723 0.00177916 9.9999 6.25128e-06C8.52581 -0.0016443 7.06969 0.323576 5.73638 0.952251C4.40308 1.58093 3.22575 2.49742 2.28917 3.63573H2.29427L3.71775 3.22448ZM10.4226 0.994404L11.4437 0.43227L12.0995 0.811058L11.1503 1.53362L10.2437 1.62466L9.83565 1.35982L10.4226 0.994404ZM7.39804 1.07653L7.84876 1.26433L8.43891 1.07653L8.7604 1.63357L7.39804 1.99135L6.74296 1.6081C6.74232 1.6081 7.38339 1.19558 7.39804 1.07653Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_44_62">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="">Every collaboration supports global sustainability goals.</p>
+            </div>
+            <div class="flex items-center gap-7">
+              <div
+                class="flex items-center justify-center h-11 w-11 rounded-lg bg-gradient-to-b from-primary to-secondary ">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_44_66)">
+                    <path
+                      d="M5.08719 5.40105L3.35447 5.53492C2.87232 5.57219 2.44291 5.82488 2.17627 6.2282L0.177967 9.25052C-0.0242576 9.55637 -0.0564058 9.93915 0.0919133 10.2745C0.240272 10.6098 0.545152 10.8434 0.907454 10.8996L2.49396 11.1453C2.86509 9.17575 3.75353 7.21108 5.08719 5.40105ZM8.85446 17.5058L9.1002 19.0923C9.15633 19.4546 9.39001 19.7595 9.72528 19.9078C9.86195 19.9685 10.0098 19.9999 10.1593 20C10.3692 19.9998 10.5744 19.9378 10.7493 19.8217L13.7716 17.8235C14.175 17.5568 14.4277 17.1273 14.4648 16.6453L14.5987 14.9125C12.7886 16.2462 10.824 17.1347 8.85446 17.5058ZM8.25779 16.4061C8.31286 16.4061 8.36825 16.4016 8.42353 16.3924C9.24868 16.2544 10.044 16.022 10.8026 15.7178L4.282 9.19712C3.97778 9.95575 3.74536 10.7511 3.60739 11.5762C3.55302 11.9015 3.66212 12.2329 3.89528 12.4661L7.53369 16.1045C7.72728 16.298 7.98857 16.4061 8.25779 16.4061ZM18.405 8.86724C20.0007 5.78234 20.0598 2.52237 19.9764 0.993471C19.9478 0.469608 19.5302 0.0519548 19.0063 0.0234004C18.7144 0.0076552 18.4221 -0.000147102 18.1297 2.09973e-06C16.4201 2.09973e-06 13.715 0.258945 11.1325 1.59476C9.08008 2.65635 6.38882 4.99387 4.80102 8.0658C4.81977 8.08045 4.83809 8.09599 4.85535 8.11326L11.8865 15.1445C11.9038 15.1617 11.9193 15.18 11.934 15.1988C15.0059 13.6109 17.3434 10.9196 18.405 8.86724ZM11.6285 4.22809C12.7707 3.08588 14.6293 3.08576 15.7716 4.22809C16.325 4.78141 16.6297 5.51715 16.6297 6.29968C16.6297 7.08221 16.325 7.81795 15.7716 8.37127C15.2006 8.94232 14.4502 9.2279 13.7001 9.22798C12.9497 9.22802 12.1997 8.94247 11.6285 8.37127C11.0751 7.81795 10.7704 7.08221 10.7704 6.29968C10.7704 5.51715 11.0751 4.78141 11.6285 4.22809Z"
+                      fill="white" />
+                    <path
+                      d="M12.4575 7.54287C13.1428 8.22821 14.258 8.22825 14.9434 7.54287C15.2754 7.21084 15.4582 6.76944 15.4582 6.29991C15.4582 5.83038 15.2754 5.38898 14.9434 5.05699C14.6007 4.7143 14.1506 4.54297 13.7004 4.54297C13.2503 4.54297 12.8002 4.7143 12.4575 5.05699C12.1255 5.38898 11.9426 5.83038 11.9426 6.29991C11.9426 6.76944 12.1255 7.21088 12.4575 7.54287ZM0.597954 16.4821C0.747914 16.4821 0.897874 16.4249 1.01225 16.3105L2.92524 14.3975C3.15407 14.1686 3.15407 13.7977 2.92524 13.5688C2.69645 13.34 2.32544 13.34 2.09661 13.5688L0.183622 15.4818C-0.0452047 15.7107 -0.0452047 16.0816 0.183622 16.3105C0.237971 16.365 0.302555 16.4082 0.37366 16.4376C0.444765 16.4671 0.52099 16.4822 0.597954 16.4821ZM4.67839 15.322C4.4496 15.0932 4.07859 15.0932 3.84977 15.322L0.171864 18.9999C-0.0569624 19.2287 -0.0569624 19.5997 0.171864 19.8285C0.286277 19.9429 0.436237 20.0001 0.586197 20.0001C0.736156 20.0001 0.886116 19.9429 1.00049 19.8285L4.67835 16.1506C4.90722 15.9218 4.90722 15.5508 4.67839 15.322ZM5.60288 17.0751L3.68992 18.9881C3.4611 19.217 3.4611 19.5879 3.68992 19.8168C3.80434 19.9312 3.9543 19.9884 4.10422 19.9884C4.25414 19.9884 4.40414 19.9312 4.51851 19.8168L6.4315 17.9038C6.66033 17.6749 6.66033 17.304 6.4315 17.0751C6.20272 16.8463 5.8317 16.8463 5.60288 17.0751Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_44_66">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="">Drives growth from startup accelerations to enterprise transformations.</p>
+            </div>
+          </div>
           <!-- Stats -->
-          <div class="mt-6 flex flex-wrap justify-between gap-4 lg:gap-8">
+          <!-- <div class="mt-6 flex flex-wrap justify-between gap-4 lg:gap-8">
             <div class="flex flex-col items-center">
               <span
                 class="text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">500+</span>
@@ -1642,7 +890,7 @@
           <button
             class="bap mt-8 mb-8 w-fit inline-block px-10 py-2 rounded-md font-semibold bg-gradient-to-r from-primary to-secondary text-white cursor-pointer">
             Invest Now
-          </button>
+          </button> -->
         </div>
       </div>
 
@@ -1707,13 +955,57 @@
     </div>
   </section>
 
-  <section class="bg-white text-gray-800 px-7 lg:px-40 pt-10">
-    <div class="mb-10">
+  <section class="w-full bg-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Left Section: Text + Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14 ">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-snug mb-4 w-full">
+          Traction You Can Track.<br />
+          <span class="text-black">Trust You Can Count On.</span>
+        </h2>
+        <p class="text-gray-600 text-base sm:text-lg mb-8  w-full">
+          We’ve earned trust by showing up, in more places, with more value.
+          With 10,000+ assets active, a presence in 85+ cities, and the support
+          of 500+ investors, our growth is built on consistency, not claims.
+        </p>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 gap-4 w-full">
+          <div class="bg-gray-100 rounded-xl py-6 px-4 text-center w-full flex flex-col items-center justify-center">
+            <p class="text-2xl font-semibold text-gray-900">200+</p>
+            <p class="text-sm text-gray-600">Employees</p>
+          </div>
+          <div class="bg-gray-100 rounded-xl py-6 px-4 text-center w-full flex flex-col items-center justify-center">
+            <p class="text-2xl font-semibold text-gray-900">85+</p>
+            <p class="text-sm text-gray-600">Cities Covered</p>
+          </div>
+          <div class="bg-gray-100 rounded-xl py-6 px-4 text-center w-full flex flex-col items-center justify-center">
+            <p class="text-2xl font-semibold text-gray-900">500+</p>
+            <p class="text-sm text-gray-600">Trusted Investors</p>
+          </div>
+          <div class="bg-gray-100 rounded-xl py-6 px-4 text-center w-full flex flex-col items-center justify-center">
+            <p class="text-2xl font-semibold text-gray-900">10,000+</p>
+            <p class="text-sm text-gray-600">Assets On-Road/On-Rent</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden shadow-sm ">
+          <img src="./assets/trust.png" alt="Team Meeting" class="w-full object-cover" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="bg-white text-gray-800 px-7 lg:px-40 ">
+    <!-- <div class="mb-10">
       <h2
         class="text-xl lg:text-4xl mb-3 font-bold text-center bg-gradient-to-r from-[#027fc0] to-[#79d9e1] bg-clip-text text-transparent">
         Traction & Trust
       </h2>
-    </div>
+    </div> -->
 
     <div>
       <div class="slider-container relative pb-10">
@@ -1790,26 +1082,29 @@
 
   </section>
 
-  <section class="bg-gradient-to-r from-primary to-secondary text-white py-10 px-6 lg:px-20 rounded-2xl mt-6 mb-20">
-    <div class="text-center mb-6">
-      <h2 class="text-3xl lg:text-5xl font-bold mb-5">
-        Unlock steady returns with EBG’s Partner Program!
+  <section class="mt-6 mb-20 w-full flex flex-col justify-center"
+    style="height: 462px; background-image: url('./assets/segment.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="text-left ml-9 text-white ">
+      <h2 class="text-3xl lg:text-[40px] leading-12 font-bold mb-5">
+        Unlock steady <br>returns with EBG’s<br>Partner Program!
       </h2>
       <p class="text-lg mb-6">
-        Minimum Investment: ₹5 Lakhs | Returns Begin: 1st Month | Onboarding:
+        Minimum Investment: ₹5 Lakhs | Returns Begin: 1st<br>Month | Onboarding:
         10 Days
       </p>
       <p class="font-bold text-lg mb-5">
-        Exclusive Offer: 0% Management Fees for Year 1 for First Investors!
+        Exclusive Offer: 0% Management Fees for<br>Year 1 for First Investors!
       </p>
-      <button class="bap min-w-2xs  bg-gradient-to-r from-primary to-secondary px-10 py-3 rounded-lg font-semibold">
-        Invest Now
-      </button>
-      <p class="text-sm mt-4">Limited Seats!</p>
+      <div class="w-fit flex flex-col items-center">
+        <button class="bap min-w-2xs  bg-gradient-to-r from-[#027FC0] to-[#79D9E1] px-10 py-3 rounded-lg font-semibold">
+          Invest Now
+        </button>
+        <p class="text-sm mt-4">Limited Seats!</p>
+      </div>
     </div>
   </section>
 
-  <div class="modal-overlay" id="modalOverlay">
+  <!-- <div class="modal-overlay" id="modalOverlay">
     <div class="modal">
       <button id="closeModal-btn" class="text-white absolute right-5 top-3 cursor-pointer z-50">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1821,10 +1116,8 @@
       </button>
       <video id="video-play" class="rounded-2xl shadow-2xl lg:h-[650px] w-full object-cover" src="./assets/EBGHero.mp4"
         loop></video>
-      <!-- <div class="relative"> -->
-      <!-- </div> -->
     </div>
-  </div>
+  </div> -->
 
   <footer class="bg-gray-100 text-gray-900">
     <!-- Footer -->
