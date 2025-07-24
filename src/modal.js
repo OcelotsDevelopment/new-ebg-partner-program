@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const modal = /*html*/ `
   <div id="partnerModal" class="partner-modal fixed inset-0 bg-black/50 bg-opacity-40 flex justify-center items-center z-50">
-  <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-6 rounded-lg shadow-lg max-w-xl w-full mx-4">
+  <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer card-details bg-white p-3 md:p-6 rounded-lg shadow-lg max-w-xl w-full mx-4">
       <div class="w-commerce-commercecartheader cart-title flex justify-between items-center mb-4">
-          <h1 class="partner-title text-3xl font-semibold">
+          <h1 class="partner-title text-lg md:text-3xl font-semibold">
                     Become a <span class="partner-highlight">Partner</span>
                 </h1>
           <a id="closePartnerModal" class="w-commerce-commercecartcloselink closse-button w-inline-block cursor-pointer" onclick="document.getElementById('partnerModal')?.remove()">
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
               <div aria-label="Partner form" aria-live="polite">
                   <section class="partner-form-section">
                       <div class="partner-form-container">
-                          <p class="partner-subtitle text-lg mb-6">
+                          <p class="partner-subtitle text-sm md:text-lg mb-6">
                               Join us and unlock exclusive benefits! Fill out the form below, and our team will get in touch with you.
                           </p>
 
-                          <form action="https://forms.zohopublic.com/ebikegohyd1/form/PartnerNetwork1/formperma/8Q2wNTXY8-9TAyZT-3LCZtTNo-GIyNvyQLGOD8tOZaE/htmlRecords/submit" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data" class="partner-form">
+                          <form action="https://forms.zohopublic.com/ebikegohyd1/form/PartnerNetwork1/formperma/8Q2wNTXY8-9TAyZT-3LCZtTNo-GIyNvyQLGOD8tOZaE/htmlRecords/submit" name="form" id="form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data" class="partner-form overflow-scroll h-[70vh] md:h-auto">
 
                               <!-- Hidden fields -->
                               <input type="hidden" name="zf_referrer_name" value="">
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                               <input type="hidden" name="zc_gad" value="">
 
                               <!-- Name Fields -->
-                              <div class="form-row flex space-x-4 mb-4">
+                              <div class="form-row flex flex-col md:flex-row gap-4 mb-4">
                                   <div class="w-full">
                                       <input type="text" maxlength="255" name="Name_First" fieldtype="7" placeholder="First Name" required class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                   </div>

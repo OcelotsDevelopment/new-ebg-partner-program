@@ -165,10 +165,10 @@
 <body class="text-gray-800 font-sans">
   <!-- Header -->
   <header>
-    <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
+    <nav class="flex justify-between items-center px-4 lg:px-20 py-4">
       <div>
         <a href="/">
-          <img src="./assets/logo.png" alt="EBG Partner Program" class="h-6 lg:h-16" />
+          <img src="./assets/logo.png" alt="EBG Partner Program" class="h-12 lg:h-16" />
         </a>
       </div>
       <ul class="hidden lg:flex items-center gap-8">
@@ -213,7 +213,8 @@
   <section class="relative min-h-[90vh] flex items-center">
     <!-- Full Screen Background Image -->
     <div class="absolute inset-0">
-      <img src="./assets/ebygo.jpeg" alt="Business Partnership" class="w-full h-full object-cover" />
+      <img src="./assets/ebygo.jpeg" alt="Business Partnership" class="w-full h-full object-cover " style="-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);"/>
       <div class="absolute inset-0 bg-gradient-to-r from-primary/50 to-secondary/50 mix-blend-multiply"></div>
     </div>
     <div class="relative z-10 w-full md:w-7xl mx-auto px-4 md:px-0 py-20">
@@ -294,11 +295,11 @@
               <!-- <div class="flex space-x-3 text-sm"> -->
                 <!-- <div class="w-1/2"> -->
                   <input type="text" maxlength="255" name="Name_First" fieldtype="7" placeholder="First Name" required
-                    class="w-full p-1.5 rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
+                    class="w-full p-1.5 py-3 bg-[#E7E5E5] shadow rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
                 <!-- </div> -->
                 <!-- <div class="w-1/2"> -->
                   <input type="text" maxlength="255" name="Name_Last" fieldtype="7" placeholder="Last Name" required
-                    class="w-full p-1.5 rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
+                    class="w-full p-1.5 py-3 rounded-md bg-[#E7E5E5] shadow focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
                 <!-- </div> -->
               <!-- </div> -->
 
@@ -306,17 +307,17 @@
               <div class="flex space-x-3 text-sm">
                 <div class="w-[70px]">
                   <input type="text" value="+91" readonly
-                    class="p-1.5 w-full rounded-md bg-white border border-gray-200 text-gray-500 cursor-not-allowed">
+                    class="p-1.5 py-3 w-full rounded-md bg-[#E7E5E5] shadow text-gray-500 cursor-not-allowed">
                 </div>
                 <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneformat="1"
                   iscountrycodeenabled="false" maxlength="20" fieldtype="11" id="international_PhoneNumber_countrycode"
                   placeholder="Phone Number" required
-                  class="w-full p-1.5 text-sm rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
+                  class="w-full p-1.5 py-3 text-sm rounded-md bg-[#E7E5E5] shadow focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
               </div>
 
               <!-- Email Field -->
               <input type="email" maxlength="255" name="Email" fieldtype="9" placeholder="Email Address" required
-                class="w-full p-1.5 text-sm rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
+                class="w-full p-1.5 py-3 text-sm rounded-md bg-[#E7E5E5] shadow focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 placeholder-gray-400 transition">
 
               <!-- Product Category -->
               <div>
@@ -324,7 +325,7 @@
                   Product Category <span class="text-red-500">*</span>
                 </label>
                 <select name="Dropdown" required
-                  class="w-full p-1.5 rounded-md bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 transition">
+                  class="w-full p-1.5 py-3 rounded-md bg-[#E7E5E5] shadow focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 transition">
                   <option value="">-Select-</option>
                   <option value="Appliance">Appliance</option>
                   <option value="Mobility">Mobility</option>
@@ -338,7 +339,7 @@
                   Location <span class="text-red-500">*</span>
                 </label>
                 <select name="Dropdown1" id="location" required
-                  class="p-1.5 border border-gray-300 rounded-md w-full bg-white">
+                  class="p-1.5 py-3 rounded-md w-full bg-[#E7E5E5] shadow">
                   <option value="">Select State</option>
                   <option value="Andhra Pradesh">Andhra Pradesh</option>
                   <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -386,7 +387,7 @@
                   Optimal Investment <span class="text-red-500">*</span>
                 </label>
                 <select name="Dropdown2" id="investment" required
-                  class="p-1.5 border border-gray-300 bg-white rounded-md w-full">
+                  class="p-1.5 py-3 bg-[#E7E5E5] shadow rounded-md w-full">
                   <option value="">Select Investment</option>
                   <option value="5 Lakhs - 20 Lakhs">5 Lakhs - 20 Lakhs</option>
                   <option value="20 Lakhs - 50 Lakhs">20 Lakhs - 50 Lakhs</option>
@@ -397,7 +398,7 @@
 
               <!-- Submit Button -->
               <button type="submit" id="submit-btn"
-                class="w-full min-h-10 bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 rounded-md shadow-md hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-primary flex justify-center items-center">
+                class="w-full min-h-10 bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 rounded-md shadow-md hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-primary flex justify-center items-center cursor-pointer">
                 <span class="btn-text">Submit</span>
                 <span class="loading-spinner hidden ml-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
