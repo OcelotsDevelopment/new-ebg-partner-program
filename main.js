@@ -231,3 +231,38 @@ document.addEventListener("DOMContentLoaded", function () {
   // Also trigger on load in case already in view
   triggerCountersIfNeeded();
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionTriggers = document.querySelectorAll('.accordion-trigger');
+  
+  accordionTriggers.forEach(trigger => {
+      trigger.addEventListener('click', function() {
+          const targetId = this.getAttribute('data-target');
+          const targetContent = document.getElementById(targetId);
+          const icon = this.querySelector('.accordion-icon');
+          
+          // Toggle the clicked accordion
+          if (targetContent.classList.contains('open')) {
+              targetContent.classList.remove('open');
+              icon.textContent = '+';
+          } else {
+              // Close all other accordions first
+              accordionTriggers.forEach(otherTrigger => {
+                  const otherId = otherTrigger.getAttribute('data-target');
+                  const otherContent = document.getElementById(otherId);
+                  const otherIcon = otherTrigger.querySelector('.accordion-icon');
+                  
+                  if (otherId !== targetId && otherContent.classList.contains('open')) {
+                      otherContent.classList.remove('open');
+                      otherIcon.textContent = '+';
+                  }
+              });
+              
+              // Open the clicked accordion
+              targetContent.classList.add('open');
+              icon.textContent = '−';
+          }
+      });
+  });
+});
