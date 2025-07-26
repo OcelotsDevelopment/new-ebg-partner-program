@@ -36,6 +36,7 @@ export default defineConfig({
         mobility: resolve(__dirname, 'mobility.html'),
         energy: resolve(__dirname, 'energy.html'),
         "thank-you": resolve(__dirname, 'thank-you.html'),
+        booking: resolve(__dirname, 'booking.html'),
       },
       output: {
         entryFileNames: (chunkInfo) => {

@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 const distDir = './dist'
-const pages = ['aboutus', 'appliance', 'mobility', 'energy', 'thank-you']
+const pages = ['aboutus', 'appliance', 'mobility', 'energy', 'thank-you', 'booking']
 
 // Function to update HTML links
 function updateLinksInHTML(htmlContent) {
